@@ -132,9 +132,9 @@ const attractions: Attraction[] = [
     description:
       "Peninsula and shopping district known for its public market, art studios, and marina.",
     address: "Granville Island, Vancouver, BC, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/FikjdFTkHwG6XzR97",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1596383924438-83e350052527",
+    googleMapUrl: "https://maps.app.goo.gl/wAw3spBfsYJp7JRY9",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1692152006306-3e036c4b9414",
     categories: [6, 7, 10, 11],
   },
   {
