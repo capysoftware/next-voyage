@@ -1,4 +1,11 @@
-import { pgTable, text, timestamp, boolean } from "drizzle-orm/pg-core";
+import {
+  pgTable,
+  text,
+  timestamp,
+  boolean,
+  serial,
+  integer,
+} from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
   id: text("id").primaryKey(),
@@ -48,4 +55,42 @@ export const verification = pgTable("verification", {
   expiresAt: timestamp("expires_at").notNull(),
   createdAt: timestamp("created_at"),
   updatedAt: timestamp("updated_at"),
+});
+
+export const cities = pgTable("cities", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  country: text("country"),
+  description: text("description"),
+  image: text("image"),
+});
+
+export const attractions = pgTable("attractions", {
+  id: serial("id").primaryKey(),
+  cityId: integer("city_id")
+    .notNull()
+    .references(() => cities.id, { onDelete: "cascade" }),
+  name: text("name").notNull(),
+  description: text("description"),
+  address: text("address"),
+  googleMapUrl: text("google_map_url"),
+  rating: integer("rating"),
+  image: text("image"),
+});
+
+export const categories = pgTable("categories", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  color: text("color").notNull(),
+});
+
+export const attractionCategories = pgTable("attraction_categories", {
+  id: serial("id").primaryKey(),
+  attractionId: integer("attraction_id")
+    .notNull()
+    .references(() => attractions.id, { onDelete: "cascade" }),
+
+  categoryId: integer("category_id")
+    .notNull()
+    .references(() => categories.id, { onDelete: "cascade" }),
 });
