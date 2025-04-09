@@ -120,9 +120,9 @@ const attractions: Attraction[] = [
     description:
       "A simple suspension bridge crossing the Capilano River with a cliff walk & treetop adventure through rainforest.",
     address: "3735 Capilano Rd, North Vancouver, BC V7R 4J1, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/iTK3nqgLkiEYtfX38",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1566138884785-c2753542ad8e",
+    googleMapUrl: "https://maps.app.goo.gl/TBEsQAgKZHte3JgH8",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1485289284810-303162a4add7",
     categories: [3, 5, 7],
   },
   {
