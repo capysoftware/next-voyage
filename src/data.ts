@@ -215,13 +215,13 @@ const attractions: Attraction[] = [
   {
     id: 10,
     cityId: 1,
-    name: "Gastown",
+    name: "Gastown Steam Clock",
     description:
-      "Vancouver's oldest neighborhood featuring Victorian architecture, boutique shops, and restaurants.",
-    address: "Gastown, Vancouver, BC, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/Y1W1CWsqMSmUqQDZA",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1591292036257-a419691c73af",
+      "Built in 1977, this well-known, antique-style clock is powered by steam & whistles to tell the time.",
+    address: "305 Water St, Vancouver, BC V6B 1B9, Canada",
+    googleMapUrl: "https://maps.app.goo.gl/mRexvzXXHQuNRbWi9",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1712285155308-0d49a3c994f0",
     categories: [4, 6, 11, 12],
   },
 
