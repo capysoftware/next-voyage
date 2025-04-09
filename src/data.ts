@@ -257,9 +257,10 @@ const attractions: Attraction[] = [
     description:
       "A public aquarium featuring a diverse collection of marine life and interactive exhibits.",
     address: "288 Bremner Blvd, Toronto, ON M5V 3L9, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/jXnhRbEK1sLMeciP7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a",
+    googleMapUrl: "https://maps.app.goo.gl/RceJ4sY9yc5JoHXs5",
+    rating: 4.6,
+    image:
+      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB8n_nMF0c-VN3s_ypSqYzfbbFVIU75V-eIB07mzsDfQDt2tFjTpcdXHtyZ95SC29uzvCTnLEXqD0kIrKCgTfCtKrcdQBSELqiQjHpl2l98a4BFQUzh_ROI0gUW1BRpt8iTYHIex=s1360-w1360-h1020",
     categories: [7, 10],
   },
   {
