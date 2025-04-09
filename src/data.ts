@@ -245,9 +245,9 @@ const attractions: Attraction[] = [
     description:
       "Canada's largest museum with world culture and natural history collections.",
     address: "100 Queens Park, Toronto, ON M5S 2C6, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/MULkXG54x3NkhR7A6",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1558504806-f7d81d8e1e5d",
+    googleMapUrl: "https://maps.app.goo.gl/E2EoqmZN8NbymmSS8",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1696246234599-09aa237e1938",
     categories: [1, 4, 14],
   },
   {
