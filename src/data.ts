@@ -233,9 +233,9 @@ const attractions: Attraction[] = [
     description:
       "A 553.3 m-high concrete communications and observation tower in downtown Toronto, offering spectacular views of the city.",
     address: "290 Bremner Blvd, Toronto, ON M5V 3L9, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/o9gY6Zx6rzFJVUcC9",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da",
+    googleMapUrl: "https://maps.app.goo.gl/knBKTREwPwH7yXED9",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1521505088417-bfc5a507f901",
     categories: [3, 7, 13],
   },
   {
