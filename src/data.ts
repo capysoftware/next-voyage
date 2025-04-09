@@ -158,7 +158,8 @@ const attractions: Attraction[] = [
     address: "6393 NW Marine Dr, Vancouver, BC V6T 1Z2, Canada",
     googleMapUrl: "https://maps.app.goo.gl/tDPBKe3TtXWWH5Qi8",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1600524168564-6ac0963b5e12",
+    image:
+      "https://lh3.googleusercontent.com/proxy/ruyVV1lPKalBFvOidz34LSS7wGrF9qEr_bc1lOgO1glz8WyLVJxU2BQGDvJVKE8MBWSQ2FVMtpD2lMRgvWlNN9u3ade6zOsiigNUiurAJmXFNhuTEgzVb4gEQewH3tB6MwUEjJqaszvGTNdDVK0CCB8EXqrJnA=s1360-w1360-h1020",
     categories: [1, 4, 14],
   },
   {
