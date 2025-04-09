@@ -168,9 +168,9 @@ const attractions: Attraction[] = [
     description:
       "A mountain with panoramic views of Vancouver, outdoor activities and wildlife refuge.",
     address: "6400 Nancy Greene Way, North Vancouver, BC V7R 4K9, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/wxDfgNSqFBc2YBmW9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1587982649760-70c2f63573b2",
+    googleMapUrl: "https://maps.app.goo.gl/Hx1TJA5GZcbE7B8X6",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1610976273321-bd3466ae0b23",
     categories: [5, 7, 13],
   },
   {
