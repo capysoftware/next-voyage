@@ -207,9 +207,9 @@ const attractions: Attraction[] = [
     description:
       "An interactive science center featuring exhibits, demonstrations, and shows for all ages.",
     address: "1455 Quebec St, Vancouver, BC V6A 3Z7, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/Q94C6oZTeBZkjEEx8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1589352911517-7e81b7bf9a13",
+    googleMapUrl: "https://maps.app.goo.gl/MLpXv4JuSU7MJtxAA",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1544161513-0179fe746fd5",
     categories: [1, 7, 10],
   },
   {
