@@ -144,9 +144,9 @@ const attractions: Attraction[] = [
     description:
       "A public aquarium located in Stanley Park that is a center for marine research, conservation and marine animal rehabilitation.",
     address: "845 Avison Way, Vancouver, BC V6G 3E2, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/9sZYSNWYtJ41vUU69",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1555679486-e341a5a95a89",
+    googleMapUrl: "https://maps.app.goo.gl/wrT8gEehjYE7o5Rc9",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1486411894105-9ad5867702e6",
     categories: [7, 10, 5],
   },
   {
