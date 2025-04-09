@@ -156,9 +156,9 @@ const attractions: Attraction[] = [
     description:
       "A museum featuring an extensive collection of world arts and cultures with a special emphasis on the First Nations of British Columbia.",
     address: "6393 NW Marine Dr, Vancouver, BC V6T 1Z2, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/nchAjxAWdH95Q5S96",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1569831479472-2acbe08ebed2",
+    googleMapUrl: "https://maps.app.goo.gl/tDPBKe3TtXWWH5Qi8",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1600524168564-6ac0963b5e12",
     categories: [1, 4, 14],
   },
   {
