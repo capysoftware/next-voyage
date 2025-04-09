@@ -180,9 +180,9 @@ const attractions: Attraction[] = [
     description:
       "The first Chinese garden built outside of China, featuring traditional architecture and design.",
     address: "578 Carrall St, Vancouver, BC V6B 5K2, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/w9FUPYp8FGQ7cSK88",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1620546531039-a56bbc35f00c",
+    googleMapUrl: "https://maps.app.goo.gl/BNKKFmvSH3rdTgqr7",
+    rating: 4.2,
+    image: "https://images.unsplash.com/photo-1614765437824-f5433016b7b6",
     categories: [4, 8, 12, 14],
   },
   {
