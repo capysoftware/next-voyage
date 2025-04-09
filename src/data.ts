@@ -146,7 +146,8 @@ const attractions: Attraction[] = [
     address: "845 Avison Way, Vancouver, BC V6G 3E2, Canada",
     googleMapUrl: "https://maps.app.goo.gl/wrT8gEehjYE7o5Rc9",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1486411894105-9ad5867702e6",
+    image:
+      "https://media.cntraveler.com/photos/5c23aba24cebb85796fe4e43/16:9/w_2560%2Cc_limit/Vancouver-Aquarium_New-Entrance-Exterior---Photo-Credit-Vancouver-Aquarium.jpg",
     categories: [7, 10, 5],
   },
   {
