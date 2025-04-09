@@ -182,7 +182,8 @@ const attractions: Attraction[] = [
     address: "578 Carrall St, Vancouver, BC V6B 5K2, Canada",
     googleMapUrl: "https://maps.app.goo.gl/BNKKFmvSH3rdTgqr7",
     rating: 4.2,
-    image: "https://images.unsplash.com/photo-1614765437824-f5433016b7b6",
+    image:
+      "https://lh3.googleusercontent.com/proxy/St1b7eyMqkDja2sCo1b6iSWcKNcTAYOySO4HpF3strV6bnCJZA0Fjzf76UQlY3twNkknj26lqYz6DYC-GHL-buel13BRFR5Mg6NpwvgAEvUeIDt1WuDgdzHKc1XK4ZiSI1-ort9Rckc1WCuuCLl7lDeohkfGm9c=s1360-w1360-h1020",
     categories: [4, 8, 12, 14],
   },
   {
