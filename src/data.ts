@@ -192,9 +192,10 @@ const attractions: Attraction[] = [
     description:
       "A popular beach area in downtown Vancouver known for swimming, sunbathing, and watching sunsets.",
     address: "1700 Beach Ave, Vancouver, BC V6G 1Y7, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/t7Jt152kNJ6oYAJi8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1611516183407-d7a17823f40b",
+    googleMapUrl: "https://maps.app.goo.gl/Dvvdkx9oAmxYT532A",
+    rating: 4.7,
+    image:
+      "https://lh3.googleusercontent.com/p/AF1QipP-GHe1BzyBFYScUWHgzSeT9R819MF4Dw6mPGI2=s1360-w1360-h1020",
     categories: [5, 9, 10],
   },
   {
