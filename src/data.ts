@@ -748,9 +748,9 @@ const attractions: Attraction[] = [
     description:
       "A historic landmark featuring more than 2,600 stars embedded in the sidewalks along Hollywood Boulevard, honoring achievements in the entertainment industry.",
     address: "Hollywood Walk of Fame, Los Angeles, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/3KpgH2fCvFMtGkZj7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1599320684653-84ae3d5c73b3",
+    googleMapUrl: "https://maps.app.goo.gl/XAMQs6HFTreF7TxC7",
+    rating: 4.1,
+    image: "https://images.unsplash.com/photo-1741628423337-7d84748b25de",
     categories: [3, 7, 10],
   },
   {
