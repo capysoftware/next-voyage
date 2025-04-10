@@ -1,4 +1,5 @@
 import CityCard from "@/components/city-card";
+import { Tape } from "@/components/tape";
 import { cities } from "@/data";
 
 export default function Home() {
@@ -13,6 +14,10 @@ export default function Home() {
             Explore beautiful cities around the world and discover their amazing
             attractions
           </p>
+          <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
+          <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
+          <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
+          <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
         </div>
         <div className="mx-auto max-w-2xl">
           <p className="font-handwritten mb-8 text-lg">

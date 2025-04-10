@@ -20,8 +20,8 @@ const CityCard: React.FC<CityCardProps> = ({ city }) => {
             className="mb-3 h-48 w-full object-cover"
           />
         </div>
-        <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
-        <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
+        <Tape className="absolute top-0 -left-4 -translate-y-1/2 -rotate-12" />
+        <Tape className="absolute top-0 -right-4 -translate-y-1/2 rotate-12" />
         <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
         <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
         <div className="p-2 text-center">
@@ -29,7 +29,7 @@ const CityCard: React.FC<CityCardProps> = ({ city }) => {
             {city.name}
           </h3>
           <p className="text-foreground flex items-center justify-center gap-1 text-sm">
-            <MapPin size={14} />
+            <MapPin className="size-3.5" />
             <span>{city.country}</span>
           </p>
         </div>
