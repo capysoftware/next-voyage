@@ -3,6 +3,7 @@ import { attractions, cities } from "@/data";
 import { ArrowLeft, MapPin } from "lucide-react";
 import Link from "next/link";
 import CityAttractions from "./components/city-attractions";
+import Image from "next/image";
 
 interface CityDetailsPageProps {
   params: Promise<{ id: number }>;
@@ -48,10 +49,12 @@ export default async function CityDetailsPage({
 
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="md:w-1/2">
-            <img
+            <Image
               src={city.image}
               alt={city.name}
+              placeholder="blur"
               className="h-64 w-full rounded-md object-cover shadow-md"
+              loading="lazy"
             />
           </div>
 

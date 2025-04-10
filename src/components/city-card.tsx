@@ -4,6 +4,7 @@ import { MapPin } from "lucide-react";
 import { City } from "../data";
 import { Tape } from "./tape";
 import Link from "next/link";
+import Image from "next/image";
 
 interface CityCardProps {
   city: City;
@@ -14,10 +15,11 @@ const CityCard: React.FC<CityCardProps> = ({ city }) => {
     <div className="relative mx-auto w-full max-w-md cursor-pointer bg-white p-2 shadow-md">
       <Link href={`/city/${city.id}`}>
         <div className="relative overflow-hidden">
-          <img
-            loading="lazy"
+          <Image
             src={city.image}
             alt={city.name}
+            placeholder="blur"
+            loading="lazy"
             className="mb-3 h-48 w-full object-cover"
           />
         </div>

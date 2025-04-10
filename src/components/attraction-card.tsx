@@ -1,5 +1,6 @@
 "use client";
 import React, { Dispatch, SetStateAction } from "react";
+import Image from "next/image";
 import { ExternalLink, MapPin } from "lucide-react";
 import { Attraction, categories } from "../data";
 import { Tape } from "./tape";
@@ -38,11 +39,12 @@ const AttractionCard: React.FC<AttractionCardProps> = ({
       }}
     >
       <div className="relative">
-        <img
-          loading="lazy"
+        <Image
           src={attraction.image}
           alt={attraction.name}
+          placeholder="blur"
           className="mb-3 h-80 w-full object-cover"
+          loading="lazy"
         />
       </div>
       <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />

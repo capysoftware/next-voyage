@@ -77,7 +77,7 @@ import GettyCenter from "@/images/attractions/los-angeles/the-getty-center.jpeg"
 import VeniceBeach from "@/images/attractions/los-angeles/venice-beach-boardwalk.jpeg";
 import HollywoodSign from "@/images/attractions/los-angeles/hollywood-sign.jpeg";
 import LACMA from "@/images/attractions/los-angeles/lacma.jpeg";
-import TheGrove from "@/images/attractions/los-angeles/the-grove.avif";
+import TheGrove from "@/images/attractions/los-angeles/the-grove.jpg";
 import RunyonCanyon from "@/images/attractions/los-angeles/runyon-canyon-park.jpg";
 
 // Tokyo attractions
