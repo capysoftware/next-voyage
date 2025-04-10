@@ -516,9 +516,9 @@ const attractions: Attraction[] = [
     description:
       "The oldest and one of the largest Chinatowns in North America, featuring authentic cuisine, shops, and cultural attractions.",
     address: "Chinatown, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/dJRwEzTJFMavfEpg9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1525811902-f2342640856e",
+    googleMapUrl: "https://maps.app.goo.gl/s36iJ3CtpA4xBpWj7",
+    rating: 3.9,
+    image: "https://images.unsplash.com/photo-1655564476277-d6c02a4dd924",
     categories: [6, 11, 14],
   },
   {
