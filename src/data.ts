@@ -540,9 +540,10 @@ const attractions: Attraction[] = [
     description:
       "A large urban park spanning over 1,000 acres, featuring gardens, museums, and recreational facilities.",
     address: "Golden Gate Park, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/kVCPn1tRd21LJA7RA",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1551091860-d9c7f6cbf2dc",
+    googleMapUrl: "https://maps.app.goo.gl/zsDNXGV4JezhLDV46",
+    rating: 4.6,
+    image:
+      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-7TX9Y257Bqaz4qeAJfuOyP3T04BxOXg0nWFpch6IovcdKxQR8iM5uk_u_jwK52i-EO0XbkVsJ2UQRpXFckzDgUZc6yfDug07IfiQQcyM7PHuHyleYnEOW76Y4dJ57HjNofdVZ=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
   {
