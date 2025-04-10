@@ -370,9 +370,9 @@ const attractions: Attraction[] = [
     description:
       "A colossal neoclassical sculpture on Liberty Island in New York Harbor, a symbol of freedom and the United States.",
     address: "Liberty Island, New York, NY 10004, USA",
-    googleMapUrl: "https://maps.app.goo.gl/jbNy4ZCwNxB1iBrX7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1605130284535-11dd9eedc58a",
+    googleMapUrl: "https://maps.app.goo.gl/RzzvhmKfPg1vT5g19",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1526638684360-95cdcee762ce",
     categories: [3, 4, 10],
   },
   {
