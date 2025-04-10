@@ -1029,9 +1029,9 @@ const attractions: Attraction[] = [
     description:
       "A major recreation complex featuring the world's largest indoor theme park, an outdoor amusement park, shopping malls, and more.",
     address: "240 Olympic-ro, Songpa-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/Ro7NFNK3QGfYNAgT9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1592480963739-7b784a508cea",
+    googleMapUrl: "https://maps.app.goo.gl/aTr3VKjtmkCyDCaU7",
+    rating: 4.3,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_grtSZrVFiPNF2xxUrn33JiB1_z-a32-Xf0Marlp1S6RmoWQh8lb99X7N-WRQBGJDIngl4AEsxtzfIfXHXsNIj-a7n9NKSVN-dNOGYSLGzlNJyr1p_ogxdcJO3sNwu61ClAGrcA7kB4baO=s680-w680-h510",
     categories: [7, 6],
   },
   {
