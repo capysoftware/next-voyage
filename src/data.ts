@@ -844,9 +844,9 @@ const attractions: Attraction[] = [
     description:
       "A 160-acre park in the heart of Hollywood, offering hiking trails and panoramic views of the city.",
     address: "2000 N Fuller Ave, Los Angeles, CA 90046, USA",
-    googleMapUrl: "https://maps.app.goo.gl/pNaANn1XnUMoQ6jL9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1593286266530-9c7d453590a2",
+    googleMapUrl: "https://maps.app.goo.gl/875ftWcPbsTanQaX7",
+    rating: 4.8,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-_fZOwMK0eMkJf6ys9JMciWdcomweAnNIKzNKDjrisY8nu0-FN_lOzx6PvG7tHq8CbafV7qU1mlXwr3cfksQD7t7T1ZRMxslpISirgdTWoNelG3YvVjoOQj92-jjaMO_iEkMrvoQ=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
 
