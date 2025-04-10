@@ -1073,13 +1073,13 @@ const attractions: Attraction[] = [
   {
     id: 79,
     cityId: 8,
-    name: "Han River Park",
+    name: "Yeouido Hangang Park",
     description:
-      "A series of parks along the Han River offering recreational activities, walking paths, and views of the city.",
-    address: "Yeouido Han River Park, Yeongdeungpo-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/vEVPjNnLHDxpA3nU9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1597074866923-dc0589150358",
+      "Large, popular park on the river featuring scenic views, plus running paths & a swimming pool.",
+    address: "330 Yeouidong-ro, Yeongdeungpo District, Seoul, South Korea",
+    googleMapUrl: "https://maps.app.goo.gl/eSo5dqK5XqE5vjTR6",
+    rating: 4.5,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_3f4tT0kBJIMxxwkAXlrjLc7laNXgsgvkDN53yahfkWxL0fXHtMfbkLMWmSx1xc8fvIuNRKlcNC89unVGFmgN0PP76l5_Z8n7IAjBXnUOGvvS89nKZMrq_uAQM2xFM0u1bOOEF=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
   {
