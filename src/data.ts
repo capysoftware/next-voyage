@@ -710,9 +710,9 @@ const attractions: Attraction[] = [
     description:
       "One of the largest air and space museums in the world, with over 175 aircraft and spacecraft on display.",
     address: "9404 E Marginal Way S, Seattle, WA 98108, USA",
-    googleMapUrl: "https://maps.app.goo.gl/gKyxZKgQvwpqHsYR9",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1636558346056-7a27d379b2ea",
+    googleMapUrl: "https://maps.app.goo.gl/gxVMoXuET6R69kWe6",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1720074670007-ad927fcc432f",
     categories: [1, 4, 10],
   },
   {
