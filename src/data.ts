@@ -528,9 +528,9 @@ const attractions: Attraction[] = [
     description:
       "Known as the 'crookedest street in the world,' this one-block section features eight hairpin turns.",
     address: "Lombard Street, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/A7ZuEfmhCWmqGjY27",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1622766815178-641bef2b4630",
+    googleMapUrl: "https://maps.app.goo.gl/KmZPhgXdeiVLq4bXA",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1602730307445-03a827d3f975",
     categories: [3, 10, 12],
   },
   {
