@@ -442,9 +442,9 @@ const attractions: Attraction[] = [
     description:
       "A 1.45-mile-long elevated linear park built on a former freight rail line on the west side of Manhattan.",
     address: "New York, NY 10011, USA",
-    googleMapUrl: "https://maps.app.goo.gl/sFbYkqZeEQyFkgKC9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1518359839974-9686eb5ec150",
+    googleMapUrl: "https://maps.app.goo.gl/UspySPcKCpZpugQY6",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1624553348093-ed95c718f37b",
     categories: [2, 10, 12],
   },
   {
