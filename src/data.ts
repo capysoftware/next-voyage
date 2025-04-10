@@ -418,9 +418,9 @@ const attractions: Attraction[] = [
     description:
       "A hybrid cable-stayed/suspension bridge spanning the East River between Manhattan and Brooklyn.",
     address: "Brooklyn Bridge, New York, NY 10038, USA",
-    googleMapUrl: "https://maps.app.goo.gl/aMKhJ3yYhc4oU2sCA",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1574347635992-f9d25fc3d a2a",
+    googleMapUrl: "https://maps.app.goo.gl/kchww5gGNKzFxCJE8",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a",
     categories: [3, 4, 12],
   },
   {
