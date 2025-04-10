@@ -736,9 +736,9 @@ const attractions: Attraction[] = [
     description:
       "A film studio and theme park offering behind-the-scenes tours of movie sets and thrilling rides based on popular films.",
     address: "100 Universal City Plaza, Universal City, CA 91608, USA",
-    googleMapUrl: "https://maps.app.goo.gl/fP8sCUGCUSJmMJST7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1609924211018-5526c55bad5b",
+    googleMapUrl: "https://maps.app.goo.gl/PaGWiv4KuGBRY3bR6",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1612150138589-f41b112ef7a3",
     categories: [7, 3],
   },
   {
