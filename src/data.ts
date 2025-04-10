@@ -480,9 +480,9 @@ const attractions: Attraction[] = [
     description:
       "An iconic suspension bridge spanning the Golden Gate strait, connecting San Francisco Bay and the Pacific Ocean.",
     address: "Golden Gate Bridge, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/oP2EKPQvcpgmJV6y9",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+    googleMapUrl: "https://maps.app.goo.gl/fiVT5PRLjWjPKnyz9",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1610312278520-bcc893a3ff1d",
     categories: [3, 12, 13],
   },
   {
