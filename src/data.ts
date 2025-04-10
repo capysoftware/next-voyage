@@ -931,9 +931,9 @@ const attractions: Attraction[] = [
     description:
       "The primary residence of the Emperor of Japan, surrounded by moats and stone walls in central Tokyo.",
     address: "1-1 Chiyoda, Chiyoda City, Tokyo 100-8111, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/EZ2Zvg4vN5M3XcfY8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1",
+    googleMapUrl: "https://maps.app.goo.gl/KrYhnWvRUdapws1s6",
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1669024595566-0d9efa64caa2",
     categories: [3, 4, 10],
   },
   {
