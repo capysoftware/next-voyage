@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Kalam } from "next/font/google";
+import { Kalam, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { cn } from "@/lib/utils";
@@ -7,6 +7,12 @@ import { cn } from "@/lib/utils";
 const kalam = Kalam({
   weight: ["300", "400", "700"],
   subsets: ["latin"],
+  variable: "--font-kalam",
+});
+
+export const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -21,9 +27,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(kalam.className, `antialiased min-h-dvh`)}>
+      <body
+        className={cn(
+          inter.variable,
+          inter.className,
+          kalam.variable,
+          `flex min-h-dvh flex-col gap-4 antialiased`,
+        )}
+      >
         <Header />
-        <main className="">{children}</main>
+        <main className="container mx-auto">{children}</main>
       </body>
     </html>
   );
