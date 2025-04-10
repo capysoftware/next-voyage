@@ -698,9 +698,9 @@ const attractions: Attraction[] = [
     description:
       "A zoological garden featuring wildlife from around the world and award-winning naturalistic exhibits.",
     address: "5500 Phinney Ave N, Seattle, WA 98103, USA",
-    googleMapUrl: "https://maps.app.goo.gl/MxpftvvpGCF4y2dL8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1564928275797-0940a0a3e411",
+    googleMapUrl: "https://maps.app.goo.gl/CLJYYPDgVdyE4u759",
+    rating: 4.6,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB9uHzmuWZrGuWzICq_seV9RyOMN4wtbjheX0ppAwaXpXoJkSRcjNGSU7c253jhYl-uG97_eKMdskbpCLKmaPaXXlPk8FUsFMG6ucYtNhmsoozw694neMy87C7FOYMdzVLBrXRlR=s680-w680-h510",
     categories: [5, 7, 10],
   },
   {
