@@ -320,9 +320,9 @@ const attractions: Attraction[] = [
     description:
       "One of the largest art museums in North America with a collection of more than 90,000 works.",
     address: "317 Dundas St W, Toronto, ON M5T 1G4, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/GhKjcCYGSB9r83Ey8",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1554324559-7a0fbf980728",
+    googleMapUrl: "https://maps.app.goo.gl/QiBBxFBsbcNAnpre6",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1557669973-a927e548e948",
     categories: [1, 12, 14],
   },
   {
