@@ -1041,9 +1041,9 @@ const attractions: Attraction[] = [
     description:
       "A UNESCO World Heritage Site known for its beautiful garden called Huwon (Secret Garden), representing traditional Korean palace architecture.",
     address: "99 Yulgok-ro, Jongno-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/q8JaS5ZRBgf97bN79",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1604718767854-eac330cab657",
+    googleMapUrl: "https://maps.app.goo.gl/ds6EAeHjgUCuryRX8",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1609527166729-9a37af65114d",
     categories: [3, 4, 12],
   },
   {
