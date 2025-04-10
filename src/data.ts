@@ -772,9 +772,9 @@ const attractions: Attraction[] = [
     description:
       "A landmark pier with an amusement park, restaurants, and panoramic views of the Pacific Ocean.",
     address: "200 Santa Monica Pier, Santa Monica, CA 90401, USA",
-    googleMapUrl: "https://maps.app.goo.gl/xbDZwwk9KNQGY8Ja7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1618918160222-b1d7e96be27c",
+    googleMapUrl: "https://maps.app.goo.gl/THaYCSPHrFfgZ5xNA",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1611858775986-6c97e73f688d",
     categories: [3, 7, 9],
   },
   {
