@@ -553,9 +553,9 @@ const attractions: Attraction[] = [
     description:
       "A monumental structure built for the 1915 Panama-Pacific Exposition, featuring a classical rotunda and colonnades.",
     address: "3601 Lyon St, San Francisco, CA 94123, USA",
-    googleMapUrl: "https://maps.app.goo.gl/JgJtYpnNh1FZLzcT8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1549991191-6011e46af0c0",
+    googleMapUrl: "https://maps.app.goo.gl/wHhmhSEZN1Njtz1X6",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1711325565501-0d71ceecafb0",
     categories: [3, 4, 12],
   },
   {
