@@ -722,9 +722,9 @@ const attractions: Attraction[] = [
     description:
       "A public park on the site of the former Seattle Gas Light Company gasification plant, offering views of Lake Union and the Seattle skyline.",
     address: "2101 N Northlake Way, Seattle, WA 98103, USA",
-    googleMapUrl: "https://maps.app.goo.gl/Tp8jS1GcwCKhgj3p9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1557085125-fa189e102833",
+    googleMapUrl: "https://maps.app.goo.gl/PXPYww2YCuZzvJzQ8",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1657569277373-016ebb2bf20b",
     categories: [2, 4, 13],
   },
 
