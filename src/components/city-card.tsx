@@ -15,6 +15,7 @@ const CityCard: React.FC<CityCardProps> = ({ city }) => {
       <Link href={`/city/${city.id}`}>
         <div className="relative overflow-hidden">
           <img
+            loading="lazy"
             src={city.image}
             alt={city.name}
             className="mb-3 h-48 w-full object-cover"
