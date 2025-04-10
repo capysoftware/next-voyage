@@ -832,9 +832,9 @@ const attractions: Attraction[] = [
     description:
       "A popular retail and entertainment complex featuring shops, restaurants, a movie theater, and a dancing fountain.",
     address: "189 The Grove Dr, Los Angeles, CA 90036, USA",
-    googleMapUrl: "https://maps.app.goo.gl/HCdU8R5Z6G4MKxLv6",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1505845296167-d68ee4536cf2",
+    googleMapUrl: "https://maps.app.goo.gl/n6rLh7U3armEKEfh8",
+    rating: 4.6,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB8Tpa8xwLYoHll9f1bcc0Arx21CL3ioR5_-fuXOUbLhaKX4NfBqjYFqdh_RL2pkOHL5HqlJoftyKP8zyDNcYC5GkqQxyvF0kJ8mIFr76UtXwSV_Y7sZHA5YK-bxcGakxhLDYHr78iilkWDP=s1360-w1360-h1020",
     categories: [6, 7, 11],
   },
   {
