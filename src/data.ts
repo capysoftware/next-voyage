@@ -406,9 +406,9 @@ const attractions: Attraction[] = [
     description:
       "A major commercial intersection and neighborhood known for its bright lights, Broadway theaters, and as a symbol of New York City.",
     address: "Manhattan, NY 10036, USA",
-    googleMapUrl: "https://maps.app.goo.gl/BW7vXxgUSLLvt6aG7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1534270804882-6b5048b1c1fc",
+    googleMapUrl: "https://maps.app.goo.gl/3gkZWurFZbGnWdHM6",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1582760548598-0bccdf815aa2",
     categories: [3, 6, 7],
   },
   {
