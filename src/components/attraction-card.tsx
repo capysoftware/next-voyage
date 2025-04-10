@@ -23,12 +23,7 @@ const AttractionCard: React.FC<AttractionCardProps> = ({ attraction }) => {
         <img
           src={attraction.image}
           alt={attraction.name}
-          className="mb-3 h-48 w-full object-cover"
-          onError={(e) => {
-            // Fallback to placeholder image if the original image fails to load
-            e.currentTarget.src =
-              "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
-          }}
+          className="mb-3 h-60 w-full object-cover"
         />
       </div>
       <div className="p-2">

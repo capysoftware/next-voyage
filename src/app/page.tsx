@@ -3,7 +3,7 @@ import { cities } from "@/data";
 
 export default function Home() {
   return (
-    <div className="pb-20">
+    <>
       <div className="mx-auto mb-12 max-w-4xl text-center">
         <div className="bubble-pattern relative mb-8 inline-block bg-white p-4 px-8 pt-8 shadow-md">
           <h1 className="font-handwritten mb-4 text-4xl font-bold">
@@ -24,9 +24,9 @@ export default function Home() {
       </div>
       <div className="mx-auto grid grid-cols-1 gap-14 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {cities.map((c) => (
-          <CityCard key={c.name} city={c} />
+          <CityCard key={c.id} city={c} />
         ))}
       </div>
-    </div>
+    </>
   );
 }
