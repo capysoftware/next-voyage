@@ -1085,13 +1085,13 @@ const attractions: Attraction[] = [
   {
     id: 80,
     cityId: 8,
-    name: "Gangnam District",
+    name: "Starfield Library",
     description:
-      "A trendy area known for its upscale shopping, dining, and entertainment venues, made famous by the Gangnam Style song.",
-    address: "Gangnam-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/TFwwQZpJZBXzvqVC7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1583069844784-38285f9b57a4",
+      "Futuristic library & cultural event space on 2 levels of a mall with floor-to-ceiling bookshelves.",
+    address: "South Korea, Seoul, Gangnam District, Yeongdong-daero, 513 스타필드 코엑스몰 B1",
+    googleMapUrl: "https://maps.app.goo.gl/dx6mBHn4EqcdW75v6",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1591550890804-be953fd22999",
     categories: [6, 7, 11],
   },
 ];
