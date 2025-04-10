@@ -796,9 +796,9 @@ const attractions: Attraction[] = [
     description:
       "A vibrant, mile-long pedestrian promenade featuring street performers, vendors, and eclectic shops along the Pacific Ocean.",
     address: "Venice Beach Boardwalk, Los Angeles, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/e9tgb8uh72iBU4qL7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da",
+    googleMapUrl: "https://maps.app.goo.gl/7J4nanc4tpHKMn7v9",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1552150393-3e2f61af25de",
     categories: [9, 7, 6],
   },
   {
