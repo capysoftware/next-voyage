@@ -573,13 +573,14 @@ const attractions: Attraction[] = [
   {
     id: 39,
     cityId: 4,
-    name: "Cable Cars",
+    name: "PIER 39",
     description:
-      "The world's last manually operated cable car system, a San Francisco icon since 1873.",
+      "Bustling bayside pier featuring scenic views, sea lion sightings, eateries, shops & entertainment.",
     address: "Powell-Hyde Cable Car, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/aGVUZbXPkSLESHmi8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1570937943292-a374fd42bec5",
+    googleMapUrl: "The Embarcadero, San Francisco, CA 94133, United States",
+    rating: 4.6,
+    image:
+      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_4wAfG_qS8yVnpA6r7IF29C5lB3T0DiKtn1S34zerMPyxoWOReyxQ-dBLOZvEbPQJg56lJne-xmgTga2oNAUmaRxqwOXThUn_rSTsnpf79y4jjzQGIVwnEDmublPfFXkdxwgREtA=s1360-w1360-h1020",
     categories: [3, 7, 10],
   },
   {
