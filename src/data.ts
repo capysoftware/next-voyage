@@ -590,9 +590,10 @@ const attractions: Attraction[] = [
     description:
       "A row of colorful Victorian houses facing Alamo Square Park, famously featured in movies and TV shows.",
     address: "Steiner St & Hayes St, San Francisco, CA 94117, USA",
-    googleMapUrl: "https://maps.app.goo.gl/Jdu5pHwEv34CiT4M8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1562157069-c63fde79040d",
+    googleMapUrl: "https://maps.app.goo.gl/jP9Mu2Xo5QrWRfff9",
+    rating: 4.4,
+    image:
+      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_ehjer6uQCSCzQFf6XWjTg_QQ0a0RViFZyhf1ILimNTx4o8gRmpix-7XtD46QVfxRXbQrbdwVJH8ywkBRoR0145rl04wbLXZQA7w1msNLuGD1d9fm-6HGPj6M_sTOTjTlkCbr_=s1360-w1360-h1020",
     categories: [3, 4, 12],
   },
 
