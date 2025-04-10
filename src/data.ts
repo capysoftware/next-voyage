@@ -1,9 +1,115 @@
+import type { StaticImageData } from "next/image";
+import Vancouver from "@/images/city/vancouver.jpeg";
+import Toronto from "@/images/city/toronto.jpeg";
+import NewYorkCity from "@/images/city/new-york-city.jpeg";
+import SanFrancisco from "@/images/city/san-francisco.jpeg";
+import Seattle from "@/images/city/seattle.jpeg";
+import LosAngeles from "@/images/city/los-angeles.jpeg";
+import Tokyo from "@/images/city/tokyo.jpeg";
+import Seoul from "@/images/city/seoul.jpeg";
+
+// Vancouver attractions
+import StanleyPark from "@/images/attractions/vancouver/stanley-park.jpeg";
+import CapilanoSuspensionBridge from "@/images/attractions/vancouver/capilano-suspension-bridge.jpeg";
+import GranvilleIsland from "@/images/attractions/vancouver/granville-island.jpeg";
+import VancouverAquarium from "@/images/attractions/vancouver/vancouver-aquarium.webp";
+import MuseumOfAnthropology from "@/images/attractions/vancouver/moa.jpg";
+import GrouseMountain from "@/images/attractions/vancouver/grouse-mountain.jpeg";
+import SunYatSenGarden from "@/images/attractions/vancouver/dr-sun-yat-sen-garden.jpg";
+import EnglishBayBeach from "@/images/attractions/vancouver/english-bay-beach.jpg";
+import ScienceWorld from "@/images/attractions/vancouver/science-world.jpeg";
+import GastownSteamClock from "@/images/attractions/vancouver/gastown.jpeg";
+
+// Toronto attractions
+import CNTower from "@/images/attractions/toronto/cn-tower.jpeg";
+import RoyalOntarioMuseum from "@/images/attractions/toronto/royal-ontario-museum.jpeg";
+import RipleysAquarium from "@/images/attractions/toronto/ripleys-aquarium.jpg";
+import TorontoIslands from "@/images/attractions/toronto/toronto-islands.jpeg";
+import DistilleryDistrict from "@/images/attractions/toronto/the-distillery-historic-district.jpeg";
+import CasaLoma from "@/images/attractions/toronto/casa-loma.jpeg";
+import HighPark from "@/images/attractions/toronto/high-park.jpg";
+import ArtGalleryOfOntario from "@/images/attractions/toronto/art-gallery-of-ontario.jpeg";
+import StLawrenceMarket from "@/images/attractions/toronto/st-lawrence-market.jpeg";
+import KensingtonMarket from "@/images/attractions/toronto/kensington-market.jpeg";
+
+// New York City attractions
+import EmpireStateBuilding from "@/images/attractions/new-york-city/empire-state-building.jpeg";
+import StatueOfLiberty from "@/images/attractions/new-york-city/statue-of-liberty.jpeg";
+import CentralPark from "@/images/attractions/new-york-city/central-park.jpeg";
+import MetropolitanMuseum from "@/images/attractions/new-york-city/metropolitan-museum-of-art.jpeg";
+import TimesSquare from "@/images/attractions/new-york-city/times-square.jpeg";
+import BrooklynBridge from "@/images/attractions/new-york-city/brooklyn-bridge.jpeg";
+import Memorial911 from "@/images/attractions/new-york-city/9-11-memorial-museum.jpeg";
+import HighLine from "@/images/attractions/new-york-city/high-line.jpeg";
+import AmericanMuseumOfNaturalHistory from "@/images/attractions/new-york-city/american-museum-history.jpeg";
+import FifthAvenue from "@/images/attractions/new-york-city/fifth-avenue.jpeg";
+
+// San Francisco attractions
+import GoldenGateBridge from "@/images/attractions/san-francisco/golden-gate-bridge.jpeg";
+import AlcatrazIsland from "@/images/attractions/san-francisco/alcatraz-island.jpeg";
+import FishermansWharf from "@/images/attractions/san-francisco/fishermans-wharf.jpeg";
+import Chinatown from "@/images/attractions/san-francisco/chinatown.jpeg";
+import LombardStreet from "@/images/attractions/san-francisco/lombard-st.jpeg";
+import GoldenGatePark from "@/images/attractions/san-francisco/golden-gate-park.jpg";
+import PalaceOfFineArts from "@/images/attractions/san-francisco/palace-of-fine-arts.jpeg";
+import TwinPeaks from "@/images/attractions/san-francisco/twin-peaks.jpeg";
+import Pier39 from "@/images/attractions/san-francisco/pier-39.jpg";
+import PaintedLadies from "@/images/attractions/san-francisco/painted-ladies.jpg";
+
+// Seattle attractions
+import SpaceNeedle from "@/images/attractions/seattle/space-needle.jpeg";
+import PikePlaceMarket from "@/images/attractions/seattle/pike-place-market.jpeg";
+import ChihulyGarden from "@/images/attractions/seattle/chihuly-garden-and-glass.jpeg";
+import MoPOP from "@/images/attractions/seattle/mopop.jpg";
+import OlympicSculpturePark from "@/images/attractions/seattle/olympic-sculpture-park.jpeg";
+import SeattleAquarium from "@/images/attractions/seattle/seattle-aquarium.jpeg";
+import KerryPark from "@/images/attractions/seattle/kerry-park.jpeg";
+import WoodlandPark from "@/images/attractions/seattle/woodland-park.jpg";
+import MuseumOfFlight from "@/images/attractions/seattle/museum-of-flight.jpeg";
+import GasWorksPark from "@/images/attractions/seattle/gas-works-park.jpeg";
+
+// Los Angeles attractions
+import UniversalStudios from "@/images/attractions/los-angeles/universal-studios-hollywood.jpeg";
+import HollywoodWalkOfFame from "@/images/attractions/los-angeles/hollywood-walk-of-fame.jpeg";
+import GriffithObservatory from "@/images/attractions/los-angeles/griffith-observatory.jpeg";
+import SantaMonicaPier from "@/images/attractions/los-angeles/santa-monica-pier.jpeg";
+import GettyCenter from "@/images/attractions/los-angeles/the-getty-center.jpeg";
+import VeniceBeach from "@/images/attractions/los-angeles/venice-beach-boardwalk.jpeg";
+import HollywoodSign from "@/images/attractions/los-angeles/hollywood-sign.jpeg";
+import LACMA from "@/images/attractions/los-angeles/lacma.jpeg";
+import TheGrove from "@/images/attractions/los-angeles/the-grove.avif";
+import RunyonCanyon from "@/images/attractions/los-angeles/runyon-canyon-park.jpg";
+
+// Tokyo attractions
+import TokyoSkytree from "@/images/attractions/tokyo/tokyo-skytree.jpeg";
+import MeijiShrine from "@/images/attractions/tokyo/meji-shrine.jpeg";
+import SensojiTemple from "@/images/attractions/tokyo/senso-ji-temple.jpeg";
+import ShibuyaCrossing from "@/images/attractions/tokyo/shibuya-crossing.jpeg";
+import TokyoDisneyland from "@/images/attractions/tokyo/tokyo-disneyland.jpeg";
+import ImperialPalace from "@/images/attractions/tokyo/tokyo-imperial-park.jpeg";
+import UenoPark from "@/images/attractions/tokyo/ueno-park.jpeg";
+import Akihabara from "@/images/attractions/tokyo/akihabara-electric-town.jpeg";
+import Harajuku from "@/images/attractions/tokyo/harajuku.jpeg";
+import ShinjukuGyoen from "@/images/attractions/tokyo/shinjuku-gyoen-national-garden.jpg";
+
+// Seoul attractions
+import GyeongbokgungPalace from "@/images/attractions/seoul/gyeongbokgung-palace.jpeg";
+import NamsanTower from "@/images/attractions/seoul/namsan-tower.jpeg";
+import BukchonHanokVillage from "@/images/attractions/seoul/bukchon-hanok-village.jpeg";
+import Myeongdong from "@/images/attractions/seoul/myeongdong.jpeg";
+import LotteWorld from "@/images/attractions/seoul/lotte-world.jpg";
+import ChangdeokgungPalace from "@/images/attractions/seoul/changdeokgung-palace.jpeg";
+import DongdaemunDesignPlaza from "@/images/attractions/seoul/dongdaemun-design-plaza.jpg";
+import Insadong from "@/images/attractions/seoul/insadong.jpeg";
+import YeouidoHangangPark from "@/images/attractions/seoul/yeouido-hangang-park.jpg";
+import StarfieldLibrary from "@/images/attractions/seoul/starfield-library.jpeg";
+
 interface City {
   id: number;
   name: string;
   country: string;
   description: string;
-  image: string;
+  image: StaticImageData;
 }
 
 const cities: City[] = [
@@ -13,7 +119,7 @@ const cities: City[] = [
     country: "Canada",
     description:
       "A bustling west coast seaport in British Columbia, Vancouver is among Canada's densest, most ethnically diverse cities, surrounded by mountains and natural beauty.",
-    image: "https://images.unsplash.com/photo-1560813962-ff3d8fcf59ba",
+    image: Vancouver,
   },
   {
     id: 2,
@@ -21,7 +127,7 @@ const cities: City[] = [
     country: "Canada",
     description:
       "Canada's largest city and a multicultural hub for arts, culture, finance, and technology.",
-    image: "https://images.unsplash.com/photo-1517090504586-fde19ea6066f",
+    image: Toronto,
   },
   {
     id: 3,
@@ -29,7 +135,7 @@ const cities: City[] = [
     country: "United States",
     description:
       "New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean, and is known for its iconic skyline, arts scene, and cultural diversity.",
-    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9",
+    image: NewYorkCity,
   },
   {
     id: 4,
@@ -37,7 +143,7 @@ const cities: City[] = [
     country: "United States",
     description:
       "San Francisco, a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay, is known for its iconic Golden Gate Bridge, cable cars, and colorful Victorian houses.",
-    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+    image: SanFrancisco,
   },
   {
     id: 5,
@@ -45,7 +151,7 @@ const cities: City[] = [
     country: "United States",
     description:
       "Seattle, a city on Puget Sound in the Pacific Northwest, is surrounded by water, mountains and evergreen forests, and home to thousands of acres of parkland.",
-    image: "https://images.unsplash.com/photo-1502175353174-a7a70e73b362",
+    image: Seattle,
   },
   {
     id: 6,
@@ -53,7 +159,7 @@ const cities: City[] = [
     country: "United States",
     description:
       "Los Angeles is a sprawling Southern California city and the center of the nation's film and television industry, with studios such as Paramount Pictures, Universal and Warner Brothers.",
-    image: "https://images.unsplash.com/photo-1580655653885-65763b2597d0",
+    image: LosAngeles,
   },
   {
     id: 7,
@@ -61,7 +167,7 @@ const cities: City[] = [
     country: "Japan",
     description:
       "Tokyo, Japan's busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples.",
-    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
+    image: Tokyo,
   },
   {
     id: 8,
@@ -69,7 +175,7 @@ const cities: City[] = [
     country: "South Korea",
     description:
       "Seoul, the capital of South Korea, is a huge metropolis where modern skyscrapers, high-tech subways and pop culture meet Buddhist temples, palaces and street markets.",
-    image: "https://images.unsplash.com/photo-1682648353194-85d274114ef0",
+    image: Seoul,
   },
 ];
 
@@ -104,7 +210,7 @@ interface Attraction {
   address: string;
   googleMapUrl: string;
   rating: number;
-  image: string;
+  image: StaticImageData;
   categories: number[];
 }
 
@@ -119,7 +225,7 @@ const attractions: Attraction[] = [
     address: "Vancouver, BC V6G 1Z4, Canada",
     googleMapUrl: "https://maps.app.goo.gl/e6RrFyrDx4TPLg2p9",
     rating: 5,
-    image: "https://images.unsplash.com/uploads/1413142095961484763cf/d141726c",
+    image: StanleyPark,
     categories: [2, 3, 5, 10],
   },
   {
@@ -131,7 +237,7 @@ const attractions: Attraction[] = [
     address: "3735 Capilano Rd, North Vancouver, BC V7R 4J1, Canada",
     googleMapUrl: "https://maps.app.goo.gl/TBEsQAgKZHte3JgH8",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1485289284810-303162a4add7",
+    image: CapilanoSuspensionBridge,
     categories: [3, 5, 7],
   },
   {
@@ -143,7 +249,7 @@ const attractions: Attraction[] = [
     address: "Granville Island, Vancouver, BC, Canada",
     googleMapUrl: "https://maps.app.goo.gl/wAw3spBfsYJp7JRY9",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1692152006306-3e036c4b9414",
+    image: GranvilleIsland,
     categories: [6, 7, 10, 11],
   },
   {
@@ -155,8 +261,7 @@ const attractions: Attraction[] = [
     address: "845 Avison Way, Vancouver, BC V6G 3E2, Canada",
     googleMapUrl: "https://maps.app.goo.gl/wrT8gEehjYE7o5Rc9",
     rating: 4.5,
-    image:
-      "https://media.cntraveler.com/photos/5c23aba24cebb85796fe4e43/16:9/w_2560%2Cc_limit/Vancouver-Aquarium_New-Entrance-Exterior---Photo-Credit-Vancouver-Aquarium.jpg",
+    image: VancouverAquarium,
     categories: [7, 10, 5],
   },
   {
@@ -168,8 +273,7 @@ const attractions: Attraction[] = [
     address: "6393 NW Marine Dr, Vancouver, BC V6T 1Z2, Canada",
     googleMapUrl: "https://maps.app.goo.gl/tDPBKe3TtXWWH5Qi8",
     rating: 4.7,
-    image:
-      "https://visit.ubc.ca/wp-content/uploads/2019/07/moa_6-1940x1216_2x-1024x642.jpg",
+    image: MuseumOfAnthropology,
     categories: [1, 4, 14],
   },
   {
@@ -181,7 +285,7 @@ const attractions: Attraction[] = [
     address: "6400 Nancy Greene Way, North Vancouver, BC V7R 4K9, Canada",
     googleMapUrl: "https://maps.app.goo.gl/Hx1TJA5GZcbE7B8X6",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1610976273321-bd3466ae0b23",
+    image: GrouseMountain,
     categories: [5, 7, 13],
   },
   {
@@ -193,8 +297,7 @@ const attractions: Attraction[] = [
     address: "578 Carrall St, Vancouver, BC V6B 5K2, Canada",
     googleMapUrl: "https://maps.app.goo.gl/BNKKFmvSH3rdTgqr7",
     rating: 4.2,
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/b/b7/Dr._Sun_Yat-Sen_Classical_Chinese_Garden_07.jpg",
+    image: SunYatSenGarden,
     categories: [4, 8, 12, 14],
   },
   {
@@ -206,8 +309,7 @@ const attractions: Attraction[] = [
     address: "1700 Beach Ave, Vancouver, BC V6G 1Y7, Canada",
     googleMapUrl: "https://maps.app.goo.gl/Dvvdkx9oAmxYT532A",
     rating: 4.7,
-    image:
-      "https://lh3.googleusercontent.com/p/AF1QipP-GHe1BzyBFYScUWHgzSeT9R819MF4Dw6mPGI2=s1360-w1360-h1020",
+    image: EnglishBayBeach,
     categories: [5, 9, 10],
   },
   {
@@ -219,7 +321,7 @@ const attractions: Attraction[] = [
     address: "1455 Quebec St, Vancouver, BC V6A 3Z7, Canada",
     googleMapUrl: "https://maps.app.goo.gl/MLpXv4JuSU7MJtxAA",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1544161513-0179fe746fd5",
+    image: ScienceWorld,
     categories: [1, 7, 10],
   },
   {
@@ -231,7 +333,7 @@ const attractions: Attraction[] = [
     address: "305 Water St, Vancouver, BC V6B 1B9, Canada",
     googleMapUrl: "https://maps.app.goo.gl/mRexvzXXHQuNRbWi9",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1712285155308-0d49a3c994f0",
+    image: GastownSteamClock,
     categories: [4, 6, 11, 12],
   },
 
@@ -245,7 +347,7 @@ const attractions: Attraction[] = [
     address: "290 Bremner Blvd, Toronto, ON M5V 3L9, Canada",
     googleMapUrl: "https://maps.app.goo.gl/knBKTREwPwH7yXED9",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1521505088417-bfc5a507f901",
+    image: CNTower,
     categories: [3, 7, 13],
   },
   {
@@ -257,7 +359,7 @@ const attractions: Attraction[] = [
     address: "100 Queens Park, Toronto, ON M5S 2C6, Canada",
     googleMapUrl: "https://maps.app.goo.gl/E2EoqmZN8NbymmSS8",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1696246234599-09aa237e1938",
+    image: RoyalOntarioMuseum,
     categories: [1, 4, 14],
   },
   {
@@ -269,8 +371,7 @@ const attractions: Attraction[] = [
     address: "288 Bremner Blvd, Toronto, ON M5V 3L9, Canada",
     googleMapUrl: "https://maps.app.goo.gl/RceJ4sY9yc5JoHXs5",
     rating: 4.6,
-    image:
-      "https://seeyousoon.ca/wp-content/uploads/2020/07/Ripleys-Aquarium-of-Canada.jpg",
+    image: RipleysAquarium,
     categories: [7, 10],
   },
   {
@@ -282,7 +383,7 @@ const attractions: Attraction[] = [
     address: "Toronto Islands, Toronto, ON, Canada",
     googleMapUrl: "https://maps.app.goo.gl/Q9cq48xzevZMyc9w8",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1478515940002-d9d96d21e720",
+    image: TorontoIslands,
     categories: [2, 5, 9, 10],
   },
   {
@@ -294,7 +395,7 @@ const attractions: Attraction[] = [
     address: "55 Mill St, Toronto, ON M5A 3C4, Canada",
     googleMapUrl: "https://maps.app.goo.gl/w9RPtbPWGaouEMce8",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1579198096038-58bb3a8fc556",
+    image: DistilleryDistrict,
     categories: [4, 6, 11, 12],
   },
   {
@@ -306,7 +407,7 @@ const attractions: Attraction[] = [
     address: "1 Austin Terrace, Toronto, ON M5R 1X8, Canada",
     googleMapUrl: "https://maps.app.goo.gl/uejtQPEJjEDQXQ4C7",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1691494242756-0e6ccaf4b762",
+    image: CasaLoma,
     categories: [3, 4, 12],
   },
   {
@@ -318,8 +419,7 @@ const attractions: Attraction[] = [
     address: "1873 Bloor St W, Toronto, ON M6R 2Z3, Canada",
     googleMapUrl: "https://maps.app.goo.gl/622X7D16qNqo2GX66",
     rating: 4.7,
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Hillside_Gardens_%2824677009128%29.jpg/1200px-Hillside_Gardens_%2824677009128%29.jpg",
+    image: HighPark,
     categories: [2, 5, 10],
   },
   {
@@ -331,7 +431,7 @@ const attractions: Attraction[] = [
     address: "317 Dundas St W, Toronto, ON M5T 1G4, Canada",
     googleMapUrl: "https://maps.app.goo.gl/QiBBxFBsbcNAnpre6",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1557669973-a927e548e948",
+    image: ArtGalleryOfOntario,
     categories: [1, 12, 14],
   },
   {
@@ -343,7 +443,7 @@ const attractions: Attraction[] = [
     address: "93 Front St E, Toronto, ON M5E 1C3, Canada",
     googleMapUrl: "https://maps.app.goo.gl/2P8cvHCLztyA9pP19",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1625616257864-99f951b0b64b",
+    image: StLawrenceMarket,
     categories: [6, 11, 10],
   },
   {
@@ -355,7 +455,7 @@ const attractions: Attraction[] = [
     address: "Kensington Market, Toronto, ON, Canada",
     googleMapUrl: "https://maps.app.goo.gl/mJnRUqNVMfyGSdDZA",
     rating: 4.1,
-    image: "https://images.unsplash.com/photo-1739761445791-72bb62789110",
+    image: KensingtonMarket,
     categories: [6, 11, 14],
   },
 
@@ -369,7 +469,7 @@ const attractions: Attraction[] = [
     address: "20 W 34th St, New York, NY 10001, USA",
     googleMapUrl: "https://maps.app.goo.gl/do6VhLwabwYjXisQ6",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1555109307-f7d9da25c244",
+    image: EmpireStateBuilding,
     categories: [3, 12, 13],
   },
   {
@@ -381,7 +481,7 @@ const attractions: Attraction[] = [
     address: "Liberty Island, New York, NY 10004, USA",
     googleMapUrl: "https://maps.app.goo.gl/RzzvhmKfPg1vT5g19",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1526638684360-95cdcee762ce",
+    image: StatueOfLiberty,
     categories: [3, 4, 10],
   },
   {
@@ -393,7 +493,7 @@ const attractions: Attraction[] = [
     address: "Central Park, New York, NY, USA",
     googleMapUrl: "https://maps.app.goo.gl/3uwqnyQD6tA2Ynpq8",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1568515387631-8b650bbcdb90",
+    image: CentralPark,
     categories: [2, 5, 10],
   },
   {
@@ -405,7 +505,7 @@ const attractions: Attraction[] = [
     address: "1000 5th Ave, New York, NY 10028, USA",
     googleMapUrl: "https://maps.app.goo.gl/n1uZZ88mcgzc1BEj9",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1576254232140-70c274d668c4",
+    image: MetropolitanMuseum,
     categories: [1, 4, 14],
   },
   {
@@ -417,7 +517,7 @@ const attractions: Attraction[] = [
     address: "Manhattan, NY 10036, USA",
     googleMapUrl: "https://maps.app.goo.gl/3gkZWurFZbGnWdHM6",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1582760548598-0bccdf815aa2",
+    image: TimesSquare,
     categories: [3, 6, 7],
   },
   {
@@ -429,7 +529,7 @@ const attractions: Attraction[] = [
     address: "Brooklyn Bridge, New York, NY 10038, USA",
     googleMapUrl: "https://maps.app.goo.gl/kchww5gGNKzFxCJE8",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a",
+    image: BrooklynBridge,
     categories: [3, 4, 12],
   },
   {
@@ -441,7 +541,7 @@ const attractions: Attraction[] = [
     address: "180 Greenwich St, New York, NY 10007, USA",
     googleMapUrl: "https://maps.app.goo.gl/q6Ev6MvK9PYLxQPJA",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1544500060-cd2188b3d440",
+    image: Memorial911,
     categories: [3, 4, 13],
   },
   {
@@ -453,7 +553,7 @@ const attractions: Attraction[] = [
     address: "New York, NY 10011, USA",
     googleMapUrl: "https://maps.app.goo.gl/UspySPcKCpZpugQY6",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1624553348093-ed95c718f37b",
+    image: HighLine,
     categories: [2, 10, 12],
   },
   {
@@ -465,7 +565,7 @@ const attractions: Attraction[] = [
     address: "200 Central Park West, New York, NY 10024, USA",
     googleMapUrl: "https://maps.app.goo.gl/Dedc9qy4sWAg8ZQ1A",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1534739302117-e9ff126dec91",
+    image: AmericanMuseumOfNaturalHistory,
     categories: [1, 10, 14],
   },
   {
@@ -477,7 +577,7 @@ const attractions: Attraction[] = [
     address: "Fifth Avenue, New York, NY, USA",
     googleMapUrl: "https://maps.app.goo.gl/ma2KE4YTy5K3RA2R6",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1583842761792-214790fc1ae0",
+    image: FifthAvenue,
     categories: [6, 12],
   },
 
@@ -491,7 +591,7 @@ const attractions: Attraction[] = [
     address: "Golden Gate Bridge, San Francisco, CA, USA",
     googleMapUrl: "https://maps.app.goo.gl/fiVT5PRLjWjPKnyz9",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1610312278520-bcc893a3ff1d",
+    image: GoldenGateBridge,
     categories: [3, 12, 13],
   },
   {
@@ -503,7 +603,7 @@ const attractions: Attraction[] = [
     address: "Alcatraz Island, San Francisco, CA 94133, USA",
     googleMapUrl: "https://maps.app.goo.gl/VKwcyLQvqvm4WbvRA",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1586860870825-874e93ea0f63",
+    image: AlcatrazIsland,
     categories: [3, 4, 10],
   },
   {
@@ -515,7 +615,7 @@ const attractions: Attraction[] = [
     address: "Fisherman's Wharf, San Francisco, CA, USA",
     googleMapUrl: "https://maps.app.goo.gl/3wNf5TgeX8jgw1Bs5",
     rating: 4.1,
-    image: "https://images.unsplash.com/photo-1679560872179-65ad87a01c8c",
+    image: FishermansWharf,
     categories: [3, 6, 11],
   },
   {
@@ -527,7 +627,7 @@ const attractions: Attraction[] = [
     address: "Chinatown, San Francisco, CA, USA",
     googleMapUrl: "https://maps.app.goo.gl/s36iJ3CtpA4xBpWj7",
     rating: 3.9,
-    image: "https://images.unsplash.com/photo-1655564476277-d6c02a4dd924",
+    image: Chinatown,
     categories: [6, 11, 14],
   },
   {
@@ -539,7 +639,7 @@ const attractions: Attraction[] = [
     address: "Lombard Street, San Francisco, CA, USA",
     googleMapUrl: "https://maps.app.goo.gl/KmZPhgXdeiVLq4bXA",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1602730307445-03a827d3f975",
+    image: LombardStreet,
     categories: [3, 10, 12],
   },
   {
@@ -551,8 +651,7 @@ const attractions: Attraction[] = [
     address: "Golden Gate Park, San Francisco, CA, USA",
     googleMapUrl: "https://maps.app.goo.gl/zsDNXGV4JezhLDV46",
     rating: 4.6,
-    image:
-      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-7TX9Y257Bqaz4qeAJfuOyP3T04BxOXg0nWFpch6IovcdKxQR8iM5uk_u_jwK52i-EO0XbkVsJ2UQRpXFckzDgUZc6yfDug07IfiQQcyM7PHuHyleYnEOW76Y4dJ57HjNofdVZ=s1360-w1360-h1020",
+    image: GoldenGatePark,
     categories: [2, 5, 10],
   },
   {
@@ -564,7 +663,7 @@ const attractions: Attraction[] = [
     address: "3601 Lyon St, San Francisco, CA 94123, USA",
     googleMapUrl: "https://maps.app.goo.gl/wHhmhSEZN1Njtz1X6",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1711325565501-0d71ceecafb0",
+    image: PalaceOfFineArts,
     categories: [3, 4, 12],
   },
   {
@@ -576,7 +675,7 @@ const attractions: Attraction[] = [
     address: "501 Twin Peaks Blvd, San Francisco, CA 94114, USA",
     googleMapUrl: "https://maps.app.goo.gl/actrZDdvvNuKXnGE6",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1646782368671-74c5cbe1ba3a",
+    image: TwinPeaks,
     categories: [5, 10, 13],
   },
   {
@@ -588,8 +687,7 @@ const attractions: Attraction[] = [
     address: "Powell-Hyde Cable Car, San Francisco, CA, USA",
     googleMapUrl: "https://maps.app.goo.gl/LwKFM7kRVK5WyJyD7",
     rating: 4.6,
-    image:
-      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_4wAfG_qS8yVnpA6r7IF29C5lB3T0DiKtn1S34zerMPyxoWOReyxQ-dBLOZvEbPQJg56lJne-xmgTga2oNAUmaRxqwOXThUn_rSTsnpf79y4jjzQGIVwnEDmublPfFXkdxwgREtA=s1360-w1360-h1020",
+    image: Pier39,
     categories: [3, 7, 10],
   },
   {
@@ -601,8 +699,7 @@ const attractions: Attraction[] = [
     address: "Steiner St & Hayes St, San Francisco, CA 94117, USA",
     googleMapUrl: "https://maps.app.goo.gl/jP9Mu2Xo5QrWRfff9",
     rating: 4.4,
-    image:
-      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_ehjer6uQCSCzQFf6XWjTg_QQ0a0RViFZyhf1ILimNTx4o8gRmpix-7XtD46QVfxRXbQrbdwVJH8ywkBRoR0145rl04wbLXZQA7w1msNLuGD1d9fm-6HGPj6M_sTOTjTlkCbr_=s1360-w1360-h1020",
+    image: PaintedLadies,
     categories: [3, 4, 12],
   },
 
@@ -616,7 +713,7 @@ const attractions: Attraction[] = [
     address: "400 Broad St, Seattle, WA 98109, USA",
     googleMapUrl: "https://maps.app.goo.gl/cM3swBcntk1qdqqdA",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1581541178541-53e7751142a2",
+    image: SpaceNeedle,
     categories: [3, 7, 13],
   },
   {
@@ -628,7 +725,7 @@ const attractions: Attraction[] = [
     address: "85 Pike St, Seattle, WA 98101, USA",
     googleMapUrl: "https://maps.app.goo.gl/mDioFwDJvrjVrpDH9",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1696219362975-365d75fda5b5",
+    image: PikePlaceMarket,
     categories: [6, 11, 10],
   },
   {
@@ -640,7 +737,7 @@ const attractions: Attraction[] = [
     address: "305 Harrison St, Seattle, WA 98109, USA",
     googleMapUrl: "https://maps.app.goo.gl/Lx82BpLt16BKNiXZ9",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1642827588589-804867437e8d",
+    image: ChihulyGarden,
     categories: [1, 12, 14],
   },
   {
@@ -652,8 +749,7 @@ const attractions: Attraction[] = [
     address: "325 5th Ave N, Seattle, WA 98109, USA",
     googleMapUrl: "https://maps.app.goo.gl/1AsNFKH2R24r8sSK9",
     rating: 4.6,
-    image:
-      "https://cdn.prod.website-files.com/660b0c9bcd7ca28941eef70b/671be28bbf860d1d8799c0b5_mopop.jpg",
+    image: MoPOP,
     categories: [1, 7, 14],
   },
   {
@@ -665,7 +761,7 @@ const attractions: Attraction[] = [
     address: "2901 Western Ave, Seattle, WA 98121, USA",
     googleMapUrl: "https://maps.app.goo.gl/vauvNNSrZ7ALPESP6",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1659037526779-c615a8b18aae",
+    image: OlympicSculpturePark,
     categories: [2, 12, 10],
   },
   {
@@ -677,7 +773,7 @@ const attractions: Attraction[] = [
     address: "1483 Alaskan Way, Seattle, WA 98101, USA",
     googleMapUrl: "https://maps.app.goo.gl/gC9VnxxGowdrhUG47",
     rating: 4.3,
-    image: "https://images.unsplash.com/photo-1659214317709-e3fc38c9b07a",
+    image: SeattleAquarium,
     categories: [7, 10, 5],
   },
   {
@@ -689,7 +785,7 @@ const attractions: Attraction[] = [
     address: "211 W Highland Dr, Seattle, WA 98119, USA",
     googleMapUrl: "https://maps.app.goo.gl/BD7kuZCPr82rMm4A8",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1690982272971-5ecdfc188f39",
+    image: KerryPark,
     categories: [2, 10, 13],
   },
   {
@@ -701,8 +797,7 @@ const attractions: Attraction[] = [
     address: "5500 Phinney Ave N, Seattle, WA 98103, USA",
     googleMapUrl: "https://maps.app.goo.gl/CLJYYPDgVdyE4u759",
     rating: 4.6,
-    image:
-      "https://images.adsttc.com/media/images/5016/09f4/28ba/0d15/9800/083c/large_jpg/stringio.jpg?1414283937",
+    image: WoodlandPark,
     categories: [5, 7, 10],
   },
   {
@@ -714,7 +809,7 @@ const attractions: Attraction[] = [
     address: "9404 E Marginal Way S, Seattle, WA 98108, USA",
     googleMapUrl: "https://maps.app.goo.gl/gxVMoXuET6R69kWe6",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1720074670007-ad927fcc432f",
+    image: MuseumOfFlight,
     categories: [1, 4, 10],
   },
   {
@@ -726,7 +821,7 @@ const attractions: Attraction[] = [
     address: "2101 N Northlake Way, Seattle, WA 98103, USA",
     googleMapUrl: "https://maps.app.goo.gl/PXPYww2YCuZzvJzQ8",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1657569277373-016ebb2bf20b",
+    image: GasWorksPark,
     categories: [2, 4, 13],
   },
 
@@ -740,7 +835,7 @@ const attractions: Attraction[] = [
     address: "100 Universal City Plaza, Universal City, CA 91608, USA",
     googleMapUrl: "https://maps.app.goo.gl/PaGWiv4KuGBRY3bR6",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1612150138589-f41b112ef7a3",
+    image: UniversalStudios,
     categories: [7, 3],
   },
   {
@@ -752,7 +847,7 @@ const attractions: Attraction[] = [
     address: "Hollywood Walk of Fame, Los Angeles, CA, USA",
     googleMapUrl: "https://maps.app.goo.gl/XAMQs6HFTreF7TxC7",
     rating: 4.1,
-    image: "https://images.unsplash.com/photo-1741628423337-7d84748b25de",
+    image: HollywoodWalkOfFame,
     categories: [3, 7, 10],
   },
   {
@@ -764,7 +859,7 @@ const attractions: Attraction[] = [
     address: "2800 E Observatory Rd, Los Angeles, CA 90027, USA",
     googleMapUrl: "https://maps.app.goo.gl/6KChcdZd8McY32aw9",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1650576822670-4ef713c9c9c1",
+    image: GriffithObservatory,
     categories: [1, 10, 13],
   },
   {
@@ -776,7 +871,7 @@ const attractions: Attraction[] = [
     address: "200 Santa Monica Pier, Santa Monica, CA 90401, USA",
     googleMapUrl: "https://maps.app.goo.gl/THaYCSPHrFfgZ5xNA",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1611858775986-6c97e73f688d",
+    image: SantaMonicaPier,
     categories: [3, 7, 9],
   },
   {
@@ -788,7 +883,7 @@ const attractions: Attraction[] = [
     address: "1200 Getty Center Dr, Los Angeles, CA 90049, USA",
     googleMapUrl: "https://maps.app.goo.gl/8oprjhdhm7zRknLH8",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1582346992845-c963d5b0ba0d",
+    image: GettyCenter,
     categories: [1, 12, 10],
   },
   {
@@ -800,7 +895,7 @@ const attractions: Attraction[] = [
     address: "Venice Beach Boardwalk, Los Angeles, CA, USA",
     googleMapUrl: "https://maps.app.goo.gl/7J4nanc4tpHKMn7v9",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1552150393-3e2f61af25de",
+    image: VeniceBeach,
     categories: [9, 7, 6],
   },
   {
@@ -812,7 +907,7 @@ const attractions: Attraction[] = [
     address: "Los Angeles, CA 90068, USA",
     googleMapUrl: "https://maps.app.goo.gl/omEWF4UHmrciV2Tp6",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1641534425566-9e141d1b3b17",
+    image: HollywoodSign,
     categories: [3, 10, 13],
   },
   {
@@ -824,7 +919,7 @@ const attractions: Attraction[] = [
     address: "5905 Wilshire Blvd, Los Angeles, CA 90036, USA",
     googleMapUrl: "https://maps.app.goo.gl/Bc5UmaFN6BGY6PeD7",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1520516620562-04b7d17e7500",
+    image: LACMA,
     categories: [1, 12, 14],
   },
   {
@@ -836,8 +931,7 @@ const attractions: Attraction[] = [
     address: "189 The Grove Dr, Los Angeles, CA 90036, USA",
     googleMapUrl: "https://maps.app.goo.gl/n6rLh7U3armEKEfh8",
     rating: 4.6,
-    image:
-      "https://www.discoverlosangeles.com/sites/default/files/business/the-grove/c_fit-w_1920-h_1440-crm-la-the-grove-b1308d265056a36_b13090b0-5056-a36f-230a56d099b862af.jpg",
+    image: TheGrove,
     categories: [6, 7, 11],
   },
   {
@@ -849,8 +943,7 @@ const attractions: Attraction[] = [
     address: "2000 N Fuller Ave, Los Angeles, CA 90046, USA",
     googleMapUrl: "https://maps.app.goo.gl/875ftWcPbsTanQaX7",
     rating: 4.8,
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/36/Runyon_Paved_Section.jpg",
+    image: RunyonCanyon,
     categories: [2, 5, 10],
   },
 
@@ -864,7 +957,7 @@ const attractions: Attraction[] = [
     address: "1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japan",
     googleMapUrl: "https://maps.app.goo.gl/JhgN9NsM8Zkfxv8RA",
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1696766061774-453cc4c7187d",
+    image: TokyoSkytree,
     categories: [3, 7, 13],
   },
   {
@@ -876,7 +969,7 @@ const attractions: Attraction[] = [
     address: "1-1 Yoyogikamizonocho, Shibuya City, Tokyo 151-8557, Japan",
     googleMapUrl: "https://maps.app.goo.gl/6sTNm2nU6FtHocTCA",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1703443371292-0d9081cc4787",
+    image: MeijiShrine,
     categories: [4, 8, 10],
   },
   {
@@ -888,7 +981,7 @@ const attractions: Attraction[] = [
     address: "2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan",
     googleMapUrl: "https://maps.app.goo.gl/Af62RG6JDRJmPbAC6",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1706813253696-10ee6332edd3",
+    image: SensojiTemple,
     categories: [4, 8, 14],
   },
   {
@@ -901,7 +994,7 @@ const attractions: Attraction[] = [
       "Japan, 〒150-0043 Tokyo, Shibuya City, Dogenzaka, 2 Chome−2−1 Shibuya Scramble Square",
     googleMapUrl: "https://maps.app.goo.gl/kkxoSMdzHXHy3tZc6",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1564608909988-b678124c55d6",
+    image: ShibuyaCrossing,
     categories: [3, 10, 7],
   },
   {
@@ -913,7 +1006,7 @@ const attractions: Attraction[] = [
     address: "1-1 Maihama, Urayasu, Chiba 279-0031, Japan",
     googleMapUrl: "https://maps.app.goo.gl/gTucqPjPRUj2QmT18",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1547782126-87bb2bead14e",
+    image: TokyoDisneyland,
     categories: [7, 10],
   },
   {
@@ -925,8 +1018,7 @@ const attractions: Attraction[] = [
     address: "11 Naitomachi, Shinjuku City, Tokyo 160-0014, Japan",
     googleMapUrl: "https://maps.app.goo.gl/v9NtLSbAyuZAakPs8",
     rating: 4.6,
-    image:
-      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-1nhK6xYZZxMnGPEg2bW09h2KxCIAkmZ5UNC5FzBg-ULV0_-NDrYozaNj2D_KTuhhL4ClmEIpRygHPn_qCoxgA_Sqj7XlKB3h01HdCthc2ID6aspTHZsauTsJdWeGEIzcuxgI3=s1360-w1360-h1020",
+    image: ShinjukuGyoen,
     categories: [2, 5, 10],
   },
   {
@@ -938,7 +1030,7 @@ const attractions: Attraction[] = [
     address: "1-1 Chiyoda, Chiyoda City, Tokyo 100-8111, Japan",
     googleMapUrl: "https://maps.app.goo.gl/KrYhnWvRUdapws1s6",
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1669024595566-0d9efa64caa2",
+    image: ImperialPalace,
     categories: [3, 4, 10],
   },
   {
@@ -950,7 +1042,7 @@ const attractions: Attraction[] = [
     address: "Uenokoen, Taito City, Tokyo 110-0007, Japan",
     googleMapUrl: "https://maps.app.goo.gl/QS2kMCzovy3Et1WH6",
     rating: 4.3,
-    image: "https://images.unsplash.com/photo-1560257934-c627e08b0b17",
+    image: UenoPark,
     categories: [2, 5, 10],
   },
   {
@@ -962,7 +1054,7 @@ const attractions: Attraction[] = [
     address: "Akihabara, Taito City, Tokyo, Japan",
     googleMapUrl: "https://maps.app.goo.gl/pGtpVpd452LizEwY9",
     rating: 4.2,
-    image: "https://images.unsplash.com/photo-1683995259187-54142c49338b",
+    image: Akihabara,
     categories: [6, 7, 14],
   },
   {
@@ -974,7 +1066,7 @@ const attractions: Attraction[] = [
     address: "1 Chome Jingumae, Shibuya City, Tokyo 150-0001, Japan",
     googleMapUrl: "https://maps.app.goo.gl/VFwa3nqFpP5bTt3s5",
     rating: 4.0,
-    image: "https://images.unsplash.com/photo-1709455237000-678076b41f64",
+    image: Harajuku,
     categories: [6, 7, 14],
   },
 
@@ -988,7 +1080,7 @@ const attractions: Attraction[] = [
     address: "161 Sajik-ro, Jongno-gu, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/3fTS2EQMkHFvevJE8",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1678649579235-95d84c92246e",
+    image: GyeongbokgungPalace,
     categories: [3, 4, 12],
   },
   {
@@ -1000,7 +1092,7 @@ const attractions: Attraction[] = [
     address: "105 Namsangongwon-gil, Yongsan-gu, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/3npT4tX5y4cFt22u5",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1685761341534-b155d516eb80",
+    image: NamsanTower,
     categories: [3, 13, 7],
   },
   {
@@ -1012,7 +1104,7 @@ const attractions: Attraction[] = [
     address: "37 Gyedong-gil, Jongno-gu, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/hjj3rHYVqtipapzG8",
     rating: 4.4,
-    image: "https://images.unsplash.com/photo-1593726222205-21404ff4e5fd",
+    image: BukchonHanokVillage,
     categories: [4, 12, 14],
   },
   {
@@ -1024,7 +1116,7 @@ const attractions: Attraction[] = [
     address: "Myeongdong, Jung-gu, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/SL1yNvN849BrmS2y8",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1677097610167-c2d62b06fad3",
+    image: Myeongdong,
     categories: [6, 11, 10],
   },
   {
@@ -1036,8 +1128,7 @@ const attractions: Attraction[] = [
     address: "240 Olympic-ro, Songpa-gu, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/aTr3VKjtmkCyDCaU7",
     rating: 4.3,
-    image:
-      "https://rollercoastertraveller.com/wp-content/uploads/2023/05/lotte-world-april-2023-5.jpg",
+    image: LotteWorld,
     categories: [7, 6],
   },
   {
@@ -1049,7 +1140,7 @@ const attractions: Attraction[] = [
     address: "99 Yulgok-ro, Jongno-gu, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/ds6EAeHjgUCuryRX8",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1609527166729-9a37af65114d",
+    image: ChangdeokgungPalace,
     categories: [3, 4, 12],
   },
   {
@@ -1061,8 +1152,7 @@ const attractions: Attraction[] = [
     address: "281 Eulji-ro, Jung-gu, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/PAqpkrw8CF6MdCdy8",
     rating: 4.3,
-    image:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Dongdaemun_Design_Plaza_at_night%2C_Seoul%2C_Korea.jpg/1200px-Dongdaemun_Design_Plaza_at_night%2C_Seoul%2C_Korea.jpg",
+    image: DongdaemunDesignPlaza,
     categories: [12, 6, 7],
   },
   {
@@ -1074,7 +1164,7 @@ const attractions: Attraction[] = [
     address: "Insadong-gil, Jongno-gu, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/J71rfCpD5RSGfjVX8",
     rating: 4.2,
-    image: "https://images.unsplash.com/photo-1652185262483-88b6fac95f5d",
+    image: Insadong,
     categories: [6, 11, 14],
   },
   {
@@ -1086,8 +1176,7 @@ const attractions: Attraction[] = [
     address: "330 Yeouidong-ro, Yeongdeungpo District, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/eSo5dqK5XqE5vjTR6",
     rating: 4.5,
-    image:
-      "https://www.expatkidskorea.com/custom/domain_1/image_files/sitemgr_photo_11656.jpg",
+    image: YeouidoHangangPark,
     categories: [2, 5, 10],
   },
   {
@@ -1100,7 +1189,7 @@ const attractions: Attraction[] = [
       "South Korea, Seoul, Gangnam District, Yeongdong-daero, 513 스타필드 코엑스몰 B1",
     googleMapUrl: "https://maps.app.goo.gl/dx6mBHn4EqcdW75v6",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1591550890804-be953fd22999",
+    image: StarfieldLibrary,
     categories: [6, 7, 11],
   },
 ];
