@@ -261,7 +261,7 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/RceJ4sY9yc5JoHXs5",
     rating: 4.6,
     image:
-      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB8n_nMF0c-VN3s_ypSqYzfbbFVIU75V-eIB07mzsDfQDt2tFjTpcdXHtyZ95SC29uzvCTnLEXqD0kIrKCgTfCtKrcdQBSELqiQjHpl2l98a4BFQUzh_ROI0gUW1BRpt8iTYHIex=s1360-w1360-h1020",
+      "https://lh3.googleusercontent.com/p/AF1QipO3Q_mrfNnz2xqxuFoRHQsouK-yWX15CWe_LRat=s1360-w1360-h1020",
     categories: [7, 10],
   },
   {
