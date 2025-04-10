@@ -981,9 +981,9 @@ const attractions: Attraction[] = [
     description:
       "The largest and most significant royal palace built during the Joseon Dynasty, featuring traditional architecture and changing of the guard ceremonies.",
     address: "161 Sajik-ro, Jongno-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/xGv3XQJrqpSWZC2V7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1548128791-4c5f2a0df0ef",
+    googleMapUrl: "https://maps.app.goo.gl/3fTS2EQMkHFvevJE8",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1678649579235-95d84c92246e",
     categories: [3, 4, 12],
   },
   {
