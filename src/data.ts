@@ -907,9 +907,9 @@ const attractions: Attraction[] = [
     description:
       "A theme park featuring attractions, dining, and entertainment based on Disney films and characters.",
     address: "1-1 Maihama, Urayasu, Chiba 279-0031, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/Xm5MkHzzkEHfQZWw6",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1547782371-cd401ba30d87",
+    googleMapUrl: "https://maps.app.goo.gl/gTucqPjPRUj2QmT18",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1547782126-87bb2bead14e",
     categories: [7, 10],
   },
   {
