@@ -967,9 +967,9 @@ const attractions: Attraction[] = [
     description:
       "A colorful street known for its youth fashion culture, trendy shops, and crepe stands.",
     address: "1 Chome Jingumae, Shibuya City, Tokyo 150-0001, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/2v2CvGw8Z8WwZdYb7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1597998318626-3cf45ec66bbf",
+    googleMapUrl: "https://maps.app.goo.gl/VFwa3nqFpP5bTt3s5",
+    rating: 4.0,
+    image: "https://images.unsplash.com/photo-1709455237000-678076b41f64",
     categories: [6, 7, 14],
   },
 
