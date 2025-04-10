@@ -943,9 +943,9 @@ const attractions: Attraction[] = [
     description:
       "A spacious public park known for its museums, zoo, and cherry blossoms in spring.",
     address: "Uenokoen, Taito City, Tokyo 110-0007, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/dfPLKVJ6Y3jmwq1o7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d",
+    googleMapUrl: "https://maps.app.goo.gl/QS2kMCzovy3Et1WH6",
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1560257934-c627e08b0b17",
     categories: [2, 5, 10],
   },
   {
