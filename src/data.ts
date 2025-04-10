@@ -760,9 +760,9 @@ const attractions: Attraction[] = [
     description:
       "A facility situated on the south-facing slope of Mount Hollywood, offering views of the Los Angeles Basin and astronomical exhibits.",
     address: "2800 E Observatory Rd, Los Angeles, CA 90027, USA",
-    googleMapUrl: "https://maps.app.goo.gl/qLGFX9rRbPYBVvAX8",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1566159199779-20748d701da7",
+    googleMapUrl: "https://maps.app.goo.gl/6KChcdZd8McY32aw9",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1650576822670-4ef713c9c9c1",
     categories: [1, 10, 13],
   },
   {
