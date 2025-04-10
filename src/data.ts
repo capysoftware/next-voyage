@@ -454,9 +454,9 @@ const attractions: Attraction[] = [
     description:
       "One of the largest natural history museums in the world, with 45 permanent exhibition halls.",
     address: "200 Central Park West, New York, NY 10024, USA",
-    googleMapUrl: "https://maps.app.goo.gl/FqJMuVQVJmEgW62C6",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1596400795818-fcd4e0d355b6",
+    googleMapUrl: "https://maps.app.goo.gl/Dedc9qy4sWAg8ZQ1A",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1534739302117-e9ff126dec91",
     categories: [1, 10, 14],
   },
   {
