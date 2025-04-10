@@ -344,9 +344,9 @@ const attractions: Attraction[] = [
     description:
       "A multicultural neighborhood known for its eclectic mix of shops, restaurants, and street art.",
     address: "Kensington Market, Toronto, ON, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/HGNaH4qGsWzGe6hQ8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1586075293616-9768755ba673",
+    googleMapUrl: "https://maps.app.goo.gl/mJnRUqNVMfyGSdDZA",
+    rating: 4.1,
+    image: "https://images.unsplash.com/photo-1739761445791-72bb62789110",
     categories: [6, 11, 14],
   },
 
