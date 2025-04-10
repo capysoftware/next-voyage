@@ -919,9 +919,9 @@ const attractions: Attraction[] = [
     description:
       "A spacious public park featuring Japanese, French, and English gardens, especially popular during cherry blossom season.",
     address: "11 Naitomachi, Shinjuku City, Tokyo 160-0014, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/m4EvqxKP5wHQDWzF9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1553621042-f6e147245754",
+    googleMapUrl: "https://maps.app.goo.gl/v9NtLSbAyuZAakPs8",
+    rating: 4.6,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-1nhK6xYZZxMnGPEg2bW09h2KxCIAkmZ5UNC5FzBg-ULV0_-NDrYozaNj2D_KTuhhL4ClmEIpRygHPn_qCoxgA_Sqj7XlKB3h01HdCthc2ID6aspTHZsauTsJdWeGEIzcuxgI3=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
   {
