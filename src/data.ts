@@ -614,9 +614,9 @@ const attractions: Attraction[] = [
     description:
       "An observation tower built for the 1962 World's Fair, offering 360-degree views of Seattle and its surroundings.",
     address: "400 Broad St, Seattle, WA 98109, USA",
-    googleMapUrl: "https://maps.app.goo.gl/YX5aJfuSPQAx6rEZA",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1542223616-9de9adb5e3e8",
+    googleMapUrl: "https://maps.app.goo.gl/cM3swBcntk1qdqqdA",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1581541178541-53e7751142a2",
     categories: [3, 7, 13],
   },
   {
@@ -626,9 +626,9 @@ const attractions: Attraction[] = [
     description:
       "A historic public market overlooking the Elliott Bay waterfront, known for its fresh produce, crafts, and the original Starbucks.",
     address: "85 Pike St, Seattle, WA 98101, USA",
-    googleMapUrl: "https://maps.app.goo.gl/3JvVGMTLPBL9MXvZ7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1556912998-c57cc6b63cd7",
+    googleMapUrl: "https://maps.app.goo.gl/mDioFwDJvrjVrpDH9",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1696219362975-365d75fda5b5",
     categories: [6, 11, 10],
   },
   {
@@ -638,9 +638,9 @@ const attractions: Attraction[] = [
     description:
       "An exhibit showcasing the studio glass of Dale Chihuly, featuring a garden, glasshouse, and interior galleries.",
     address: "305 Harrison St, Seattle, WA 98109, USA",
-    googleMapUrl: "https://maps.app.goo.gl/8fUyg2vfHNadFvZn8",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1579022090314-03660ebed710",
+    googleMapUrl: "https://maps.app.goo.gl/Lx82BpLt16BKNiXZ9",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1642827588589-804867437e8d",
     categories: [1, 12, 14],
   },
   {
@@ -650,9 +650,9 @@ const attractions: Attraction[] = [
     description:
       "A nonprofit museum dedicated to contemporary popular culture, music, science fiction, and more.",
     address: "325 5th Ave N, Seattle, WA 98109, USA",
-    googleMapUrl: "https://maps.app.goo.gl/BjP88mjGkd8gVwNr7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1558888401-3cc1de77652d",
+    googleMapUrl: "https://maps.app.goo.gl/1AsNFKH2R24r8sSK9",
+    rating: 4.6,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-nbOTSQkUjB2ddvNtHmmO_qPoEWeKQhrACI3F5fcknzSkFOxi_IFR1Jm1uxOfis23XvYZ3pHOY-DAhoMcUpRgtkCGY73VYSzs19lXCrKX8aE6Ow3I4iRGhbQVwmRK4lzjtLHZj=s1360-w1360-h1020",
     categories: [1, 7, 14],
   },
   {
@@ -662,9 +662,9 @@ const attractions: Attraction[] = [
     description:
       "A nine-acre public park featuring outdoor sculptures and a beach along the waterfront.",
     address: "2901 Western Ave, Seattle, WA 98121, USA",
-    googleMapUrl: "https://maps.app.goo.gl/VWmCacCRJavvhhD49",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1559077182-28cc77a88245",
+    googleMapUrl: "https://maps.app.goo.gl/vauvNNSrZ7ALPESP6",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1659037526779-c615a8b18aae",
     categories: [2, 12, 10],
   },
   {
@@ -674,9 +674,9 @@ const attractions: Attraction[] = [
     description:
       "A public aquarium located on Pier 59 on the Elliott Bay waterfront, featuring marine exhibits.",
     address: "1483 Alaskan Way, Seattle, WA 98101, USA",
-    googleMapUrl: "https://maps.app.goo.gl/uuodCy6Qgu4WiEvGA",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1576698487061-89e722f7726d",
+    googleMapUrl: "https://maps.app.goo.gl/gC9VnxxGowdrhUG47",
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1659214317709-e3fc38c9b07a",
     categories: [7, 10, 5],
   },
   {
@@ -686,9 +686,9 @@ const attractions: Attraction[] = [
     description:
       "A small park offering one of the most photographed views of Seattle's skyline, Mount Rainier, and Elliott Bay.",
     address: "211 W Highland Dr, Seattle, WA 98119, USA",
-    googleMapUrl: "https://maps.app.goo.gl/2CZkb5NxnE5WvBf49",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1558717697-193dae8b5a23",
+    googleMapUrl: "https://maps.app.goo.gl/BD7kuZCPr82rMm4A8",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1690982272971-5ecdfc188f39",
     categories: [2, 10, 13],
   },
   {
@@ -698,9 +698,9 @@ const attractions: Attraction[] = [
     description:
       "A zoological garden featuring wildlife from around the world and award-winning naturalistic exhibits.",
     address: "5500 Phinney Ave N, Seattle, WA 98103, USA",
-    googleMapUrl: "https://maps.app.goo.gl/MxpftvvpGCF4y2dL8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1564928275797-0940a0a3e411",
+    googleMapUrl: "https://maps.app.goo.gl/CLJYYPDgVdyE4u759",
+    rating: 4.6,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB9uHzmuWZrGuWzICq_seV9RyOMN4wtbjheX0ppAwaXpXoJkSRcjNGSU7c253jhYl-uG97_eKMdskbpCLKmaPaXXlPk8FUsFMG6ucYtNhmsoozw694neMy87C7FOYMdzVLBrXRlR=s680-w680-h510",
     categories: [5, 7, 10],
   },
   {
@@ -710,9 +710,9 @@ const attractions: Attraction[] = [
     description:
       "One of the largest air and space museums in the world, with over 175 aircraft and spacecraft on display.",
     address: "9404 E Marginal Way S, Seattle, WA 98108, USA",
-    googleMapUrl: "https://maps.app.goo.gl/gKyxZKgQvwpqHsYR9",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1636558346056-7a27d379b2ea",
+    googleMapUrl: "https://maps.app.goo.gl/gxVMoXuET6R69kWe6",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1720074670007-ad927fcc432f",
     categories: [1, 4, 10],
   },
   {
@@ -722,9 +722,9 @@ const attractions: Attraction[] = [
     description:
       "A public park on the site of the former Seattle Gas Light Company gasification plant, offering views of Lake Union and the Seattle skyline.",
     address: "2101 N Northlake Way, Seattle, WA 98103, USA",
-    googleMapUrl: "https://maps.app.goo.gl/Tp8jS1GcwCKhgj3p9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1557085125-fa189e102833",
+    googleMapUrl: "https://maps.app.goo.gl/PXPYww2YCuZzvJzQ8",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1657569277373-016ebb2bf20b",
     categories: [2, 4, 13],
   },
 
@@ -736,9 +736,9 @@ const attractions: Attraction[] = [
     description:
       "A film studio and theme park offering behind-the-scenes tours of movie sets and thrilling rides based on popular films.",
     address: "100 Universal City Plaza, Universal City, CA 91608, USA",
-    googleMapUrl: "https://maps.app.goo.gl/fP8sCUGCUSJmMJST7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1609924211018-5526c55bad5b",
+    googleMapUrl: "https://maps.app.goo.gl/PaGWiv4KuGBRY3bR6",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1612150138589-f41b112ef7a3",
     categories: [7, 3],
   },
   {
@@ -748,9 +748,9 @@ const attractions: Attraction[] = [
     description:
       "A historic landmark featuring more than 2,600 stars embedded in the sidewalks along Hollywood Boulevard, honoring achievements in the entertainment industry.",
     address: "Hollywood Walk of Fame, Los Angeles, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/3KpgH2fCvFMtGkZj7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1599320684653-84ae3d5c73b3",
+    googleMapUrl: "https://maps.app.goo.gl/XAMQs6HFTreF7TxC7",
+    rating: 4.1,
+    image: "https://images.unsplash.com/photo-1741628423337-7d84748b25de",
     categories: [3, 7, 10],
   },
   {
@@ -760,9 +760,9 @@ const attractions: Attraction[] = [
     description:
       "A facility situated on the south-facing slope of Mount Hollywood, offering views of the Los Angeles Basin and astronomical exhibits.",
     address: "2800 E Observatory Rd, Los Angeles, CA 90027, USA",
-    googleMapUrl: "https://maps.app.goo.gl/qLGFX9rRbPYBVvAX8",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1566159199779-20748d701da7",
+    googleMapUrl: "https://maps.app.goo.gl/6KChcdZd8McY32aw9",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1650576822670-4ef713c9c9c1",
     categories: [1, 10, 13],
   },
   {
@@ -772,9 +772,9 @@ const attractions: Attraction[] = [
     description:
       "A landmark pier with an amusement park, restaurants, and panoramic views of the Pacific Ocean.",
     address: "200 Santa Monica Pier, Santa Monica, CA 90401, USA",
-    googleMapUrl: "https://maps.app.goo.gl/xbDZwwk9KNQGY8Ja7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1618918160222-b1d7e96be27c",
+    googleMapUrl: "https://maps.app.goo.gl/THaYCSPHrFfgZ5xNA",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1611858775986-6c97e73f688d",
     categories: [3, 7, 9],
   },
   {
@@ -784,9 +784,9 @@ const attractions: Attraction[] = [
     description:
       "A campus of the Getty Museum featuring European paintings, drawings, sculptures, and decorative arts, as well as European and American photographs.",
     address: "1200 Getty Center Dr, Los Angeles, CA 90049, USA",
-    googleMapUrl: "https://maps.app.goo.gl/GsEXMhYKoRK7RRqn9",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1604193329766-0ff3af871e9e",
+    googleMapUrl: "https://maps.app.goo.gl/8oprjhdhm7zRknLH8",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1582346992845-c963d5b0ba0d",
     categories: [1, 12, 10],
   },
   {
@@ -796,9 +796,9 @@ const attractions: Attraction[] = [
     description:
       "A vibrant, mile-long pedestrian promenade featuring street performers, vendors, and eclectic shops along the Pacific Ocean.",
     address: "Venice Beach Boardwalk, Los Angeles, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/e9tgb8uh72iBU4qL7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da",
+    googleMapUrl: "https://maps.app.goo.gl/7J4nanc4tpHKMn7v9",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1552150393-3e2f61af25de",
     categories: [9, 7, 6],
   },
   {
@@ -808,9 +808,9 @@ const attractions: Attraction[] = [
     description:
       "An iconic landmark in the Hollywood Hills spelling out 'HOLLYWOOD,' originally erected in 1923.",
     address: "Los Angeles, CA 90068, USA",
-    googleMapUrl: "https://maps.app.goo.gl/gXFi8MZpV1TGhzYC6",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1595830770487-46328ba8c2d5",
+    googleMapUrl: "https://maps.app.goo.gl/omEWF4UHmrciV2Tp6",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1641534425566-9e141d1b3b17",
     categories: [3, 10, 13],
   },
   {
@@ -820,9 +820,9 @@ const attractions: Attraction[] = [
     description:
       "The largest art museum in the western United States, featuring a collection spanning thousands of years and diverse cultures.",
     address: "5905 Wilshire Blvd, Los Angeles, CA 90036, USA",
-    googleMapUrl: "https://maps.app.goo.gl/LEvwJEwZfdpqWAgZ7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1575383095193-07792c4a8885",
+    googleMapUrl: "https://maps.app.goo.gl/Bc5UmaFN6BGY6PeD7",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1520516620562-04b7d17e7500",
     categories: [1, 12, 14],
   },
   {
@@ -832,9 +832,9 @@ const attractions: Attraction[] = [
     description:
       "A popular retail and entertainment complex featuring shops, restaurants, a movie theater, and a dancing fountain.",
     address: "189 The Grove Dr, Los Angeles, CA 90036, USA",
-    googleMapUrl: "https://maps.app.goo.gl/HCdU8R5Z6G4MKxLv6",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1505845296167-d68ee4536cf2",
+    googleMapUrl: "https://maps.app.goo.gl/n6rLh7U3armEKEfh8",
+    rating: 4.6,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB8Tpa8xwLYoHll9f1bcc0Arx21CL3ioR5_-fuXOUbLhaKX4NfBqjYFqdh_RL2pkOHL5HqlJoftyKP8zyDNcYC5GkqQxyvF0kJ8mIFr76UtXwSV_Y7sZHA5YK-bxcGakxhLDYHr78iilkWDP=s1360-w1360-h1020",
     categories: [6, 7, 11],
   },
   {
@@ -844,9 +844,9 @@ const attractions: Attraction[] = [
     description:
       "A 160-acre park in the heart of Hollywood, offering hiking trails and panoramic views of the city.",
     address: "2000 N Fuller Ave, Los Angeles, CA 90046, USA",
-    googleMapUrl: "https://maps.app.goo.gl/pNaANn1XnUMoQ6jL9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1593286266530-9c7d453590a2",
+    googleMapUrl: "https://maps.app.goo.gl/875ftWcPbsTanQaX7",
+    rating: 4.8,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-_fZOwMK0eMkJf6ys9JMciWdcomweAnNIKzNKDjrisY8nu0-FN_lOzx6PvG7tHq8CbafV7qU1mlXwr3cfksQD7t7T1ZRMxslpISirgdTWoNelG3YvVjoOQj92-jjaMO_iEkMrvoQ=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
 
@@ -858,9 +858,9 @@ const attractions: Attraction[] = [
     description:
       "A broadcasting and observation tower that is the tallest structure in Japan, offering panoramic views of Tokyo.",
     address: "1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/T9dVnPMWLn32P8mK6",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989",
+    googleMapUrl: "https://maps.app.goo.gl/JhgN9NsM8Zkfxv8RA",
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1696766061774-453cc4c7187d",
     categories: [3, 7, 13],
   },
   {
@@ -870,9 +870,9 @@ const attractions: Attraction[] = [
     description:
       "A Shinto shrine dedicated to Emperor Meiji and Empress Shoken, surrounded by a forest in the middle of Tokyo.",
     address: "1-1 Yoyogikamizonocho, Shibuya City, Tokyo 151-8557, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/zLFvpZZMsrSEtYrj7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1583416770333-c2048694dfe1",
+    googleMapUrl: "https://maps.app.goo.gl/6sTNm2nU6FtHocTCA",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1703443371292-0d9081cc4787",
     categories: [4, 8, 10],
   },
   {
@@ -882,9 +882,9 @@ const attractions: Attraction[] = [
     description:
       "Tokyo's oldest temple, featuring a five-story pagoda and bustling shopping street (Nakamise).",
     address: "2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/ZXVnA4N9gWAJNDX99",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1583400223105-aeca3c6dd3a9",
+    googleMapUrl: "https://maps.app.goo.gl/Af62RG6JDRJmPbAC6",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1706813253696-10ee6332edd3",
     categories: [4, 8, 14],
   },
   {
@@ -895,9 +895,9 @@ const attractions: Attraction[] = [
       "One of the busiest pedestrian crossings in the world, where thousands of people cross simultaneously when the traffic lights change.",
     address:
       "Japan, 〒150-0043 Tokyo, Shibuya City, Dogenzaka, 2 Chome−2−1 Shibuya Scramble Square",
-    googleMapUrl: "https://maps.app.goo.gl/s8wJa9RPskd6Jhj1A",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1542051841669-53ae482608c1",
+    googleMapUrl: "https://maps.app.goo.gl/kkxoSMdzHXHy3tZc6",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1564608909988-b678124c55d6",
     categories: [3, 10, 7],
   },
   {
@@ -907,9 +907,9 @@ const attractions: Attraction[] = [
     description:
       "A theme park featuring attractions, dining, and entertainment based on Disney films and characters.",
     address: "1-1 Maihama, Urayasu, Chiba 279-0031, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/Xm5MkHzzkEHfQZWw6",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1547782371-cd401ba30d87",
+    googleMapUrl: "https://maps.app.goo.gl/gTucqPjPRUj2QmT18",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1547782126-87bb2bead14e",
     categories: [7, 10],
   },
   {
@@ -919,9 +919,9 @@ const attractions: Attraction[] = [
     description:
       "A spacious public park featuring Japanese, French, and English gardens, especially popular during cherry blossom season.",
     address: "11 Naitomachi, Shinjuku City, Tokyo 160-0014, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/m4EvqxKP5wHQDWzF9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1553621042-f6e147245754",
+    googleMapUrl: "https://maps.app.goo.gl/v9NtLSbAyuZAakPs8",
+    rating: 4.6,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-1nhK6xYZZxMnGPEg2bW09h2KxCIAkmZ5UNC5FzBg-ULV0_-NDrYozaNj2D_KTuhhL4ClmEIpRygHPn_qCoxgA_Sqj7XlKB3h01HdCthc2ID6aspTHZsauTsJdWeGEIzcuxgI3=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
   {
@@ -931,9 +931,9 @@ const attractions: Attraction[] = [
     description:
       "The primary residence of the Emperor of Japan, surrounded by moats and stone walls in central Tokyo.",
     address: "1-1 Chiyoda, Chiyoda City, Tokyo 100-8111, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/EZ2Zvg4vN5M3XcfY8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1",
+    googleMapUrl: "https://maps.app.goo.gl/KrYhnWvRUdapws1s6",
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1669024595566-0d9efa64caa2",
     categories: [3, 4, 10],
   },
   {
@@ -943,21 +943,21 @@ const attractions: Attraction[] = [
     description:
       "A spacious public park known for its museums, zoo, and cherry blossoms in spring.",
     address: "Uenokoen, Taito City, Tokyo 110-0007, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/dfPLKVJ6Y3jmwq1o7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d",
+    googleMapUrl: "https://maps.app.goo.gl/QS2kMCzovy3Et1WH6",
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1560257934-c627e08b0b17",
     categories: [2, 5, 10],
   },
   {
     id: 69,
     cityId: 7,
-    name: "Akihabara",
+    name: "Akihabara Electric Town",
     description:
       "A district known for its electronic shops, anime stores, and maid cafes, reflecting Japan's otaku culture.",
     address: "Akihabara, Taito City, Tokyo, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/aSn61jAzVMV8s9uw8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1581534886143-21af48d5ce16",
+    googleMapUrl: "https://maps.app.goo.gl/pGtpVpd452LizEwY9",
+    rating: 4.2,
+    image: "https://images.unsplash.com/photo-1683995259187-54142c49338b",
     categories: [6, 7, 14],
   },
   {
@@ -967,9 +967,9 @@ const attractions: Attraction[] = [
     description:
       "A colorful street known for its youth fashion culture, trendy shops, and crepe stands.",
     address: "1 Chome Jingumae, Shibuya City, Tokyo 150-0001, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/2v2CvGw8Z8WwZdYb7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1597998318626-3cf45ec66bbf",
+    googleMapUrl: "https://maps.app.goo.gl/VFwa3nqFpP5bTt3s5",
+    rating: 4.0,
+    image: "https://images.unsplash.com/photo-1709455237000-678076b41f64",
     categories: [6, 7, 14],
   },
 
@@ -981,9 +981,9 @@ const attractions: Attraction[] = [
     description:
       "The largest and most significant royal palace built during the Joseon Dynasty, featuring traditional architecture and changing of the guard ceremonies.",
     address: "161 Sajik-ro, Jongno-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/xGv3XQJrqpSWZC2V7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1548128791-4c5f2a0df0ef",
+    googleMapUrl: "https://maps.app.goo.gl/3fTS2EQMkHFvevJE8",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1678649579235-95d84c92246e",
     categories: [3, 4, 12],
   },
   {
@@ -993,9 +993,9 @@ const attractions: Attraction[] = [
     description:
       "A communication and observation tower offering panoramic views of Seoul from its location on Namsan Mountain.",
     address: "105 Namsangongwon-gil, Yongsan-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/jNKS34TupWUF6QvV8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1617440168937-c6497a7b8f12",
+    googleMapUrl: "https://maps.app.goo.gl/3npT4tX5y4cFt22u5",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1685761341534-b155d516eb80",
     categories: [3, 13, 7],
   },
   {
@@ -1005,9 +1005,9 @@ const attractions: Attraction[] = [
     description:
       "A traditional Korean village featuring hundreds of hanok (traditional houses) that date back to the Joseon Dynasty.",
     address: "37 Gyedong-gil, Jongno-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/1P2TQJtPg1HzrRLg6",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1579169825753-44f9d4f31117",
+    googleMapUrl: "https://maps.app.goo.gl/hjj3rHYVqtipapzG8",
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1593726222205-21404ff4e5fd",
     categories: [4, 12, 14],
   },
   {
@@ -1017,9 +1017,9 @@ const attractions: Attraction[] = [
     description:
       "A major shopping area featuring luxury brands, department stores, and street food stalls.",
     address: "Myeongdong, Jung-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/4Nv31f1yoHEGW1gq5",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e",
+    googleMapUrl: "https://maps.app.goo.gl/SL1yNvN849BrmS2y8",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1677097610167-c2d62b06fad3",
     categories: [6, 11, 10],
   },
   {
@@ -1029,9 +1029,9 @@ const attractions: Attraction[] = [
     description:
       "A major recreation complex featuring the world's largest indoor theme park, an outdoor amusement park, shopping malls, and more.",
     address: "240 Olympic-ro, Songpa-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/Ro7NFNK3QGfYNAgT9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1592480963739-7b784a508cea",
+    googleMapUrl: "https://maps.app.goo.gl/aTr3VKjtmkCyDCaU7",
+    rating: 4.3,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_grtSZrVFiPNF2xxUrn33JiB1_z-a32-Xf0Marlp1S6RmoWQh8lb99X7N-WRQBGJDIngl4AEsxtzfIfXHXsNIj-a7n9NKSVN-dNOGYSLGzlNJyr1p_ogxdcJO3sNwu61ClAGrcA7kB4baO=s680-w680-h510",
     categories: [7, 6],
   },
   {
@@ -1041,9 +1041,9 @@ const attractions: Attraction[] = [
     description:
       "A UNESCO World Heritage Site known for its beautiful garden called Huwon (Secret Garden), representing traditional Korean palace architecture.",
     address: "99 Yulgok-ro, Jongno-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/q8JaS5ZRBgf97bN79",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1604718767854-eac330cab657",
+    googleMapUrl: "https://maps.app.goo.gl/ds6EAeHjgUCuryRX8",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1609527166729-9a37af65114d",
     categories: [3, 4, 12],
   },
   {
@@ -1053,9 +1053,9 @@ const attractions: Attraction[] = [
     description:
       "A major urban development featuring a futuristic design by Zaha Hadid, hosting exhibitions, fashion shows, and cultural events.",
     address: "281 Eulji-ro, Jung-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/TMUPvyJc1qVyYQse9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1599828584205-ba7e68179d78",
+    googleMapUrl: "https://maps.app.goo.gl/PAqpkrw8CF6MdCdy8",
+    rating: 4.3,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_OFns2L9h04hCEaRCUxZ-rtR9PiOOOxEE4kJD9MYcPcLNWDPMAbJvp10syAMamAG3X8I7yts0gWA8xP_yyIqWxPRT9uG0DQQSGEqC0FuABvFkjiYWm2vPJuk0zXkp9ARnrroo=s1360-w1360-h1020",
     categories: [12, 6, 7],
   },
   {
@@ -1065,33 +1065,33 @@ const attractions: Attraction[] = [
     description:
       "A neighborhood known for its traditional crafts, teahouses, and galleries, representing Korean art and culture.",
     address: "Insadong-gil, Jongno-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/LCjEAh5Wf4SzGh4g8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1497548291890-7d8f6ffec900",
+    googleMapUrl: "https://maps.app.goo.gl/J71rfCpD5RSGfjVX8",
+    rating: 4.2,
+    image: "https://images.unsplash.com/photo-1652185262483-88b6fac95f5d",
     categories: [6, 11, 14],
   },
   {
     id: 79,
     cityId: 8,
-    name: "Han River Park",
+    name: "Yeouido Hangang Park",
     description:
-      "A series of parks along the Han River offering recreational activities, walking paths, and views of the city.",
-    address: "Yeouido Han River Park, Yeongdeungpo-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/vEVPjNnLHDxpA3nU9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1597074866923-dc0589150358",
+      "Large, popular park on the river featuring scenic views, plus running paths & a swimming pool.",
+    address: "330 Yeouidong-ro, Yeongdeungpo District, Seoul, South Korea",
+    googleMapUrl: "https://maps.app.goo.gl/eSo5dqK5XqE5vjTR6",
+    rating: 4.5,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_3f4tT0kBJIMxxwkAXlrjLc7laNXgsgvkDN53yahfkWxL0fXHtMfbkLMWmSx1xc8fvIuNRKlcNC89unVGFmgN0PP76l5_Z8n7IAjBXnUOGvvS89nKZMrq_uAQM2xFM0u1bOOEF=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
   {
     id: 80,
     cityId: 8,
-    name: "Gangnam District",
+    name: "Starfield Library",
     description:
-      "A trendy area known for its upscale shopping, dining, and entertainment venues, made famous by the Gangnam Style song.",
-    address: "Gangnam-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/TFwwQZpJZBXzvqVC7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1583069844784-38285f9b57a4",
+      "Futuristic library & cultural event space on 2 levels of a mall with floor-to-ceiling bookshelves.",
+    address: "South Korea, Seoul, Gangnam District, Yeongdong-daero, 513 스타필드 코엑스몰 B1",
+    googleMapUrl: "https://maps.app.goo.gl/dx6mBHn4EqcdW75v6",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1591550890804-be953fd22999",
     categories: [6, 7, 11],
   },
 ];
