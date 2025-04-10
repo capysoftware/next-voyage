@@ -1,8 +1,8 @@
-import AttractionCard from "@/components/attraction-card";
 import { Tape } from "@/components/tape";
 import { attractions, cities } from "@/data";
 import { ArrowLeft, MapPin } from "lucide-react";
 import Link from "next/link";
+import CityAttractions from "./components/city-attractions";
 
 interface CityDetailsPageProps {
   params: Promise<{ id: number }>;
@@ -78,11 +78,7 @@ export default async function CityDetailsPage({
         Top Attractions in {city.name}
       </h2>
 
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {cityAttractions.map((attraction) => (
-          <AttractionCard key={attraction.id} attraction={attraction} />
-        ))}
-      </div>
+      <CityAttractions cityAttractions={cityAttractions} />
     </>
   );
 }
