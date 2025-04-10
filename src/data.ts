@@ -895,9 +895,9 @@ const attractions: Attraction[] = [
       "One of the busiest pedestrian crossings in the world, where thousands of people cross simultaneously when the traffic lights change.",
     address:
       "Japan, 〒150-0043 Tokyo, Shibuya City, Dogenzaka, 2 Chome−2−1 Shibuya Scramble Square",
-    googleMapUrl: "https://maps.app.goo.gl/s8wJa9RPskd6Jhj1A",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1542051841669-53ae482608c1",
+    googleMapUrl: "https://maps.app.goo.gl/kkxoSMdzHXHy3tZc6",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1564608909988-b678124c55d6",
     categories: [3, 10, 7],
   },
   {
