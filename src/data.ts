@@ -650,9 +650,9 @@ const attractions: Attraction[] = [
     description:
       "A nonprofit museum dedicated to contemporary popular culture, music, science fiction, and more.",
     address: "325 5th Ave N, Seattle, WA 98109, USA",
-    googleMapUrl: "https://maps.app.goo.gl/BjP88mjGkd8gVwNr7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1558888401-3cc1de77652d",
+    googleMapUrl: "https://maps.app.goo.gl/1AsNFKH2R24r8sSK9",
+    rating: 4.6,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-nbOTSQkUjB2ddvNtHmmO_qPoEWeKQhrACI3F5fcknzSkFOxi_IFR1Jm1uxOfis23XvYZ3pHOY-DAhoMcUpRgtkCGY73VYSzs19lXCrKX8aE6Ow3I4iRGhbQVwmRK4lzjtLHZj=s1360-w1360-h1020",
     categories: [1, 7, 14],
   },
   {
