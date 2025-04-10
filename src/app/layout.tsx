@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Kalam, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import { cn } from "@/lib/utils";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const kalam = Kalam({
+  weight: ["300", "400", "700"],
   subsets: ["latin"],
+  variable: "--font-kalam",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -26,10 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-dvh`}
+        className={cn(
+          inter.variable,
+          inter.className,
+          kalam.variable,
+          `flex min-h-dvh flex-col gap-4 antialiased`,
+        )}
       >
         <Header />
-        <main className="">{children}</main>
+        <main className="container mx-auto p-8">{children}</main>
       </body>
     </html>
   );

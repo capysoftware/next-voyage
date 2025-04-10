@@ -80,7 +80,7 @@ const categories: Category[] = [
   { id: 7, name: "entertainment", color: "#E5DEFF" },
   { id: 8, name: "religious", color: "#F2FCE2" },
   { id: 9, name: "beach", color: "#FEF7CD" },
-  { id: 10, name: "budget_friendly", color: "#FDE1D3" },
+  { id: 10, name: "budget friendly", color: "#FDE1D3" },
   { id: 11, name: "food", color: "#D3E4FD" },
   { id: 12, name: "architecture", color: "#FFDEE2" },
   { id: 13, name: "viewpoint", color: "#E5DEFF" },
