@@ -638,9 +638,9 @@ const attractions: Attraction[] = [
     description:
       "An exhibit showcasing the studio glass of Dale Chihuly, featuring a garden, glasshouse, and interior galleries.",
     address: "305 Harrison St, Seattle, WA 98109, USA",
-    googleMapUrl: "https://maps.app.goo.gl/8fUyg2vfHNadFvZn8",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1579022090314-03660ebed710",
+    googleMapUrl: "https://maps.app.goo.gl/Lx82BpLt16BKNiXZ9",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1642827588589-804867437e8d",
     categories: [1, 12, 14],
   },
   {
