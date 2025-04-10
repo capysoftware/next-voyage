@@ -674,9 +674,9 @@ const attractions: Attraction[] = [
     description:
       "A public aquarium located on Pier 59 on the Elliott Bay waterfront, featuring marine exhibits.",
     address: "1483 Alaskan Way, Seattle, WA 98101, USA",
-    googleMapUrl: "https://maps.app.goo.gl/uuodCy6Qgu4WiEvGA",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1576698487061-89e722f7726d",
+    googleMapUrl: "https://maps.app.goo.gl/gC9VnxxGowdrhUG47",
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1659214317709-e3fc38c9b07a",
     categories: [7, 10, 5],
   },
   {
