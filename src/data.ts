@@ -870,9 +870,9 @@ const attractions: Attraction[] = [
     description:
       "A Shinto shrine dedicated to Emperor Meiji and Empress Shoken, surrounded by a forest in the middle of Tokyo.",
     address: "1-1 Yoyogikamizonocho, Shibuya City, Tokyo 151-8557, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/zLFvpZZMsrSEtYrj7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1583416770333-c2048694dfe1",
+    googleMapUrl: "https://maps.app.goo.gl/6sTNm2nU6FtHocTCA",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1703443371292-0d9081cc4787",
     categories: [4, 8, 10],
   },
   {
