@@ -504,9 +504,9 @@ const attractions: Attraction[] = [
     description:
       "A popular tourist attraction with seafood restaurants, souvenir shops, and sea lion viewing.",
     address: "Fisherman's Wharf, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/uzkBg7LqYPQAvZc97",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1598401042500-5345aeb4821f",
+    googleMapUrl: "https://maps.app.goo.gl/3wNf5TgeX8jgw1Bs5",
+    rating: 4.1,
+    image: "https://images.unsplash.com/photo-1679560872179-65ad87a01c8c",
     categories: [3, 6, 11],
   },
   {
