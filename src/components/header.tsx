@@ -10,10 +10,10 @@ export default async function Header() {
     headers: await headers(),
   });
   return (
-    <header className="container p-4 mx-auto flex justify-between">
+    <header className="container mx-auto flex justify-between p-4">
       <Link
         href="/"
-        className="text-2xl font-bold tracking-tighter flex gap-2 items-center"
+        className="flex items-center gap-2 text-2xl font-bold tracking-tighter"
       >
         <Compass className="size-6" />
         Next Voyage

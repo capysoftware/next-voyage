@@ -5,7 +5,7 @@ export function Tape(props: ComponentProps<"div">) {
   return (
     <div
       {...props}
-      className={cn(props.className, "bg-white/60  shadow-sm w-16 h-5")}
+      className={cn(props.className, "isolate h-5 w-16 bg-white/60 shadow-sm")}
     />
   );
 }
