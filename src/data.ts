@@ -858,9 +858,9 @@ const attractions: Attraction[] = [
     description:
       "A broadcasting and observation tower that is the tallest structure in Japan, offering panoramic views of Tokyo.",
     address: "1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/T9dVnPMWLn32P8mK6",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989",
+    googleMapUrl: "https://maps.app.goo.gl/JhgN9NsM8Zkfxv8RA",
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1696766061774-453cc4c7187d",
     categories: [3, 7, 13],
   },
   {
