@@ -1053,9 +1053,9 @@ const attractions: Attraction[] = [
     description:
       "A major urban development featuring a futuristic design by Zaha Hadid, hosting exhibitions, fashion shows, and cultural events.",
     address: "281 Eulji-ro, Jung-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/TMUPvyJc1qVyYQse9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1599828584205-ba7e68179d78",
+    googleMapUrl: "https://maps.app.goo.gl/PAqpkrw8CF6MdCdy8",
+    rating: 4.3,
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_OFns2L9h04hCEaRCUxZ-rtR9PiOOOxEE4kJD9MYcPcLNWDPMAbJvp10syAMamAG3X8I7yts0gWA8xP_yyIqWxPRT9uG0DQQSGEqC0FuABvFkjiYWm2vPJuk0zXkp9ARnrroo=s1360-w1360-h1020",
     categories: [12, 6, 7],
   },
   {
