@@ -617,9 +617,9 @@ const attractions: Attraction[] = [
     description:
       "A historic public market overlooking the Elliott Bay waterfront, known for its fresh produce, crafts, and the original Starbucks.",
     address: "85 Pike St, Seattle, WA 98101, USA",
-    googleMapUrl: "https://maps.app.goo.gl/3JvVGMTLPBL9MXvZ7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1556912998-c57cc6b63cd7",
+    googleMapUrl: "https://maps.app.goo.gl/mDioFwDJvrjVrpDH9",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1696219362975-365d75fda5b5",
     categories: [6, 11, 10],
   },
   {
