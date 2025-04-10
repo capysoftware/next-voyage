@@ -662,9 +662,9 @@ const attractions: Attraction[] = [
     description:
       "A nine-acre public park featuring outdoor sculptures and a beach along the waterfront.",
     address: "2901 Western Ave, Seattle, WA 98121, USA",
-    googleMapUrl: "https://maps.app.goo.gl/VWmCacCRJavvhhD49",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1559077182-28cc77a88245",
+    googleMapUrl: "https://maps.app.goo.gl/vauvNNSrZ7ALPESP6",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1659037526779-c615a8b18aae",
     categories: [2, 12, 10],
   },
   {
