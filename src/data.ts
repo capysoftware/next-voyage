@@ -820,9 +820,9 @@ const attractions: Attraction[] = [
     description:
       "The largest art museum in the western United States, featuring a collection spanning thousands of years and diverse cultures.",
     address: "5905 Wilshire Blvd, Los Angeles, CA 90036, USA",
-    googleMapUrl: "https://maps.app.goo.gl/LEvwJEwZfdpqWAgZ7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1575383095193-07792c4a8885",
+    googleMapUrl: "https://maps.app.goo.gl/Bc5UmaFN6BGY6PeD7",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1520516620562-04b7d17e7500",
     categories: [1, 12, 14],
   },
   {
