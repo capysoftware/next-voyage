@@ -430,9 +430,9 @@ const attractions: Attraction[] = [
     description:
       "The main building of the rebuilt World Trade Center complex and a memorial commemorating the September 11, 2001 attacks.",
     address: "180 Greenwich St, New York, NY 10007, USA",
-    googleMapUrl: "https://maps.app.goo.gl/4AZJtVnnrrHqcfcv8",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1582763292276-cdc13f6c3c3f",
+    googleMapUrl: "https://maps.app.goo.gl/q6Ev6MvK9PYLxQPJA",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1544500060-cd2188b3d440",
     categories: [3, 4, 13],
   },
   {
