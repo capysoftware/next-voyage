@@ -784,9 +784,9 @@ const attractions: Attraction[] = [
     description:
       "A campus of the Getty Museum featuring European paintings, drawings, sculptures, and decorative arts, as well as European and American photographs.",
     address: "1200 Getty Center Dr, Los Angeles, CA 90049, USA",
-    googleMapUrl: "https://maps.app.goo.gl/GsEXMhYKoRK7RRqn9",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1604193329766-0ff3af871e9e",
+    googleMapUrl: "https://maps.app.goo.gl/8oprjhdhm7zRknLH8",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1582346992845-c963d5b0ba0d",
     categories: [1, 12, 10],
   },
   {
