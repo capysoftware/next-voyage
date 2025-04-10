@@ -394,9 +394,9 @@ const attractions: Attraction[] = [
     description:
       "One of the world's largest and most prestigious art museums, housing an extensive collection spanning 5,000 years.",
     address: "1000 5th Ave, New York, NY 10028, USA",
-    googleMapUrl: "https://maps.app.goo.gl/mDYnFJEb7QMB49Y17",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1565363669858-91866531537b",
+    googleMapUrl: "https://maps.app.goo.gl/n1uZZ88mcgzc1BEj9",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1576254232140-70c274d668c4",
     categories: [1, 4, 14],
   },
   {
