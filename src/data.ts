@@ -565,9 +565,9 @@ const attractions: Attraction[] = [
     description:
       "Two adjacent peaks offering panoramic views of the San Francisco Bay Area.",
     address: "501 Twin Peaks Blvd, San Francisco, CA 94114, USA",
-    googleMapUrl: "https://maps.app.goo.gl/q9F3XdWkdZyPxUus5",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1521464302861-ce943915d1c3",
+    googleMapUrl: "https://maps.app.goo.gl/actrZDdvvNuKXnGE6",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1646782368671-74c5cbe1ba3a",
     categories: [5, 10, 13],
   },
   {
