@@ -271,9 +271,9 @@ const attractions: Attraction[] = [
     description:
       "A group of small islands offering beaches, parks, and recreational activities, providing a scenic escape from the city.",
     address: "Toronto Islands, Toronto, ON, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/NtVwmzcyPiSYQZYw8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1565023945521-a9105c400466",
+    googleMapUrl: "https://maps.app.goo.gl/Q9cq48xzevZMyc9w8",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1478515940002-d9d96d21e720",
     categories: [2, 5, 9, 10],
   },
   {
