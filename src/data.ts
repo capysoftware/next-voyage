@@ -882,9 +882,9 @@ const attractions: Attraction[] = [
     description:
       "Tokyo's oldest temple, featuring a five-story pagoda and bustling shopping street (Nakamise).",
     address: "2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/ZXVnA4N9gWAJNDX99",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1583400223105-aeca3c6dd3a9",
+    googleMapUrl: "https://maps.app.goo.gl/Af62RG6JDRJmPbAC6",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1706813253696-10ee6332edd3",
     categories: [4, 8, 14],
   },
   {
