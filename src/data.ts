@@ -279,13 +279,13 @@ const attractions: Attraction[] = [
   {
     id: 15,
     cityId: 2,
-    name: "Distillery District",
+    name: "The Distillery Historic District",
     description:
-      "A historic area with Victorian-era buildings now housing shops, galleries, and restaurants.",
-    address: "The Distillery District, Toronto, ON, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/kTZMHJYEodgw1GH97",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1557773092-eaa0eed89d9d",
+      "A collection of boutiques, galleries, cafes & restaurants takes the place of a former distillery.",
+    address: "55 Mill St, Toronto, ON M5A 3C4, Canada",
+    googleMapUrl: "https://maps.app.goo.gl/w9RPtbPWGaouEMce8",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1579198096038-58bb3a8fc556",
     categories: [4, 6, 11, 12],
   },
   {
