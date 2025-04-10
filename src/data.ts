@@ -1,4 +1,5 @@
 interface City {
+  id: number;
   name: string;
   country: string;
   description: string;
@@ -7,6 +8,7 @@ interface City {
 
 const cities: City[] = [
   {
+    id: 1,
     name: "Vancouver",
     country: "Canada",
     description:
@@ -14,6 +16,7 @@ const cities: City[] = [
     image: "https://images.unsplash.com/photo-1560813962-ff3d8fcf59ba",
   },
   {
+    id: 2,
     name: "Toronto",
     country: "Canada",
     description:
@@ -21,6 +24,7 @@ const cities: City[] = [
     image: "https://images.unsplash.com/photo-1517090504586-fde19ea6066f",
   },
   {
+    id: 3,
     name: "New York City",
     country: "United States",
     description:
@@ -28,6 +32,7 @@ const cities: City[] = [
     image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9",
   },
   {
+    id: 4,
     name: "San Francisco",
     country: "United States",
     description:
@@ -35,6 +40,7 @@ const cities: City[] = [
     image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
   },
   {
+    id: 5,
     name: "Seattle",
     country: "United States",
     description:
@@ -42,6 +48,7 @@ const cities: City[] = [
     image: "https://images.unsplash.com/photo-1502175353174-a7a70e73b362",
   },
   {
+    id: 6,
     name: "Los Angeles",
     country: "United States",
     description:
@@ -49,6 +56,7 @@ const cities: City[] = [
     image: "https://images.unsplash.com/photo-1580655653885-65763b2597d0",
   },
   {
+    id: 7,
     name: "Tokyo",
     country: "Japan",
     description:
@@ -56,6 +64,7 @@ const cities: City[] = [
     image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
   },
   {
+    id: 8,
     name: "Seoul",
     country: "South Korea",
     description:
