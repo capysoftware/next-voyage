@@ -605,9 +605,9 @@ const attractions: Attraction[] = [
     description:
       "An observation tower built for the 1962 World's Fair, offering 360-degree views of Seattle and its surroundings.",
     address: "400 Broad St, Seattle, WA 98109, USA",
-    googleMapUrl: "https://maps.app.goo.gl/YX5aJfuSPQAx6rEZA",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1542223616-9de9adb5e3e8",
+    googleMapUrl: "https://maps.app.goo.gl/cM3swBcntk1qdqqdA",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1581541178541-53e7751142a2",
     categories: [3, 7, 13],
   },
   {
