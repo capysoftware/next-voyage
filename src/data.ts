@@ -466,9 +466,9 @@ const attractions: Attraction[] = [
     description:
       "A major thoroughfare known for its luxury shops, museums, and historic landmarks.",
     address: "Fifth Avenue, New York, NY, USA",
-    googleMapUrl: "https://maps.app.goo.gl/RCxrz6Y7VuBzCrBt5",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1610842332271-1c47fda1fb34",
+    googleMapUrl: "https://maps.app.goo.gl/ma2KE4YTy5K3RA2R6",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1583842761792-214790fc1ae0",
     categories: [6, 12],
   },
 
