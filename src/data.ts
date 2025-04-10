@@ -492,9 +492,9 @@ const attractions: Attraction[] = [
     description:
       "A historic former federal prison located on an island in San Francisco Bay.",
     address: "Alcatraz Island, San Francisco, CA 94133, USA",
-    googleMapUrl: "https://maps.app.goo.gl/6FpAcmpY6GYnRt6g7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1534632052870-c33b9985608f",
+    googleMapUrl: "https://maps.app.goo.gl/VKwcyLQvqvm4WbvRA",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1586860870825-874e93ea0f63",
     categories: [3, 4, 10],
   },
   {
