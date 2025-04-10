@@ -332,9 +332,9 @@ const attractions: Attraction[] = [
     description:
       "A historic market complex dating back to 1803, offering food, art, and specialty products.",
     address: "93 Front St E, Toronto, ON M5E 1C3, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/RB94HL4FRKu19AjQ9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1550794733-48f8d7c23339",
+    googleMapUrl: "https://maps.app.goo.gl/2P8cvHCLztyA9pP19",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1625616257864-99f951b0b64b",
     categories: [6, 11, 10],
   },
   {
