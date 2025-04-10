@@ -1,22 +1,42 @@
 "use client";
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import { ExternalLink, MapPin } from "lucide-react";
 import { Attraction, categories } from "../data";
 import { Tape } from "./tape";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
+import { cn } from "@/lib/utils";
 
 interface AttractionCardProps {
   attraction: Attraction;
+  isSelected: boolean;
+  setSelectedAttractions: Dispatch<SetStateAction<Attraction[]>>;
 }
 
-const AttractionCard: React.FC<AttractionCardProps> = ({ attraction }) => {
+const AttractionCard: React.FC<AttractionCardProps> = ({
+  attraction,
+  isSelected,
+  setSelectedAttractions,
+}) => {
   const attractionCategories = attraction.categories.map(
     (c) => categories[c - 1],
   );
 
   return (
-    <div className="relative mx-auto flex max-w-md flex-col bg-white p-3 shadow-md">
+    <div
+      className={cn(
+        "relative mx-auto flex max-w-md flex-col border-2 border-transparent bg-white p-3 shadow-md transition duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-105 hover:cursor-pointer",
+        { "border-blue-400": isSelected },
+      )}
+      onClick={() => {
+        setSelectedAttractions((prev) => {
+          if (prev.some((a) => a.id === attraction.id)) {
+            return prev.filter((a) => a.id !== attraction.id);
+          }
+          return [...prev, attraction];
+        });
+      }}
+    >
       <div className="relative">
         <img
           loading="lazy"
