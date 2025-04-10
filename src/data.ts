@@ -808,9 +808,9 @@ const attractions: Attraction[] = [
     description:
       "An iconic landmark in the Hollywood Hills spelling out 'HOLLYWOOD,' originally erected in 1923.",
     address: "Los Angeles, CA 90068, USA",
-    googleMapUrl: "https://maps.app.goo.gl/gXFi8MZpV1TGhzYC6",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1595830770487-46328ba8c2d5",
+    googleMapUrl: "https://maps.app.goo.gl/omEWF4UHmrciV2Tp6",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1641534425566-9e141d1b3b17",
     categories: [3, 10, 13],
   },
   {
