@@ -129,9 +129,9 @@ const attractions: Attraction[] = [
     description:
       "A simple suspension bridge crossing the Capilano River with a cliff walk & treetop adventure through rainforest.",
     address: "3735 Capilano Rd, North Vancouver, BC V7R 4J1, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/iTK3nqgLkiEYtfX38",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1566138884785-c2753542ad8e",
+    googleMapUrl: "https://maps.app.goo.gl/TBEsQAgKZHte3JgH8",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1485289284810-303162a4add7",
     categories: [3, 5, 7],
   },
   {
@@ -141,9 +141,9 @@ const attractions: Attraction[] = [
     description:
       "Peninsula and shopping district known for its public market, art studios, and marina.",
     address: "Granville Island, Vancouver, BC, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/FikjdFTkHwG6XzR97",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1596383924438-83e350052527",
+    googleMapUrl: "https://maps.app.goo.gl/wAw3spBfsYJp7JRY9",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1692152006306-3e036c4b9414",
     categories: [6, 7, 10, 11],
   },
   {
@@ -153,9 +153,10 @@ const attractions: Attraction[] = [
     description:
       "A public aquarium located in Stanley Park that is a center for marine research, conservation and marine animal rehabilitation.",
     address: "845 Avison Way, Vancouver, BC V6G 3E2, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/9sZYSNWYtJ41vUU69",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1555679486-e341a5a95a89",
+    googleMapUrl: "https://maps.app.goo.gl/wrT8gEehjYE7o5Rc9",
+    rating: 4.5,
+    image:
+      "https://media.cntraveler.com/photos/5c23aba24cebb85796fe4e43/16:9/w_2560%2Cc_limit/Vancouver-Aquarium_New-Entrance-Exterior---Photo-Credit-Vancouver-Aquarium.jpg",
     categories: [7, 10, 5],
   },
   {
@@ -165,9 +166,10 @@ const attractions: Attraction[] = [
     description:
       "A museum featuring an extensive collection of world arts and cultures with a special emphasis on the First Nations of British Columbia.",
     address: "6393 NW Marine Dr, Vancouver, BC V6T 1Z2, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/nchAjxAWdH95Q5S96",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1569831479472-2acbe08ebed2",
+    googleMapUrl: "https://maps.app.goo.gl/tDPBKe3TtXWWH5Qi8",
+    rating: 4.7,
+    image:
+      "https://lh3.googleusercontent.com/proxy/ruyVV1lPKalBFvOidz34LSS7wGrF9qEr_bc1lOgO1glz8WyLVJxU2BQGDvJVKE8MBWSQ2FVMtpD2lMRgvWlNN9u3ade6zOsiigNUiurAJmXFNhuTEgzVb4gEQewH3tB6MwUEjJqaszvGTNdDVK0CCB8EXqrJnA=s1360-w1360-h1020",
     categories: [1, 4, 14],
   },
   {
@@ -177,9 +179,9 @@ const attractions: Attraction[] = [
     description:
       "A mountain with panoramic views of Vancouver, outdoor activities and wildlife refuge.",
     address: "6400 Nancy Greene Way, North Vancouver, BC V7R 4K9, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/wxDfgNSqFBc2YBmW9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1587982649760-70c2f63573b2",
+    googleMapUrl: "https://maps.app.goo.gl/Hx1TJA5GZcbE7B8X6",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1610976273321-bd3466ae0b23",
     categories: [5, 7, 13],
   },
   {
@@ -189,9 +191,10 @@ const attractions: Attraction[] = [
     description:
       "The first Chinese garden built outside of China, featuring traditional architecture and design.",
     address: "578 Carrall St, Vancouver, BC V6B 5K2, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/w9FUPYp8FGQ7cSK88",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1620546531039-a56bbc35f00c",
+    googleMapUrl: "https://maps.app.goo.gl/BNKKFmvSH3rdTgqr7",
+    rating: 4.2,
+    image:
+      "https://lh3.googleusercontent.com/proxy/St1b7eyMqkDja2sCo1b6iSWcKNcTAYOySO4HpF3strV6bnCJZA0Fjzf76UQlY3twNkknj26lqYz6DYC-GHL-buel13BRFR5Mg6NpwvgAEvUeIDt1WuDgdzHKc1XK4ZiSI1-ort9Rckc1WCuuCLl7lDeohkfGm9c=s1360-w1360-h1020",
     categories: [4, 8, 12, 14],
   },
   {
@@ -201,9 +204,10 @@ const attractions: Attraction[] = [
     description:
       "A popular beach area in downtown Vancouver known for swimming, sunbathing, and watching sunsets.",
     address: "1700 Beach Ave, Vancouver, BC V6G 1Y7, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/t7Jt152kNJ6oYAJi8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1611516183407-d7a17823f40b",
+    googleMapUrl: "https://maps.app.goo.gl/Dvvdkx9oAmxYT532A",
+    rating: 4.7,
+    image:
+      "https://lh3.googleusercontent.com/p/AF1QipP-GHe1BzyBFYScUWHgzSeT9R819MF4Dw6mPGI2=s1360-w1360-h1020",
     categories: [5, 9, 10],
   },
   {
@@ -213,21 +217,21 @@ const attractions: Attraction[] = [
     description:
       "An interactive science center featuring exhibits, demonstrations, and shows for all ages.",
     address: "1455 Quebec St, Vancouver, BC V6A 3Z7, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/Q94C6oZTeBZkjEEx8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1589352911517-7e81b7bf9a13",
+    googleMapUrl: "https://maps.app.goo.gl/MLpXv4JuSU7MJtxAA",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1544161513-0179fe746fd5",
     categories: [1, 7, 10],
   },
   {
     id: 10,
     cityId: 1,
-    name: "Gastown",
+    name: "Gastown Steam Clock",
     description:
-      "Vancouver's oldest neighborhood featuring Victorian architecture, boutique shops, and restaurants.",
-    address: "Gastown, Vancouver, BC, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/Y1W1CWsqMSmUqQDZA",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1591292036257-a419691c73af",
+      "Built in 1977, this well-known, antique-style clock is powered by steam & whistles to tell the time.",
+    address: "305 Water St, Vancouver, BC V6B 1B9, Canada",
+    googleMapUrl: "https://maps.app.goo.gl/mRexvzXXHQuNRbWi9",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1712285155308-0d49a3c994f0",
     categories: [4, 6, 11, 12],
   },
 
@@ -239,9 +243,9 @@ const attractions: Attraction[] = [
     description:
       "A 553.3 m-high concrete communications and observation tower in downtown Toronto, offering spectacular views of the city.",
     address: "290 Bremner Blvd, Toronto, ON M5V 3L9, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/o9gY6Zx6rzFJVUcC9",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da",
+    googleMapUrl: "https://maps.app.goo.gl/knBKTREwPwH7yXED9",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1521505088417-bfc5a507f901",
     categories: [3, 7, 13],
   },
   {
@@ -251,9 +255,9 @@ const attractions: Attraction[] = [
     description:
       "Canada's largest museum with world culture and natural history collections.",
     address: "100 Queens Park, Toronto, ON M5S 2C6, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/MULkXG54x3NkhR7A6",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1558504806-f7d81d8e1e5d",
+    googleMapUrl: "https://maps.app.goo.gl/E2EoqmZN8NbymmSS8",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1696246234599-09aa237e1938",
     categories: [1, 4, 14],
   },
   {
@@ -263,9 +267,10 @@ const attractions: Attraction[] = [
     description:
       "A public aquarium featuring a diverse collection of marine life and interactive exhibits.",
     address: "288 Bremner Blvd, Toronto, ON M5V 3L9, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/jXnhRbEK1sLMeciP7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a",
+    googleMapUrl: "https://maps.app.goo.gl/RceJ4sY9yc5JoHXs5",
+    rating: 4.6,
+    image:
+      "https://lh3.googleusercontent.com/p/AF1QipO3Q_mrfNnz2xqxuFoRHQsouK-yWX15CWe_LRat=s1360-w1360-h1020",
     categories: [7, 10],
   },
   {
@@ -275,21 +280,21 @@ const attractions: Attraction[] = [
     description:
       "A group of small islands offering beaches, parks, and recreational activities, providing a scenic escape from the city.",
     address: "Toronto Islands, Toronto, ON, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/NtVwmzcyPiSYQZYw8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1565023945521-a9105c400466",
+    googleMapUrl: "https://maps.app.goo.gl/Q9cq48xzevZMyc9w8",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1478515940002-d9d96d21e720",
     categories: [2, 5, 9, 10],
   },
   {
     id: 15,
     cityId: 2,
-    name: "Distillery District",
+    name: "The Distillery Historic District",
     description:
-      "A historic area with Victorian-era buildings now housing shops, galleries, and restaurants.",
-    address: "The Distillery District, Toronto, ON, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/kTZMHJYEodgw1GH97",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1557773092-eaa0eed89d9d",
+      "A collection of boutiques, galleries, cafes & restaurants takes the place of a former distillery.",
+    address: "55 Mill St, Toronto, ON M5A 3C4, Canada",
+    googleMapUrl: "https://maps.app.goo.gl/w9RPtbPWGaouEMce8",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1579198096038-58bb3a8fc556",
     categories: [4, 6, 11, 12],
   },
   {
@@ -299,9 +304,9 @@ const attractions: Attraction[] = [
     description:
       "A Gothic Revival style mansion and garden that is now a museum and landmark.",
     address: "1 Austin Terrace, Toronto, ON M5R 1X8, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/4xJUgD36NQiixeWP8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1551966646-cbb6074e823b",
+    googleMapUrl: "https://maps.app.goo.gl/uejtQPEJjEDQXQ4C7",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1691494242756-0e6ccaf4b762",
     categories: [3, 4, 12],
   },
   {
@@ -311,9 +316,10 @@ const attractions: Attraction[] = [
     description:
       "A large urban park featuring hiking trails, sports facilities, and a zoo.",
     address: "1873 Bloor St W, Toronto, ON M6R 2Z3, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/Ywvs8Uy3X34eSxhY9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1573058683523-13421d5c321e",
+    googleMapUrl: "https://maps.app.goo.gl/622X7D16qNqo2GX66",
+    rating: 4.7,
+    image:
+      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_uXDLp3kSZIN2hoSMvWHtPJcZ2Ia4w1L7LyNAeDB0hEjtYQ8suHCv3lbe2_ZpVAaAyHGRRs3BZ29_-46qd4xU_Ogrus_0ZLFsu3slCCKbZ21KSrLDLjAoX3ekx81i7LTskcqhSXw=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
   {
@@ -323,9 +329,9 @@ const attractions: Attraction[] = [
     description:
       "One of the largest art museums in North America with a collection of more than 90,000 works.",
     address: "317 Dundas St W, Toronto, ON M5T 1G4, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/GhKjcCYGSB9r83Ey8",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1554324559-7a0fbf980728",
+    googleMapUrl: "https://maps.app.goo.gl/QiBBxFBsbcNAnpre6",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1557669973-a927e548e948",
     categories: [1, 12, 14],
   },
   {
@@ -335,9 +341,9 @@ const attractions: Attraction[] = [
     description:
       "A historic market complex dating back to 1803, offering food, art, and specialty products.",
     address: "93 Front St E, Toronto, ON M5E 1C3, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/RB94HL4FRKu19AjQ9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1550794733-48f8d7c23339",
+    googleMapUrl: "https://maps.app.goo.gl/2P8cvHCLztyA9pP19",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1625616257864-99f951b0b64b",
     categories: [6, 11, 10],
   },
   {
@@ -347,9 +353,9 @@ const attractions: Attraction[] = [
     description:
       "A multicultural neighborhood known for its eclectic mix of shops, restaurants, and street art.",
     address: "Kensington Market, Toronto, ON, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/HGNaH4qGsWzGe6hQ8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1586075293616-9768755ba673",
+    googleMapUrl: "https://maps.app.goo.gl/mJnRUqNVMfyGSdDZA",
+    rating: 4.1,
+    image: "https://images.unsplash.com/photo-1739761445791-72bb62789110",
     categories: [6, 11, 14],
   },
 
@@ -361,8 +367,8 @@ const attractions: Attraction[] = [
     description:
       "An iconic 102-story skyscraper completed in 1931, offering panoramic views from its observation decks.",
     address: "20 W 34th St, New York, NY 10001, USA",
-    googleMapUrl: "https://maps.app.goo.gl/wXnq5L7AxcQsBFQD7",
-    rating: 5,
+    googleMapUrl: "https://maps.app.goo.gl/do6VhLwabwYjXisQ6",
+    rating: 4.7,
     image: "https://images.unsplash.com/photo-1555109307-f7d9da25c244",
     categories: [3, 12, 13],
   },
@@ -373,9 +379,9 @@ const attractions: Attraction[] = [
     description:
       "A colossal neoclassical sculpture on Liberty Island in New York Harbor, a symbol of freedom and the United States.",
     address: "Liberty Island, New York, NY 10004, USA",
-    googleMapUrl: "https://maps.app.goo.gl/jbNy4ZCwNxB1iBrX7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1605130284535-11dd9eedc58a",
+    googleMapUrl: "https://maps.app.goo.gl/RzzvhmKfPg1vT5g19",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1526638684360-95cdcee762ce",
     categories: [3, 4, 10],
   },
   {
@@ -385,9 +391,9 @@ const attractions: Attraction[] = [
     description:
       "An 843-acre urban park in Manhattan, offering recreational activities, gardens, and attractions.",
     address: "Central Park, New York, NY, USA",
-    googleMapUrl: "https://maps.app.goo.gl/FmKvbztPnwm82Cz36",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1498550744921-75f79806b8a7",
+    googleMapUrl: "https://maps.app.goo.gl/3uwqnyQD6tA2Ynpq8",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1568515387631-8b650bbcdb90",
     categories: [2, 5, 10],
   },
   {
@@ -397,9 +403,9 @@ const attractions: Attraction[] = [
     description:
       "One of the world's largest and most prestigious art museums, housing an extensive collection spanning 5,000 years.",
     address: "1000 5th Ave, New York, NY 10028, USA",
-    googleMapUrl: "https://maps.app.goo.gl/mDYnFJEb7QMB49Y17",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1565363669858-91866531537b",
+    googleMapUrl: "https://maps.app.goo.gl/n1uZZ88mcgzc1BEj9",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1576254232140-70c274d668c4",
     categories: [1, 4, 14],
   },
   {
@@ -409,9 +415,9 @@ const attractions: Attraction[] = [
     description:
       "A major commercial intersection and neighborhood known for its bright lights, Broadway theaters, and as a symbol of New York City.",
     address: "Manhattan, NY 10036, USA",
-    googleMapUrl: "https://maps.app.goo.gl/BW7vXxgUSLLvt6aG7",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1534270804882-6b5048b1c1fc",
+    googleMapUrl: "https://maps.app.goo.gl/3gkZWurFZbGnWdHM6",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1582760548598-0bccdf815aa2",
     categories: [3, 6, 7],
   },
   {
@@ -421,9 +427,9 @@ const attractions: Attraction[] = [
     description:
       "A hybrid cable-stayed/suspension bridge spanning the East River between Manhattan and Brooklyn.",
     address: "Brooklyn Bridge, New York, NY 10038, USA",
-    googleMapUrl: "https://maps.app.goo.gl/aMKhJ3yYhc4oU2sCA",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1574347635992-f9d25fc3d a2a",
+    googleMapUrl: "https://maps.app.goo.gl/kchww5gGNKzFxCJE8",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a",
     categories: [3, 4, 12],
   },
   {
@@ -433,9 +439,9 @@ const attractions: Attraction[] = [
     description:
       "The main building of the rebuilt World Trade Center complex and a memorial commemorating the September 11, 2001 attacks.",
     address: "180 Greenwich St, New York, NY 10007, USA",
-    googleMapUrl: "https://maps.app.goo.gl/4AZJtVnnrrHqcfcv8",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1582763292276-cdc13f6c3c3f",
+    googleMapUrl: "https://maps.app.goo.gl/q6Ev6MvK9PYLxQPJA",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1544500060-cd2188b3d440",
     categories: [3, 4, 13],
   },
   {
@@ -445,9 +451,9 @@ const attractions: Attraction[] = [
     description:
       "A 1.45-mile-long elevated linear park built on a former freight rail line on the west side of Manhattan.",
     address: "New York, NY 10011, USA",
-    googleMapUrl: "https://maps.app.goo.gl/sFbYkqZeEQyFkgKC9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1518359839974-9686eb5ec150",
+    googleMapUrl: "https://maps.app.goo.gl/UspySPcKCpZpugQY6",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1624553348093-ed95c718f37b",
     categories: [2, 10, 12],
   },
   {
@@ -457,9 +463,9 @@ const attractions: Attraction[] = [
     description:
       "One of the largest natural history museums in the world, with 45 permanent exhibition halls.",
     address: "200 Central Park West, New York, NY 10024, USA",
-    googleMapUrl: "https://maps.app.goo.gl/FqJMuVQVJmEgW62C6",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1596400795818-fcd4e0d355b6",
+    googleMapUrl: "https://maps.app.goo.gl/Dedc9qy4sWAg8ZQ1A",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1534739302117-e9ff126dec91",
     categories: [1, 10, 14],
   },
   {
@@ -469,9 +475,9 @@ const attractions: Attraction[] = [
     description:
       "A major thoroughfare known for its luxury shops, museums, and historic landmarks.",
     address: "Fifth Avenue, New York, NY, USA",
-    googleMapUrl: "https://maps.app.goo.gl/RCxrz6Y7VuBzCrBt5",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1610842332271-1c47fda1fb34",
+    googleMapUrl: "https://maps.app.goo.gl/ma2KE4YTy5K3RA2R6",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1583842761792-214790fc1ae0",
     categories: [6, 12],
   },
 
@@ -483,9 +489,9 @@ const attractions: Attraction[] = [
     description:
       "An iconic suspension bridge spanning the Golden Gate strait, connecting San Francisco Bay and the Pacific Ocean.",
     address: "Golden Gate Bridge, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/oP2EKPQvcpgmJV6y9",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+    googleMapUrl: "https://maps.app.goo.gl/fiVT5PRLjWjPKnyz9",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1610312278520-bcc893a3ff1d",
     categories: [3, 12, 13],
   },
   {
@@ -495,9 +501,9 @@ const attractions: Attraction[] = [
     description:
       "A historic former federal prison located on an island in San Francisco Bay.",
     address: "Alcatraz Island, San Francisco, CA 94133, USA",
-    googleMapUrl: "https://maps.app.goo.gl/6FpAcmpY6GYnRt6g7",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1534632052870-c33b9985608f",
+    googleMapUrl: "https://maps.app.goo.gl/VKwcyLQvqvm4WbvRA",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1586860870825-874e93ea0f63",
     categories: [3, 4, 10],
   },
   {
@@ -507,9 +513,9 @@ const attractions: Attraction[] = [
     description:
       "A popular tourist attraction with seafood restaurants, souvenir shops, and sea lion viewing.",
     address: "Fisherman's Wharf, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/uzkBg7LqYPQAvZc97",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1598401042500-5345aeb4821f",
+    googleMapUrl: "https://maps.app.goo.gl/3wNf5TgeX8jgw1Bs5",
+    rating: 4.1,
+    image: "https://images.unsplash.com/photo-1679560872179-65ad87a01c8c",
     categories: [3, 6, 11],
   },
   {
@@ -519,9 +525,9 @@ const attractions: Attraction[] = [
     description:
       "The oldest and one of the largest Chinatowns in North America, featuring authentic cuisine, shops, and cultural attractions.",
     address: "Chinatown, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/dJRwEzTJFMavfEpg9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1525811902-f2342640856e",
+    googleMapUrl: "https://maps.app.goo.gl/s36iJ3CtpA4xBpWj7",
+    rating: 3.9,
+    image: "https://images.unsplash.com/photo-1655564476277-d6c02a4dd924",
     categories: [6, 11, 14],
   },
   {
@@ -531,9 +537,9 @@ const attractions: Attraction[] = [
     description:
       "Known as the 'crookedest street in the world,' this one-block section features eight hairpin turns.",
     address: "Lombard Street, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/A7ZuEfmhCWmqGjY27",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1622766815178-641bef2b4630",
+    googleMapUrl: "https://maps.app.goo.gl/KmZPhgXdeiVLq4bXA",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1602730307445-03a827d3f975",
     categories: [3, 10, 12],
   },
   {
@@ -543,9 +549,10 @@ const attractions: Attraction[] = [
     description:
       "A large urban park spanning over 1,000 acres, featuring gardens, museums, and recreational facilities.",
     address: "Golden Gate Park, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/kVCPn1tRd21LJA7RA",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1551091860-d9c7f6cbf2dc",
+    googleMapUrl: "https://maps.app.goo.gl/zsDNXGV4JezhLDV46",
+    rating: 4.6,
+    image:
+      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-7TX9Y257Bqaz4qeAJfuOyP3T04BxOXg0nWFpch6IovcdKxQR8iM5uk_u_jwK52i-EO0XbkVsJ2UQRpXFckzDgUZc6yfDug07IfiQQcyM7PHuHyleYnEOW76Y4dJ57HjNofdVZ=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
   {
@@ -555,9 +562,9 @@ const attractions: Attraction[] = [
     description:
       "A monumental structure built for the 1915 Panama-Pacific Exposition, featuring a classical rotunda and colonnades.",
     address: "3601 Lyon St, San Francisco, CA 94123, USA",
-    googleMapUrl: "https://maps.app.goo.gl/JgJtYpnNh1FZLzcT8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1549991191-6011e46af0c0",
+    googleMapUrl: "https://maps.app.goo.gl/wHhmhSEZN1Njtz1X6",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1711325565501-0d71ceecafb0",
     categories: [3, 4, 12],
   },
   {
@@ -567,21 +574,22 @@ const attractions: Attraction[] = [
     description:
       "Two adjacent peaks offering panoramic views of the San Francisco Bay Area.",
     address: "501 Twin Peaks Blvd, San Francisco, CA 94114, USA",
-    googleMapUrl: "https://maps.app.goo.gl/q9F3XdWkdZyPxUus5",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1521464302861-ce943915d1c3",
+    googleMapUrl: "https://maps.app.goo.gl/actrZDdvvNuKXnGE6",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1646782368671-74c5cbe1ba3a",
     categories: [5, 10, 13],
   },
   {
     id: 39,
     cityId: 4,
-    name: "Cable Cars",
+    name: "PIER 39",
     description:
-      "The world's last manually operated cable car system, a San Francisco icon since 1873.",
+      "Bustling bayside pier featuring scenic views, sea lion sightings, eateries, shops & entertainment.",
     address: "Powell-Hyde Cable Car, San Francisco, CA, USA",
-    googleMapUrl: "https://maps.app.goo.gl/aGVUZbXPkSLESHmi8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1570937943292-a374fd42bec5",
+    googleMapUrl: "https://maps.app.goo.gl/LwKFM7kRVK5WyJyD7",
+    rating: 4.6,
+    image:
+      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_4wAfG_qS8yVnpA6r7IF29C5lB3T0DiKtn1S34zerMPyxoWOReyxQ-dBLOZvEbPQJg56lJne-xmgTga2oNAUmaRxqwOXThUn_rSTsnpf79y4jjzQGIVwnEDmublPfFXkdxwgREtA=s1360-w1360-h1020",
     categories: [3, 7, 10],
   },
   {
@@ -591,9 +599,10 @@ const attractions: Attraction[] = [
     description:
       "A row of colorful Victorian houses facing Alamo Square Park, famously featured in movies and TV shows.",
     address: "Steiner St & Hayes St, San Francisco, CA 94117, USA",
-    googleMapUrl: "https://maps.app.goo.gl/Jdu5pHwEv34CiT4M8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1562157069-c63fde79040d",
+    googleMapUrl: "https://maps.app.goo.gl/jP9Mu2Xo5QrWRfff9",
+    rating: 4.4,
+    image:
+      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_ehjer6uQCSCzQFf6XWjTg_QQ0a0RViFZyhf1ILimNTx4o8gRmpix-7XtD46QVfxRXbQrbdwVJH8ywkBRoR0145rl04wbLXZQA7w1msNLuGD1d9fm-6HGPj6M_sTOTjTlkCbr_=s1360-w1360-h1020",
     categories: [3, 4, 12],
   },
 
