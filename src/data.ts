@@ -295,9 +295,9 @@ const attractions: Attraction[] = [
     description:
       "A Gothic Revival style mansion and garden that is now a museum and landmark.",
     address: "1 Austin Terrace, Toronto, ON M5R 1X8, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/4xJUgD36NQiixeWP8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1551966646-cbb6074e823b",
+    googleMapUrl: "https://maps.app.goo.gl/uejtQPEJjEDQXQ4C7",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1691494242756-0e6ccaf4b762",
     categories: [3, 4, 12],
   },
   {
