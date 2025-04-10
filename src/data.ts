@@ -307,9 +307,10 @@ const attractions: Attraction[] = [
     description:
       "A large urban park featuring hiking trails, sports facilities, and a zoo.",
     address: "1873 Bloor St W, Toronto, ON M6R 2Z3, Canada",
-    googleMapUrl: "https://maps.app.goo.gl/Ywvs8Uy3X34eSxhY9",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1573058683523-13421d5c321e",
+    googleMapUrl: "https://maps.app.goo.gl/622X7D16qNqo2GX66",
+    rating: 4.7,
+    image:
+      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_uXDLp3kSZIN2hoSMvWHtPJcZ2Ia4w1L7LyNAeDB0hEjtYQ8suHCv3lbe2_ZpVAaAyHGRRs3BZ29_-46qd4xU_Ogrus_0ZLFsu3slCCKbZ21KSrLDLjAoX3ekx81i7LTskcqhSXw=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
   {
