@@ -686,9 +686,9 @@ const attractions: Attraction[] = [
     description:
       "A small park offering one of the most photographed views of Seattle's skyline, Mount Rainier, and Elliott Bay.",
     address: "211 W Highland Dr, Seattle, WA 98119, USA",
-    googleMapUrl: "https://maps.app.goo.gl/2CZkb5NxnE5WvBf49",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1558717697-193dae8b5a23",
+    googleMapUrl: "https://maps.app.goo.gl/BD7kuZCPr82rMm4A8",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1690982272971-5ecdfc188f39",
     categories: [2, 10, 13],
   },
   {
