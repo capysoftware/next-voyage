@@ -1065,9 +1065,9 @@ const attractions: Attraction[] = [
     description:
       "A neighborhood known for its traditional crafts, teahouses, and galleries, representing Korean art and culture.",
     address: "Insadong-gil, Jongno-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/LCjEAh5Wf4SzGh4g8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1497548291890-7d8f6ffec900",
+    googleMapUrl: "https://maps.app.goo.gl/J71rfCpD5RSGfjVX8",
+    rating: 4.2,
+    image: "https://images.unsplash.com/photo-1652185262483-88b6fac95f5d",
     categories: [6, 11, 14],
   },
   {
