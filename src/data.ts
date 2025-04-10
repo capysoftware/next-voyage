@@ -1017,9 +1017,9 @@ const attractions: Attraction[] = [
     description:
       "A major shopping area featuring luxury brands, department stores, and street food stalls.",
     address: "Myeongdong, Jung-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/4Nv31f1yoHEGW1gq5",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e",
+    googleMapUrl: "https://maps.app.goo.gl/SL1yNvN849BrmS2y8",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1677097610167-c2d62b06fad3",
     categories: [6, 11, 10],
   },
   {
