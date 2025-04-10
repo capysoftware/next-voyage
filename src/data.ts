@@ -382,9 +382,9 @@ const attractions: Attraction[] = [
     description:
       "An 843-acre urban park in Manhattan, offering recreational activities, gardens, and attractions.",
     address: "Central Park, New York, NY, USA",
-    googleMapUrl: "https://maps.app.goo.gl/FmKvbztPnwm82Cz36",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1498550744921-75f79806b8a7",
+    googleMapUrl: "https://maps.app.goo.gl/3uwqnyQD6tA2Ynpq8",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1568515387631-8b650bbcdb90",
     categories: [2, 5, 10],
   },
   {
