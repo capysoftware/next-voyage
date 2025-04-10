@@ -358,8 +358,8 @@ const attractions: Attraction[] = [
     description:
       "An iconic 102-story skyscraper completed in 1931, offering panoramic views from its observation decks.",
     address: "20 W 34th St, New York, NY 10001, USA",
-    googleMapUrl: "https://maps.app.goo.gl/wXnq5L7AxcQsBFQD7",
-    rating: 5,
+    googleMapUrl: "https://maps.app.goo.gl/do6VhLwabwYjXisQ6",
+    rating: 4.7,
     image: "https://images.unsplash.com/photo-1555109307-f7d9da25c244",
     categories: [3, 12, 13],
   },
