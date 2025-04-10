@@ -1005,9 +1005,9 @@ const attractions: Attraction[] = [
     description:
       "A traditional Korean village featuring hundreds of hanok (traditional houses) that date back to the Joseon Dynasty.",
     address: "37 Gyedong-gil, Jongno-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/1P2TQJtPg1HzrRLg6",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1579169825753-44f9d4f31117",
+    googleMapUrl: "https://maps.app.goo.gl/hjj3rHYVqtipapzG8",
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1593726222205-21404ff4e5fd",
     categories: [4, 12, 14],
   },
   {
