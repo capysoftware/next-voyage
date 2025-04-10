@@ -993,9 +993,9 @@ const attractions: Attraction[] = [
     description:
       "A communication and observation tower offering panoramic views of Seoul from its location on Namsan Mountain.",
     address: "105 Namsangongwon-gil, Yongsan-gu, Seoul, South Korea",
-    googleMapUrl: "https://maps.app.goo.gl/jNKS34TupWUF6QvV8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1617440168937-c6497a7b8f12",
+    googleMapUrl: "https://maps.app.goo.gl/3npT4tX5y4cFt22u5",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1685761341534-b155d516eb80",
     categories: [3, 13, 7],
   },
   {
