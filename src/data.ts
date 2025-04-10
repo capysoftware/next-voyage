@@ -169,7 +169,7 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/tDPBKe3TtXWWH5Qi8",
     rating: 4.7,
     image:
-      "https://lh3.googleusercontent.com/proxy/ruyVV1lPKalBFvOidz34LSS7wGrF9qEr_bc1lOgO1glz8WyLVJxU2BQGDvJVKE8MBWSQ2FVMtpD2lMRgvWlNN9u3ade6zOsiigNUiurAJmXFNhuTEgzVb4gEQewH3tB6MwUEjJqaszvGTNdDVK0CCB8EXqrJnA=s1360-w1360-h1020",
+      "https://visit.ubc.ca/wp-content/uploads/2019/07/moa_6-1940x1216_2x-1024x642.jpg",
     categories: [1, 4, 14],
   },
   {
@@ -194,7 +194,7 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/BNKKFmvSH3rdTgqr7",
     rating: 4.2,
     image:
-      "https://lh3.googleusercontent.com/proxy/St1b7eyMqkDja2sCo1b6iSWcKNcTAYOySO4HpF3strV6bnCJZA0Fjzf76UQlY3twNkknj26lqYz6DYC-GHL-buel13BRFR5Mg6NpwvgAEvUeIDt1WuDgdzHKc1XK4ZiSI1-ort9Rckc1WCuuCLl7lDeohkfGm9c=s1360-w1360-h1020",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b7/Dr._Sun_Yat-Sen_Classical_Chinese_Garden_07.jpg",
     categories: [4, 8, 12, 14],
   },
   {
@@ -270,7 +270,7 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/RceJ4sY9yc5JoHXs5",
     rating: 4.6,
     image:
-      "https://lh3.googleusercontent.com/p/AF1QipO3Q_mrfNnz2xqxuFoRHQsouK-yWX15CWe_LRat=s1360-w1360-h1020",
+      "https://seeyousoon.ca/wp-content/uploads/2020/07/Ripleys-Aquarium-of-Canada.jpg",
     categories: [7, 10],
   },
   {
@@ -319,7 +319,7 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/622X7D16qNqo2GX66",
     rating: 4.7,
     image:
-      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_uXDLp3kSZIN2hoSMvWHtPJcZ2Ia4w1L7LyNAeDB0hEjtYQ8suHCv3lbe2_ZpVAaAyHGRRs3BZ29_-46qd4xU_Ogrus_0ZLFsu3slCCKbZ21KSrLDLjAoX3ekx81i7LTskcqhSXw=s1360-w1360-h1020",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Hillside_Gardens_%2824677009128%29.jpg/1200px-Hillside_Gardens_%2824677009128%29.jpg",
     categories: [2, 5, 10],
   },
   {
@@ -652,7 +652,8 @@ const attractions: Attraction[] = [
     address: "325 5th Ave N, Seattle, WA 98109, USA",
     googleMapUrl: "https://maps.app.goo.gl/1AsNFKH2R24r8sSK9",
     rating: 4.6,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-nbOTSQkUjB2ddvNtHmmO_qPoEWeKQhrACI3F5fcknzSkFOxi_IFR1Jm1uxOfis23XvYZ3pHOY-DAhoMcUpRgtkCGY73VYSzs19lXCrKX8aE6Ow3I4iRGhbQVwmRK4lzjtLHZj=s1360-w1360-h1020",
+    image:
+      "https://cdn.prod.website-files.com/660b0c9bcd7ca28941eef70b/671be28bbf860d1d8799c0b5_mopop.jpg",
     categories: [1, 7, 14],
   },
   {
@@ -700,7 +701,8 @@ const attractions: Attraction[] = [
     address: "5500 Phinney Ave N, Seattle, WA 98103, USA",
     googleMapUrl: "https://maps.app.goo.gl/CLJYYPDgVdyE4u759",
     rating: 4.6,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB9uHzmuWZrGuWzICq_seV9RyOMN4wtbjheX0ppAwaXpXoJkSRcjNGSU7c253jhYl-uG97_eKMdskbpCLKmaPaXXlPk8FUsFMG6ucYtNhmsoozw694neMy87C7FOYMdzVLBrXRlR=s680-w680-h510",
+    image:
+      "https://images.adsttc.com/media/images/5016/09f4/28ba/0d15/9800/083c/large_jpg/stringio.jpg?1414283937",
     categories: [5, 7, 10],
   },
   {
@@ -834,7 +836,8 @@ const attractions: Attraction[] = [
     address: "189 The Grove Dr, Los Angeles, CA 90036, USA",
     googleMapUrl: "https://maps.app.goo.gl/n6rLh7U3armEKEfh8",
     rating: 4.6,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB8Tpa8xwLYoHll9f1bcc0Arx21CL3ioR5_-fuXOUbLhaKX4NfBqjYFqdh_RL2pkOHL5HqlJoftyKP8zyDNcYC5GkqQxyvF0kJ8mIFr76UtXwSV_Y7sZHA5YK-bxcGakxhLDYHr78iilkWDP=s1360-w1360-h1020",
+    image:
+      "https://www.discoverlosangeles.com/sites/default/files/business/the-grove/c_fit-w_1920-h_1440-crm-la-the-grove-b1308d265056a36_b13090b0-5056-a36f-230a56d099b862af.jpg",
     categories: [6, 7, 11],
   },
   {
@@ -846,7 +849,8 @@ const attractions: Attraction[] = [
     address: "2000 N Fuller Ave, Los Angeles, CA 90046, USA",
     googleMapUrl: "https://maps.app.goo.gl/875ftWcPbsTanQaX7",
     rating: 4.8,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-_fZOwMK0eMkJf6ys9JMciWdcomweAnNIKzNKDjrisY8nu0-FN_lOzx6PvG7tHq8CbafV7qU1mlXwr3cfksQD7t7T1ZRMxslpISirgdTWoNelG3YvVjoOQj92-jjaMO_iEkMrvoQ=s1360-w1360-h1020",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Runyon_Paved_Section.jpg",
     categories: [2, 5, 10],
   },
 
@@ -921,7 +925,8 @@ const attractions: Attraction[] = [
     address: "11 Naitomachi, Shinjuku City, Tokyo 160-0014, Japan",
     googleMapUrl: "https://maps.app.goo.gl/v9NtLSbAyuZAakPs8",
     rating: 4.6,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-1nhK6xYZZxMnGPEg2bW09h2KxCIAkmZ5UNC5FzBg-ULV0_-NDrYozaNj2D_KTuhhL4ClmEIpRygHPn_qCoxgA_Sqj7XlKB3h01HdCthc2ID6aspTHZsauTsJdWeGEIzcuxgI3=s1360-w1360-h1020",
+    image:
+      "https://lh3.googleusercontent.com/gps-cs-s/AB5caB-1nhK6xYZZxMnGPEg2bW09h2KxCIAkmZ5UNC5FzBg-ULV0_-NDrYozaNj2D_KTuhhL4ClmEIpRygHPn_qCoxgA_Sqj7XlKB3h01HdCthc2ID6aspTHZsauTsJdWeGEIzcuxgI3=s1360-w1360-h1020",
     categories: [2, 5, 10],
   },
   {
@@ -1031,7 +1036,8 @@ const attractions: Attraction[] = [
     address: "240 Olympic-ro, Songpa-gu, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/aTr3VKjtmkCyDCaU7",
     rating: 4.3,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_grtSZrVFiPNF2xxUrn33JiB1_z-a32-Xf0Marlp1S6RmoWQh8lb99X7N-WRQBGJDIngl4AEsxtzfIfXHXsNIj-a7n9NKSVN-dNOGYSLGzlNJyr1p_ogxdcJO3sNwu61ClAGrcA7kB4baO=s680-w680-h510",
+    image:
+      "https://rollercoastertraveller.com/wp-content/uploads/2023/05/lotte-world-april-2023-5.jpg",
     categories: [7, 6],
   },
   {
@@ -1055,7 +1061,8 @@ const attractions: Attraction[] = [
     address: "281 Eulji-ro, Jung-gu, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/PAqpkrw8CF6MdCdy8",
     rating: 4.3,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_OFns2L9h04hCEaRCUxZ-rtR9PiOOOxEE4kJD9MYcPcLNWDPMAbJvp10syAMamAG3X8I7yts0gWA8xP_yyIqWxPRT9uG0DQQSGEqC0FuABvFkjiYWm2vPJuk0zXkp9ARnrroo=s1360-w1360-h1020",
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Dongdaemun_Design_Plaza_at_night%2C_Seoul%2C_Korea.jpg/1200px-Dongdaemun_Design_Plaza_at_night%2C_Seoul%2C_Korea.jpg",
     categories: [12, 6, 7],
   },
   {
@@ -1079,7 +1086,8 @@ const attractions: Attraction[] = [
     address: "330 Yeouidong-ro, Yeongdeungpo District, Seoul, South Korea",
     googleMapUrl: "https://maps.app.goo.gl/eSo5dqK5XqE5vjTR6",
     rating: 4.5,
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_3f4tT0kBJIMxxwkAXlrjLc7laNXgsgvkDN53yahfkWxL0fXHtMfbkLMWmSx1xc8fvIuNRKlcNC89unVGFmgN0PP76l5_Z8n7IAjBXnUOGvvS89nKZMrq_uAQM2xFM0u1bOOEF=s1360-w1360-h1020",
+    image:
+      "https://www.expatkidskorea.com/custom/domain_1/image_files/sitemgr_photo_11656.jpg",
     categories: [2, 5, 10],
   },
   {
@@ -1088,7 +1096,8 @@ const attractions: Attraction[] = [
     name: "Starfield Library",
     description:
       "Futuristic library & cultural event space on 2 levels of a mall with floor-to-ceiling bookshelves.",
-    address: "South Korea, Seoul, Gangnam District, Yeongdong-daero, 513 스타필드 코엑스몰 B1",
+    address:
+      "South Korea, Seoul, Gangnam District, Yeongdong-daero, 513 스타필드 코엑스몰 B1",
     googleMapUrl: "https://maps.app.goo.gl/dx6mBHn4EqcdW75v6",
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1591550890804-be953fd22999",
