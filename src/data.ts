@@ -951,13 +951,13 @@ const attractions: Attraction[] = [
   {
     id: 69,
     cityId: 7,
-    name: "Akihabara",
+    name: "Akihabara Electric Town",
     description:
       "A district known for its electronic shops, anime stores, and maid cafes, reflecting Japan's otaku culture.",
     address: "Akihabara, Taito City, Tokyo, Japan",
-    googleMapUrl: "https://maps.app.goo.gl/aSn61jAzVMV8s9uw8",
-    rating: 4,
-    image: "https://images.unsplash.com/photo-1581534886143-21af48d5ce16",
+    googleMapUrl: "https://maps.app.goo.gl/pGtpVpd452LizEwY9",
+    rating: 4.2,
+    image: "https://images.unsplash.com/photo-1683995259187-54142c49338b",
     categories: [6, 7, 14],
   },
   {
