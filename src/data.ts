@@ -105,119 +105,116 @@ import YeouidoHangangPark from "@/images/attractions/seoul/yeouido-hangang-park.
 import StarfieldLibrary from "@/images/attractions/seoul/starfield-library.jpeg";
 
 interface City {
-  id: number;
   name: string;
   country: string;
   description: string;
   image: StaticImageData;
+  attractions: string[];
 }
 
-const cities: City[] = [
-  {
-    id: 1,
+const cities: Record<string, City> = {
+  1: {
     name: "Vancouver",
     country: "Canada",
     description:
       "A bustling west coast seaport in British Columbia, Vancouver is among Canada's densest, most ethnically diverse cities, surrounded by mountains and natural beauty.",
     image: Vancouver,
+    attractions: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
   },
-  {
-    id: 2,
+  2: {
     name: "Toronto",
     country: "Canada",
     description:
       "Canada's largest city and a multicultural hub for arts, culture, finance, and technology.",
     image: Toronto,
+    attractions: ["11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
   },
-  {
-    id: 3,
+  3: {
     name: "New York City",
     country: "United States",
     description:
       "New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean, and is known for its iconic skyline, arts scene, and cultural diversity.",
     image: NewYorkCity,
+    attractions: ["21", "22", "23", "24", "25", "26", "27", "28", "29", "30"],
   },
-  {
-    id: 4,
+  4: {
     name: "San Francisco",
     country: "United States",
     description:
       "San Francisco, a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay, is known for its iconic Golden Gate Bridge, cable cars, and colorful Victorian houses.",
     image: SanFrancisco,
+    attractions: ["31", "32", "33", "34", "35", "36", "37", "38", "39", "40"],
   },
-  {
-    id: 5,
+  5: {
     name: "Seattle",
     country: "United States",
     description:
       "Seattle, a city on Puget Sound in the Pacific Northwest, is surrounded by water, mountains and evergreen forests, and home to thousands of acres of parkland.",
     image: Seattle,
+    attractions: ["41", "42", "43", "44", "45", "46", "47", "48", "49", "50"],
   },
-  {
-    id: 6,
+  6: {
     name: "Los Angeles",
     country: "United States",
     description:
       "Los Angeles is a sprawling Southern California city and the center of the nation's film and television industry, with studios such as Paramount Pictures, Universal and Warner Brothers.",
     image: LosAngeles,
+    attractions: ["51", "52", "53", "54", "55", "56", "57", "58", "59", "60"],
   },
-  {
-    id: 7,
+  7: {
     name: "Tokyo",
     country: "Japan",
     description:
       "Tokyo, Japan's busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples.",
     image: Tokyo,
+    attractions: ["61", "62", "63", "64", "65", "66", "67", "68", "69", "70"],
   },
-  {
-    id: 8,
+  8: {
     name: "Seoul",
     country: "South Korea",
     description:
       "Seoul, the capital of South Korea, is a huge metropolis where modern skyscrapers, high-tech subways and pop culture meet Buddhist temples, palaces and street markets.",
     image: Seoul,
+    attractions: ["71", "72", "73", "74", "75", "76", "77", "78", "79", "80"],
   },
-];
+};
 
 interface Category {
-  id: number;
   name: string;
   color: string;
 }
 
-const categories: Category[] = [
-  { id: 1, name: "museum", color: "#E5DEFF" },
-  { id: 2, name: "park", color: "#F2FCE2" },
-  { id: 3, name: "landmark", color: "#FEF7CD" },
-  { id: 4, name: "historical", color: "#FDE1D3" },
-  { id: 5, name: "nature", color: "#D3E4FD" },
-  { id: 6, name: "shopping", color: "#FFDEE2" },
-  { id: 7, name: "entertainment", color: "#E5DEFF" },
-  { id: 8, name: "religious", color: "#F2FCE2" },
-  { id: 9, name: "beach", color: "#FEF7CD" },
-  { id: 10, name: "budget friendly", color: "#FDE1D3" },
-  { id: 11, name: "food", color: "#D3E4FD" },
-  { id: 12, name: "architecture", color: "#FFDEE2" },
-  { id: 13, name: "viewpoint", color: "#E5DEFF" },
-  { id: 14, name: "cultural", color: "#F2FCE2" },
-];
+const categories: Record<string, Category> = {
+  1: { name: "museum", color: "#E5DEFF" },
+  2: { name: "park", color: "#F2FCE2" },
+  3: { name: "landmark", color: "#FEF7CD" },
+  4: { name: "historical", color: "#FDE1D3" },
+  5: { name: "nature", color: "#D3E4FD" },
+  6: { name: "shopping", color: "#FFDEE2" },
+  7: { name: "entertainment", color: "#E5DEFF" },
+  8: { name: "religious", color: "#F2FCE2" },
+  9: { name: "beach", color: "#FEF7CD" },
+  10: { name: "budget friendly", color: "#FDE1D3" },
+  11: { name: "food", color: "#D3E4FD" },
+  12: { name: "architecture", color: "#FFDEE2" },
+  13: { name: "viewpoint", color: "#E5DEFF" },
+  14: { name: "cultural", color: "#F2FCE2" },
+};
 
 interface Attraction {
-  id: number;
-  cityId: number;
   name: string;
   description: string;
   address: string;
   googleMapUrl: string;
   rating: number;
   image: StaticImageData;
-  categories: number[];
+  categories: string[];
+  cityId: number;
 }
 
-const attractions: Attraction[] = [
+const attractions: Record<string, Attraction> = {
   // Vancouver Attractions
-  {
-    id: 1,
+  1: {
     cityId: 1,
     name: "Stanley Park",
     description:
@@ -226,10 +223,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/e6RrFyrDx4TPLg2p9",
     rating: 5,
     image: StanleyPark,
-    categories: [2, 3, 5, 10],
+    categories: ["2", "3", "5", "10"],
   },
-  {
-    id: 2,
+  2: {
     cityId: 1,
     name: "Capilano Suspension Bridge",
     description:
@@ -238,10 +234,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/TBEsQAgKZHte3JgH8",
     rating: 4.6,
     image: CapilanoSuspensionBridge,
-    categories: [3, 5, 7],
+    categories: ["3", "5", "7"],
   },
-  {
-    id: 3,
+  3: {
     cityId: 1,
     name: "Granville Island",
     description:
@@ -250,10 +245,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/wAw3spBfsYJp7JRY9",
     rating: 4.7,
     image: GranvilleIsland,
-    categories: [6, 7, 10, 11],
+    categories: ["6", "7", "10", "11"],
   },
-  {
-    id: 4,
+  4: {
     cityId: 1,
     name: "Vancouver Aquarium",
     description:
@@ -262,10 +256,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/wrT8gEehjYE7o5Rc9",
     rating: 4.5,
     image: VancouverAquarium,
-    categories: [7, 10, 5],
+    categories: ["7", "10", "5"],
   },
-  {
-    id: 5,
+  5: {
     cityId: 1,
     name: "Museum of Anthropology",
     description:
@@ -274,10 +267,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/tDPBKe3TtXWWH5Qi8",
     rating: 4.7,
     image: MuseumOfAnthropology,
-    categories: [1, 4, 14],
+    categories: ["1", "4", "14"],
   },
-  {
-    id: 6,
+  6: {
     cityId: 1,
     name: "Grouse Mountain",
     description:
@@ -286,10 +278,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/Hx1TJA5GZcbE7B8X6",
     rating: 4.5,
     image: GrouseMountain,
-    categories: [5, 7, 13],
+    categories: ["5", "7", "13"],
   },
-  {
-    id: 7,
+  7: {
     cityId: 1,
     name: "Dr. Sun Yat-Sen Classical Chinese Garden",
     description:
@@ -298,10 +289,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/BNKKFmvSH3rdTgqr7",
     rating: 4.2,
     image: SunYatSenGarden,
-    categories: [4, 8, 12, 14],
+    categories: ["4", "8", "12", "14"],
   },
-  {
-    id: 8,
+  8: {
     cityId: 1,
     name: "English Bay Beach",
     description:
@@ -310,10 +300,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/Dvvdkx9oAmxYT532A",
     rating: 4.7,
     image: EnglishBayBeach,
-    categories: [5, 9, 10],
+    categories: ["5", "9", "10"],
   },
-  {
-    id: 9,
+  9: {
     cityId: 1,
     name: "Science World",
     description:
@@ -322,10 +311,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/MLpXv4JuSU7MJtxAA",
     rating: 4.5,
     image: ScienceWorld,
-    categories: [1, 7, 10],
+    categories: ["1", "7", "10"],
   },
-  {
-    id: 10,
+  10: {
     cityId: 1,
     name: "Gastown Steam Clock",
     description:
@@ -334,12 +322,10 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/mRexvzXXHQuNRbWi9",
     rating: 4.5,
     image: GastownSteamClock,
-    categories: [4, 6, 11, 12],
+    categories: ["4", "6", "11", "12"],
   },
-
   // Toronto Attractions
-  {
-    id: 11,
+  11: {
     cityId: 2,
     name: "CN Tower",
     description:
@@ -348,10 +334,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/knBKTREwPwH7yXED9",
     rating: 4.6,
     image: CNTower,
-    categories: [3, 7, 13],
+    categories: ["3", "7", "13"],
   },
-  {
-    id: 12,
+  12: {
     cityId: 2,
     name: "Royal Ontario Museum",
     description:
@@ -360,10 +345,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/E2EoqmZN8NbymmSS8",
     rating: 4.7,
     image: RoyalOntarioMuseum,
-    categories: [1, 4, 14],
+    categories: ["1", "4", "14"],
   },
-  {
-    id: 13,
+  13: {
     cityId: 2,
     name: "Ripley's Aquarium of Canada",
     description:
@@ -372,10 +356,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/RceJ4sY9yc5JoHXs5",
     rating: 4.6,
     image: RipleysAquarium,
-    categories: [7, 10],
+    categories: ["7", "10"],
   },
-  {
-    id: 14,
+  14: {
     cityId: 2,
     name: "Toronto Islands",
     description:
@@ -384,10 +367,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/Q9cq48xzevZMyc9w8",
     rating: 4.7,
     image: TorontoIslands,
-    categories: [2, 5, 9, 10],
+    categories: ["2", "5", "9", "10"],
   },
-  {
-    id: 15,
+  15: {
     cityId: 2,
     name: "The Distillery Historic District",
     description:
@@ -396,10 +378,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/w9RPtbPWGaouEMce8",
     rating: 4.6,
     image: DistilleryDistrict,
-    categories: [4, 6, 11, 12],
+    categories: ["4", "6", "11", "12"],
   },
-  {
-    id: 16,
+  16: {
     cityId: 2,
     name: "Casa Loma",
     description:
@@ -408,10 +389,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/uejtQPEJjEDQXQ4C7",
     rating: 4.5,
     image: CasaLoma,
-    categories: [3, 4, 12],
+    categories: ["3", "4", "12"],
   },
-  {
-    id: 17,
+  17: {
     cityId: 2,
     name: "High Park",
     description:
@@ -420,10 +400,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/622X7D16qNqo2GX66",
     rating: 4.7,
     image: HighPark,
-    categories: [2, 5, 10],
+    categories: ["2", "5", "10"],
   },
-  {
-    id: 18,
+  18: {
     cityId: 2,
     name: "Art Gallery of Ontario",
     description:
@@ -432,10 +411,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/QiBBxFBsbcNAnpre6",
     rating: 4.7,
     image: ArtGalleryOfOntario,
-    categories: [1, 12, 14],
+    categories: ["1", "12", "14"],
   },
-  {
-    id: 19,
+  19: {
     cityId: 2,
     name: "St. Lawrence Market",
     description:
@@ -444,10 +422,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/2P8cvHCLztyA9pP19",
     rating: 4.6,
     image: StLawrenceMarket,
-    categories: [6, 11, 10],
+    categories: ["6", "11", "10"],
   },
-  {
-    id: 20,
+  20: {
     cityId: 2,
     name: "Kensington Market",
     description:
@@ -456,12 +433,11 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/mJnRUqNVMfyGSdDZA",
     rating: 4.1,
     image: KensingtonMarket,
-    categories: [6, 11, 14],
+    categories: ["6", "11", "14"],
   },
 
   // New York City Attractions
-  {
-    id: 21,
+  21: {
     cityId: 3,
     name: "Empire State Building",
     description:
@@ -470,10 +446,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/do6VhLwabwYjXisQ6",
     rating: 4.7,
     image: EmpireStateBuilding,
-    categories: [3, 12, 13],
+    categories: ["3", "12", "13"],
   },
-  {
-    id: 22,
+  22: {
     cityId: 3,
     name: "Statue of Liberty",
     description:
@@ -482,10 +457,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/RzzvhmKfPg1vT5g19",
     rating: 4.7,
     image: StatueOfLiberty,
-    categories: [3, 4, 10],
+    categories: ["3", "4", "10"],
   },
-  {
-    id: 23,
+  23: {
     cityId: 3,
     name: "Central Park",
     description:
@@ -494,10 +468,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/3uwqnyQD6tA2Ynpq8",
     rating: 4.8,
     image: CentralPark,
-    categories: [2, 5, 10],
+    categories: ["2", "5", "10"],
   },
-  {
-    id: 24,
+  24: {
     cityId: 3,
     name: "Metropolitan Museum of Art",
     description:
@@ -506,10 +479,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/n1uZZ88mcgzc1BEj9",
     rating: 4.8,
     image: MetropolitanMuseum,
-    categories: [1, 4, 14],
+    categories: ["1", "4", "14"],
   },
-  {
-    id: 25,
+  25: {
     cityId: 3,
     name: "Times Square",
     description:
@@ -518,10 +490,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/3gkZWurFZbGnWdHM6",
     rating: 4.7,
     image: TimesSquare,
-    categories: [3, 6, 7],
+    categories: ["3", "6", "7"],
   },
-  {
-    id: 26,
+  26: {
     cityId: 3,
     name: "Brooklyn Bridge",
     description:
@@ -530,10 +501,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/kchww5gGNKzFxCJE8",
     rating: 4.8,
     image: BrooklynBridge,
-    categories: [3, 4, 12],
+    categories: ["3", "4", "12"],
   },
-  {
-    id: 27,
+  27: {
     cityId: 3,
     name: "One World Trade Center & 9/11 Memorial",
     description:
@@ -542,10 +512,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/q6Ev6MvK9PYLxQPJA",
     rating: 4.8,
     image: Memorial911,
-    categories: [3, 4, 13],
+    categories: ["3", "4", "13"],
   },
-  {
-    id: 28,
+  28: {
     cityId: 3,
     name: "High Line",
     description:
@@ -554,10 +523,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/UspySPcKCpZpugQY6",
     rating: 4.7,
     image: HighLine,
-    categories: [2, 10, 12],
+    categories: ["2", "10", "12"],
   },
-  {
-    id: 29,
+  29: {
     cityId: 3,
     name: "American Museum of Natural History",
     description:
@@ -566,10 +534,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/Dedc9qy4sWAg8ZQ1A",
     rating: 4.5,
     image: AmericanMuseumOfNaturalHistory,
-    categories: [1, 10, 14],
+    categories: ["1", "10", "14"],
   },
-  {
-    id: 30,
+  30: {
     cityId: 3,
     name: "Fifth Avenue",
     description:
@@ -578,12 +545,11 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/ma2KE4YTy5K3RA2R6",
     rating: 4.7,
     image: FifthAvenue,
-    categories: [6, 12],
+    categories: ["6", "12"],
   },
 
   // San Francisco Attractions
-  {
-    id: 31,
+  31: {
     cityId: 4,
     name: "Golden Gate Bridge",
     description:
@@ -592,10 +558,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/fiVT5PRLjWjPKnyz9",
     rating: 4.8,
     image: GoldenGateBridge,
-    categories: [3, 12, 13],
+    categories: ["3", "12", "13"],
   },
-  {
-    id: 32,
+  32: {
     cityId: 4,
     name: "Alcatraz Island",
     description:
@@ -604,10 +569,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/VKwcyLQvqvm4WbvRA",
     rating: 4.7,
     image: AlcatrazIsland,
-    categories: [3, 4, 10],
+    categories: ["3", "4", "10"],
   },
-  {
-    id: 33,
+  33: {
     cityId: 4,
     name: "Fisherman's Wharf",
     description:
@@ -616,10 +580,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/3wNf5TgeX8jgw1Bs5",
     rating: 4.1,
     image: FishermansWharf,
-    categories: [3, 6, 11],
+    categories: ["3", "6", "11"],
   },
-  {
-    id: 34,
+  34: {
     cityId: 4,
     name: "Chinatown",
     description:
@@ -628,10 +591,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/s36iJ3CtpA4xBpWj7",
     rating: 3.9,
     image: Chinatown,
-    categories: [6, 11, 14],
+    categories: ["6", "11", "14"],
   },
-  {
-    id: 35,
+  35: {
     cityId: 4,
     name: "Lombard Street",
     description:
@@ -640,10 +602,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/KmZPhgXdeiVLq4bXA",
     rating: 4.6,
     image: LombardStreet,
-    categories: [3, 10, 12],
+    categories: ["3", "10", "12"],
   },
-  {
-    id: 36,
+  36: {
     cityId: 4,
     name: "Golden Gate Park",
     description:
@@ -652,10 +613,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/zsDNXGV4JezhLDV46",
     rating: 4.6,
     image: GoldenGatePark,
-    categories: [2, 5, 10],
+    categories: ["2", "5", "10"],
   },
-  {
-    id: 37,
+  37: {
     cityId: 4,
     name: "Palace of Fine Arts",
     description:
@@ -664,10 +624,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/wHhmhSEZN1Njtz1X6",
     rating: 4.8,
     image: PalaceOfFineArts,
-    categories: [3, 4, 12],
+    categories: ["3", "4", "12"],
   },
-  {
-    id: 38,
+  38: {
     cityId: 4,
     name: "Twin Peaks",
     description:
@@ -676,10 +635,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/actrZDdvvNuKXnGE6",
     rating: 4.6,
     image: TwinPeaks,
-    categories: [5, 10, 13],
+    categories: ["5", "10", "13"],
   },
-  {
-    id: 39,
+  39: {
     cityId: 4,
     name: "PIER 39",
     description:
@@ -688,10 +646,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/LwKFM7kRVK5WyJyD7",
     rating: 4.6,
     image: Pier39,
-    categories: [3, 7, 10],
+    categories: ["3", "7", "10"],
   },
-  {
-    id: 40,
+  40: {
     cityId: 4,
     name: "Painted Ladies",
     description:
@@ -700,10 +657,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/jP9Mu2Xo5QrWRfff9",
     rating: 4.4,
     image: PaintedLadies,
-    categories: [3, 4, 12],
+    categories: ["3", "4", "12"],
   },
-  {
-    id: 41,
+  41: {
     cityId: 4,
     name: "Vercel Headquarters",
     description:
@@ -712,11 +668,10 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/jP9Mu2Xo5QrWRfff9",
     rating: 4.4,
     image: VercelHeadquarters,
-    categories: [1, 12, 14],
+    categories: ["1", "12", "14"],
   },
   // Seattle Attractions
-  {
-    id: 42,
+  42: {
     cityId: 5,
     name: "Space Needle",
     description:
@@ -725,10 +680,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/cM3swBcntk1qdqqdA",
     rating: 4.6,
     image: SpaceNeedle,
-    categories: [3, 7, 13],
+    categories: ["3", "7", "13"],
   },
-  {
-    id: 43,
+  43: {
     cityId: 5,
     name: "Pike Place Market",
     description:
@@ -737,10 +691,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/mDioFwDJvrjVrpDH9",
     rating: 4.5,
     image: PikePlaceMarket,
-    categories: [6, 11, 10],
+    categories: ["6", "11", "10"],
   },
-  {
-    id: 44,
+  44: {
     cityId: 5,
     name: "Chihuly Garden and Glass",
     description:
@@ -749,10 +702,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/Lx82BpLt16BKNiXZ9",
     rating: 4.7,
     image: ChihulyGarden,
-    categories: [1, 12, 14],
+    categories: ["1", "12", "14"],
   },
-  {
-    id: 45,
+  45: {
     cityId: 5,
     name: "Museum of Pop Culture (MoPOP)",
     description:
@@ -761,10 +713,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/1AsNFKH2R24r8sSK9",
     rating: 4.6,
     image: MoPOP,
-    categories: [1, 7, 14],
+    categories: ["1", "7", "14"],
   },
-  {
-    id: 46,
+  46: {
     cityId: 5,
     name: "Olympic Sculpture Park",
     description:
@@ -773,10 +724,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/vauvNNSrZ7ALPESP6",
     rating: 4.5,
     image: OlympicSculpturePark,
-    categories: [2, 12, 10],
+    categories: ["2", "12", "10"],
   },
-  {
-    id: 47,
+  47: {
     cityId: 5,
     name: "Seattle Aquarium",
     description:
@@ -785,10 +735,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/gC9VnxxGowdrhUG47",
     rating: 4.3,
     image: SeattleAquarium,
-    categories: [7, 10, 5],
+    categories: ["7", "10", "5"],
   },
-  {
-    id: 48,
+  48: {
     cityId: 5,
     name: "Kerry Park",
     description:
@@ -797,10 +746,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/BD7kuZCPr82rMm4A8",
     rating: 4.8,
     image: KerryPark,
-    categories: [2, 10, 13],
+    categories: ["2", "10", "13"],
   },
-  {
-    id: 49,
+  49: {
     cityId: 5,
     name: "Woodland Park Zoo",
     description:
@@ -809,10 +757,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/CLJYYPDgVdyE4u759",
     rating: 4.6,
     image: WoodlandPark,
-    categories: [5, 7, 10],
+    categories: ["5", "7", "10"],
   },
-  {
-    id: 50,
+  50: {
     cityId: 5,
     name: "Museum of Flight",
     description:
@@ -821,10 +768,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/gxVMoXuET6R69kWe6",
     rating: 4.8,
     image: MuseumOfFlight,
-    categories: [1, 4, 10],
+    categories: ["1", "4", "10"],
   },
-  {
-    id: 51,
+  51: {
     cityId: 5,
     name: "Gas Works Park",
     description:
@@ -833,12 +779,11 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/PXPYww2YCuZzvJzQ8",
     rating: 4.7,
     image: GasWorksPark,
-    categories: [2, 4, 13],
+    categories: ["2", "4", "13"],
   },
 
   // Los Angeles Attractions
-  {
-    id: 52,
+  52: {
     cityId: 6,
     name: "Universal Studios Hollywood",
     description:
@@ -847,10 +792,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/PaGWiv4KuGBRY3bR6",
     rating: 4.6,
     image: UniversalStudios,
-    categories: [7, 3],
+    categories: ["7", "3"],
   },
-  {
-    id: 53,
+  53: {
     cityId: 6,
     name: "Hollywood Walk of Fame",
     description:
@@ -859,10 +803,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/XAMQs6HFTreF7TxC7",
     rating: 4.1,
     image: HollywoodWalkOfFame,
-    categories: [3, 7, 10],
+    categories: ["3", "7", "10"],
   },
-  {
-    id: 54,
+  54: {
     cityId: 6,
     name: "Griffith Observatory",
     description:
@@ -871,10 +814,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/6KChcdZd8McY32aw9",
     rating: 4.7,
     image: GriffithObservatory,
-    categories: [1, 10, 13],
+    categories: ["1", "10", "13"],
   },
-  {
-    id: 55,
+  55: {
     cityId: 6,
     name: "Santa Monica Pier",
     description:
@@ -883,10 +825,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/THaYCSPHrFfgZ5xNA",
     rating: 4.6,
     image: SantaMonicaPier,
-    categories: [3, 7, 9],
+    categories: ["3", "7", "9"],
   },
-  {
-    id: 56,
+  56: {
     cityId: 6,
     name: "The Getty Center",
     description:
@@ -895,10 +836,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/8oprjhdhm7zRknLH8",
     rating: 4.8,
     image: GettyCenter,
-    categories: [1, 12, 10],
+    categories: ["1", "12", "10"],
   },
-  {
-    id: 57,
+  57: {
     cityId: 6,
     name: "Venice Beach Boardwalk",
     description:
@@ -907,10 +847,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/7J4nanc4tpHKMn7v9",
     rating: 4.5,
     image: VeniceBeach,
-    categories: [9, 7, 6],
+    categories: ["9", "7", "6"],
   },
-  {
-    id: 58,
+  58: {
     cityId: 6,
     name: "The Hollywood Sign",
     description:
@@ -919,10 +858,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/omEWF4UHmrciV2Tp6",
     rating: 4.6,
     image: HollywoodSign,
-    categories: [3, 10, 13],
+    categories: ["3", "10", "13"],
   },
-  {
-    id: 59,
+  59: {
     cityId: 6,
     name: "Los Angeles County Museum of Art (LACMA)",
     description:
@@ -931,10 +869,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/Bc5UmaFN6BGY6PeD7",
     rating: 4.6,
     image: LACMA,
-    categories: [1, 12, 14],
+    categories: ["1", "12", "14"],
   },
-  {
-    id: 60,
+  60: {
     cityId: 6,
     name: "The Grove",
     description:
@@ -943,10 +880,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/n6rLh7U3armEKEfh8",
     rating: 4.6,
     image: TheGrove,
-    categories: [6, 7, 11],
+    categories: ["6", "7", "11"],
   },
-  {
-    id: 61,
+  61: {
     cityId: 6,
     name: "Runyon Canyon Park",
     description:
@@ -955,12 +891,11 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/875ftWcPbsTanQaX7",
     rating: 4.8,
     image: RunyonCanyon,
-    categories: [2, 5, 10],
+    categories: ["2", "5", "10"],
   },
 
   // Tokyo Attractions
-  {
-    id: 62,
+  62: {
     cityId: 7,
     name: "Tokyo Skytree",
     description:
@@ -969,10 +904,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/JhgN9NsM8Zkfxv8RA",
     rating: 4.4,
     image: TokyoSkytree,
-    categories: [3, 7, 13],
+    categories: ["3", "7", "13"],
   },
-  {
-    id: 63,
+  63: {
     cityId: 7,
     name: "Meiji Shrine",
     description:
@@ -981,10 +915,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/6sTNm2nU6FtHocTCA",
     rating: 4.6,
     image: MeijiShrine,
-    categories: [4, 8, 10],
+    categories: ["4", "8", "10"],
   },
-  {
-    id: 64,
+  64: {
     cityId: 7,
     name: "Senso-ji Temple",
     description:
@@ -993,10 +926,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/Af62RG6JDRJmPbAC6",
     rating: 4.5,
     image: SensojiTemple,
-    categories: [4, 8, 14],
+    categories: ["4", "8", "14"],
   },
-  {
-    id: 65,
+  65: {
     cityId: 7,
     name: "Shibuya Crossing",
     description:
@@ -1006,10 +938,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/kkxoSMdzHXHy3tZc6",
     rating: 4.5,
     image: ShibuyaCrossing,
-    categories: [3, 10, 7],
+    categories: ["3", "10", "7"],
   },
-  {
-    id: 66,
+  66: {
     cityId: 7,
     name: "Tokyo Disneyland",
     description:
@@ -1018,10 +949,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/gTucqPjPRUj2QmT18",
     rating: 4.6,
     image: TokyoDisneyland,
-    categories: [7, 10],
+    categories: ["7", "10"],
   },
-  {
-    id: 67,
+  67: {
     cityId: 7,
     name: "Shinjuku Gyoen National Garden",
     description:
@@ -1030,10 +960,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/v9NtLSbAyuZAakPs8",
     rating: 4.6,
     image: ShinjukuGyoen,
-    categories: [2, 5, 10],
+    categories: ["2", "5", "10"],
   },
-  {
-    id: 68,
+  68: {
     cityId: 7,
     name: "Tokyo Imperial Palace",
     description:
@@ -1042,10 +971,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/KrYhnWvRUdapws1s6",
     rating: 4.4,
     image: ImperialPalace,
-    categories: [3, 4, 10],
+    categories: ["3", "4", "10"],
   },
-  {
-    id: 69,
+  69: {
     cityId: 7,
     name: "Ueno Park",
     description:
@@ -1054,10 +982,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/QS2kMCzovy3Et1WH6",
     rating: 4.3,
     image: UenoPark,
-    categories: [2, 5, 10],
+    categories: ["2", "5", "10"],
   },
-  {
-    id: 70,
+  70: {
     cityId: 7,
     name: "Akihabara Electric Town",
     description:
@@ -1066,10 +993,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/pGtpVpd452LizEwY9",
     rating: 4.2,
     image: Akihabara,
-    categories: [6, 7, 14],
+    categories: ["6", "7", "14"],
   },
-  {
-    id: 71,
+  71: {
     cityId: 7,
     name: "Harajuku (Takeshita Street)",
     description:
@@ -1078,12 +1004,11 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/VFwa3nqFpP5bTt3s5",
     rating: 4.0,
     image: Harajuku,
-    categories: [6, 7, 14],
+    categories: ["6", "7", "14"],
   },
 
   // Seoul Attractions
-  {
-    id: 72,
+  72: {
     cityId: 8,
     name: "Gyeongbokgung Palace",
     description:
@@ -1092,10 +1017,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/3fTS2EQMkHFvevJE8",
     rating: 4.6,
     image: GyeongbokgungPalace,
-    categories: [3, 4, 12],
+    categories: ["3", "4", "12"],
   },
-  {
-    id: 73,
+  73: {
     cityId: 8,
     name: "Namsan Tower (N Seoul Tower)",
     description:
@@ -1104,10 +1028,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/3npT4tX5y4cFt22u5",
     rating: 4.5,
     image: NamsanTower,
-    categories: [3, 13, 7],
+    categories: ["3", "13", "7"],
   },
-  {
-    id: 74,
+  74: {
     cityId: 8,
     name: "Bukchon Hanok Village",
     description:
@@ -1116,10 +1039,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/hjj3rHYVqtipapzG8",
     rating: 4.4,
     image: BukchonHanokVillage,
-    categories: [4, 12, 14],
+    categories: ["4", "12", "14"],
   },
-  {
-    id: 75,
+  75: {
     cityId: 8,
     name: "Myeongdong",
     description:
@@ -1128,10 +1050,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/SL1yNvN849BrmS2y8",
     rating: 5,
     image: Myeongdong,
-    categories: [6, 11, 10],
+    categories: ["6", "11", "10"],
   },
-  {
-    id: 76,
+  76: {
     cityId: 8,
     name: "Lotte World",
     description:
@@ -1140,10 +1061,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/aTr3VKjtmkCyDCaU7",
     rating: 4.3,
     image: LotteWorld,
-    categories: [7, 6],
+    categories: ["7", "6"],
   },
-  {
-    id: 77,
+  77: {
     cityId: 8,
     name: "Changdeokgung Palace",
     description:
@@ -1152,10 +1072,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/ds6EAeHjgUCuryRX8",
     rating: 4.6,
     image: ChangdeokgungPalace,
-    categories: [3, 4, 12],
+    categories: ["3", "4", "12"],
   },
-  {
-    id: 78,
+  78: {
     cityId: 8,
     name: "Dongdaemun Design Plaza (DDP)",
     description:
@@ -1164,10 +1083,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/PAqpkrw8CF6MdCdy8",
     rating: 4.3,
     image: DongdaemunDesignPlaza,
-    categories: [12, 6, 7],
+    categories: ["12", "6", "7"],
   },
-  {
-    id: 79,
+  79: {
     cityId: 8,
     name: "Insadong",
     description:
@@ -1176,10 +1094,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/J71rfCpD5RSGfjVX8",
     rating: 4.2,
     image: Insadong,
-    categories: [6, 11, 14],
+    categories: ["6", "11", "14"],
   },
-  {
-    id: 80,
+  80: {
     cityId: 8,
     name: "Yeouido Hangang Park",
     description:
@@ -1188,10 +1105,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/eSo5dqK5XqE5vjTR6",
     rating: 4.5,
     image: YeouidoHangangPark,
-    categories: [2, 5, 10],
+    categories: ["2", "5", "10"],
   },
-  {
-    id: 81,
+  81: {
     cityId: 8,
     name: "Starfield Library",
     description:
@@ -1201,9 +1117,9 @@ const attractions: Attraction[] = [
     googleMapUrl: "https://maps.app.goo.gl/dx6mBHn4EqcdW75v6",
     rating: 4.6,
     image: StarfieldLibrary,
-    categories: [6, 7, 11],
+    categories: ["6", "7", "11"],
   },
-];
+};
 
 export { attractions, cities, categories };
 

@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 interface CityCardProps {
-  city: City;
+  city: City & { id: string };
 }
 
 const CityCard: React.FC<CityCardProps> = ({ city }) => {

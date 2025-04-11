@@ -14,9 +14,12 @@ export default async function CityDetailsPage({
 }: CityDetailsPageProps) {
   const { id } = await params;
 
-  const city = cities[id - 1];
+  const city = cities[id];
 
-  const cityAttractions = attractions.filter((a) => a.cityId === city.id);
+  const cityAttractions = city.attractions.map((id) => ({
+    ...attractions[id],
+    id,
+  }));
 
   if (!city) {
     return (
