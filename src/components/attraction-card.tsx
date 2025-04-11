@@ -7,12 +7,10 @@ import { Badge } from "./ui/badge";
 import { cn } from "@/lib/utils";
 
 interface AttractionCardProps {
-  attraction: Attraction & { id: string };
+  attraction: Attraction;
   isSelecting: boolean;
   isSelected: boolean;
-  setSelectedAttractions: Dispatch<
-    SetStateAction<(Attraction & { id: string })[]>
-  >;
+  setSelectedAttractions: Dispatch<SetStateAction<Attraction[]>>;
 }
 
 const AttractionCard: React.FC<AttractionCardProps> = ({
@@ -21,10 +19,9 @@ const AttractionCard: React.FC<AttractionCardProps> = ({
   isSelected,
   setSelectedAttractions,
 }) => {
-  const attractionCategories = attraction.categories.map((id) => ({
-    ...categories[id],
-    id,
-  }));
+  const attractionCategories = attraction.categories.map(
+    (id) => categories[id],
+  );
 
   return (
     <div

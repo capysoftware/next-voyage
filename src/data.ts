@@ -105,6 +105,7 @@ import YeouidoHangangPark from "@/images/attractions/seoul/yeouido-hangang-park.
 import StarfieldLibrary from "@/images/attractions/seoul/starfield-library.jpeg";
 
 interface City {
+  id: string;
   name: string;
   country: string;
   description: string;
@@ -113,7 +114,8 @@ interface City {
 }
 
 const cities: Record<string, City> = {
-  1: {
+  "1": {
+    id: "1",
     name: "Vancouver",
     country: "Canada",
     description:
@@ -121,7 +123,8 @@ const cities: Record<string, City> = {
     image: Vancouver,
     attractions: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
   },
-  2: {
+  "2": {
+    id: "2",
     name: "Toronto",
     country: "Canada",
     description:
@@ -129,7 +132,8 @@ const cities: Record<string, City> = {
     image: Toronto,
     attractions: ["11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
   },
-  3: {
+  "3": {
+    id: "3",
     name: "New York City",
     country: "United States",
     description:
@@ -137,7 +141,8 @@ const cities: Record<string, City> = {
     image: NewYorkCity,
     attractions: ["21", "22", "23", "24", "25", "26", "27", "28", "29", "30"],
   },
-  4: {
+  "4": {
+    id: "4",
     name: "San Francisco",
     country: "United States",
     description:
@@ -145,7 +150,8 @@ const cities: Record<string, City> = {
     image: SanFrancisco,
     attractions: ["31", "32", "33", "34", "35", "36", "37", "38", "39", "40"],
   },
-  5: {
+  "5": {
+    id: "5",
     name: "Seattle",
     country: "United States",
     description:
@@ -153,7 +159,8 @@ const cities: Record<string, City> = {
     image: Seattle,
     attractions: ["41", "42", "43", "44", "45", "46", "47", "48", "49", "50"],
   },
-  6: {
+  "6": {
+    id: "6",
     name: "Los Angeles",
     country: "United States",
     description:
@@ -161,7 +168,8 @@ const cities: Record<string, City> = {
     image: LosAngeles,
     attractions: ["51", "52", "53", "54", "55", "56", "57", "58", "59", "60"],
   },
-  7: {
+  "7": {
+    id: "7",
     name: "Tokyo",
     country: "Japan",
     description:
@@ -169,7 +177,8 @@ const cities: Record<string, City> = {
     image: Tokyo,
     attractions: ["61", "62", "63", "64", "65", "66", "67", "68", "69", "70"],
   },
-  8: {
+  "8": {
+    id: "8",
     name: "Seoul",
     country: "South Korea",
     description:
@@ -180,28 +189,30 @@ const cities: Record<string, City> = {
 };
 
 interface Category {
+  id: string;
   name: string;
   color: string;
 }
 
 const categories: Record<string, Category> = {
-  1: { name: "museum", color: "#E5DEFF" },
-  2: { name: "park", color: "#F2FCE2" },
-  3: { name: "landmark", color: "#FEF7CD" },
-  4: { name: "historical", color: "#FDE1D3" },
-  5: { name: "nature", color: "#D3E4FD" },
-  6: { name: "shopping", color: "#FFDEE2" },
-  7: { name: "entertainment", color: "#E5DEFF" },
-  8: { name: "religious", color: "#F2FCE2" },
-  9: { name: "beach", color: "#FEF7CD" },
-  10: { name: "budget friendly", color: "#FDE1D3" },
-  11: { name: "food", color: "#D3E4FD" },
-  12: { name: "architecture", color: "#FFDEE2" },
-  13: { name: "viewpoint", color: "#E5DEFF" },
-  14: { name: "cultural", color: "#F2FCE2" },
+  "1": { id: "1", name: "museum", color: "#E5DEFF" },
+  "2": { id: "2", name: "park", color: "#F2FCE2" },
+  "3": { id: "3", name: "landmark", color: "#FEF7CD" },
+  "4": { id: "4", name: "historical", color: "#FDE1D3" },
+  "5": { id: "5", name: "nature", color: "#D3E4FD" },
+  "6": { id: "6", name: "shopping", color: "#FFDEE2" },
+  "7": { id: "7", name: "entertainment", color: "#E5DEFF" },
+  "8": { id: "8", name: "religious", color: "#F2FCE2" },
+  "9": { id: "9", name: "beach", color: "#FEF7CD" },
+  "10": { id: "10", name: "budget friendly", color: "#FDE1D3" },
+  "11": { id: "11", name: "food", color: "#D3E4FD" },
+  "12": { id: "12", name: "architecture", color: "#FFDEE2" },
+  "13": { id: "13", name: "viewpoint", color: "#E5DEFF" },
+  "14": { id: "14", name: "cultural", color: "#F2FCE2" },
 };
 
 interface Attraction {
+  id: string;
   name: string;
   description: string;
   address: string;
@@ -214,7 +225,8 @@ interface Attraction {
 
 const attractions: Record<string, Attraction> = {
   // Vancouver Attractions
-  1: {
+  "1": {
+    id: "1",
     cityId: 1,
     name: "Stanley Park",
     description:
@@ -225,7 +237,8 @@ const attractions: Record<string, Attraction> = {
     image: StanleyPark,
     categories: ["2", "3", "5", "10"],
   },
-  2: {
+  "2": {
+    id: "2",
     cityId: 1,
     name: "Capilano Suspension Bridge",
     description:
@@ -236,7 +249,8 @@ const attractions: Record<string, Attraction> = {
     image: CapilanoSuspensionBridge,
     categories: ["3", "5", "7"],
   },
-  3: {
+  "3": {
+    id: "3",
     cityId: 1,
     name: "Granville Island",
     description:
@@ -247,7 +261,8 @@ const attractions: Record<string, Attraction> = {
     image: GranvilleIsland,
     categories: ["6", "7", "10", "11"],
   },
-  4: {
+  "4": {
+    id: "4",
     cityId: 1,
     name: "Vancouver Aquarium",
     description:
@@ -258,7 +273,8 @@ const attractions: Record<string, Attraction> = {
     image: VancouverAquarium,
     categories: ["7", "10", "5"],
   },
-  5: {
+  "5": {
+    id: "5",
     cityId: 1,
     name: "Museum of Anthropology",
     description:
@@ -269,7 +285,8 @@ const attractions: Record<string, Attraction> = {
     image: MuseumOfAnthropology,
     categories: ["1", "4", "14"],
   },
-  6: {
+  "6": {
+    id: "6",
     cityId: 1,
     name: "Grouse Mountain",
     description:
@@ -280,7 +297,8 @@ const attractions: Record<string, Attraction> = {
     image: GrouseMountain,
     categories: ["5", "7", "13"],
   },
-  7: {
+  "7": {
+    id: "7",
     cityId: 1,
     name: "Dr. Sun Yat-Sen Classical Chinese Garden",
     description:
@@ -291,7 +309,8 @@ const attractions: Record<string, Attraction> = {
     image: SunYatSenGarden,
     categories: ["4", "8", "12", "14"],
   },
-  8: {
+  "8": {
+    id: "8",
     cityId: 1,
     name: "English Bay Beach",
     description:
@@ -302,7 +321,8 @@ const attractions: Record<string, Attraction> = {
     image: EnglishBayBeach,
     categories: ["5", "9", "10"],
   },
-  9: {
+  "9": {
+    id: "9",
     cityId: 1,
     name: "Science World",
     description:
@@ -313,7 +333,8 @@ const attractions: Record<string, Attraction> = {
     image: ScienceWorld,
     categories: ["1", "7", "10"],
   },
-  10: {
+  "10": {
+    id: "10",
     cityId: 1,
     name: "Gastown Steam Clock",
     description:
@@ -325,7 +346,8 @@ const attractions: Record<string, Attraction> = {
     categories: ["4", "6", "11", "12"],
   },
   // Toronto Attractions
-  11: {
+  "11": {
+    id: "11",
     cityId: 2,
     name: "CN Tower",
     description:
@@ -336,7 +358,8 @@ const attractions: Record<string, Attraction> = {
     image: CNTower,
     categories: ["3", "7", "13"],
   },
-  12: {
+  "12": {
+    id: "12",
     cityId: 2,
     name: "Royal Ontario Museum",
     description:
@@ -347,7 +370,8 @@ const attractions: Record<string, Attraction> = {
     image: RoyalOntarioMuseum,
     categories: ["1", "4", "14"],
   },
-  13: {
+  "13": {
+    id: "13",
     cityId: 2,
     name: "Ripley's Aquarium of Canada",
     description:
@@ -358,7 +382,8 @@ const attractions: Record<string, Attraction> = {
     image: RipleysAquarium,
     categories: ["7", "10"],
   },
-  14: {
+  "14": {
+    id: "14",
     cityId: 2,
     name: "Toronto Islands",
     description:
@@ -369,7 +394,8 @@ const attractions: Record<string, Attraction> = {
     image: TorontoIslands,
     categories: ["2", "5", "9", "10"],
   },
-  15: {
+  "15": {
+    id: "15",
     cityId: 2,
     name: "The Distillery Historic District",
     description:
@@ -380,7 +406,8 @@ const attractions: Record<string, Attraction> = {
     image: DistilleryDistrict,
     categories: ["4", "6", "11", "12"],
   },
-  16: {
+  "16": {
+    id: "16",
     cityId: 2,
     name: "Casa Loma",
     description:
@@ -391,7 +418,8 @@ const attractions: Record<string, Attraction> = {
     image: CasaLoma,
     categories: ["3", "4", "12"],
   },
-  17: {
+  "17": {
+    id: "17",
     cityId: 2,
     name: "High Park",
     description:
@@ -402,7 +430,8 @@ const attractions: Record<string, Attraction> = {
     image: HighPark,
     categories: ["2", "5", "10"],
   },
-  18: {
+  "18": {
+    id: "18",
     cityId: 2,
     name: "Art Gallery of Ontario",
     description:
@@ -413,7 +442,8 @@ const attractions: Record<string, Attraction> = {
     image: ArtGalleryOfOntario,
     categories: ["1", "12", "14"],
   },
-  19: {
+  "19": {
+    id: "19",
     cityId: 2,
     name: "St. Lawrence Market",
     description:
@@ -424,7 +454,8 @@ const attractions: Record<string, Attraction> = {
     image: StLawrenceMarket,
     categories: ["6", "11", "10"],
   },
-  20: {
+  "20": {
+    id: "20",
     cityId: 2,
     name: "Kensington Market",
     description:
@@ -437,7 +468,8 @@ const attractions: Record<string, Attraction> = {
   },
 
   // New York City Attractions
-  21: {
+  "21": {
+    id: "21",
     cityId: 3,
     name: "Empire State Building",
     description:
@@ -448,7 +480,8 @@ const attractions: Record<string, Attraction> = {
     image: EmpireStateBuilding,
     categories: ["3", "12", "13"],
   },
-  22: {
+  "22": {
+    id: "22",
     cityId: 3,
     name: "Statue of Liberty",
     description:
@@ -459,7 +492,8 @@ const attractions: Record<string, Attraction> = {
     image: StatueOfLiberty,
     categories: ["3", "4", "10"],
   },
-  23: {
+  "23": {
+    id: "23",
     cityId: 3,
     name: "Central Park",
     description:
@@ -470,7 +504,8 @@ const attractions: Record<string, Attraction> = {
     image: CentralPark,
     categories: ["2", "5", "10"],
   },
-  24: {
+  "24": {
+    id: "24",
     cityId: 3,
     name: "Metropolitan Museum of Art",
     description:
@@ -481,7 +516,8 @@ const attractions: Record<string, Attraction> = {
     image: MetropolitanMuseum,
     categories: ["1", "4", "14"],
   },
-  25: {
+  "25": {
+    id: "25",
     cityId: 3,
     name: "Times Square",
     description:
@@ -492,7 +528,8 @@ const attractions: Record<string, Attraction> = {
     image: TimesSquare,
     categories: ["3", "6", "7"],
   },
-  26: {
+  "26": {
+    id: "26",
     cityId: 3,
     name: "Brooklyn Bridge",
     description:
@@ -503,7 +540,8 @@ const attractions: Record<string, Attraction> = {
     image: BrooklynBridge,
     categories: ["3", "4", "12"],
   },
-  27: {
+  "27": {
+    id: "27",
     cityId: 3,
     name: "One World Trade Center & 9/11 Memorial",
     description:
@@ -514,7 +552,8 @@ const attractions: Record<string, Attraction> = {
     image: Memorial911,
     categories: ["3", "4", "13"],
   },
-  28: {
+  "28": {
+    id: "28",
     cityId: 3,
     name: "High Line",
     description:
@@ -525,7 +564,8 @@ const attractions: Record<string, Attraction> = {
     image: HighLine,
     categories: ["2", "10", "12"],
   },
-  29: {
+  "29": {
+    id: "29",
     cityId: 3,
     name: "American Museum of Natural History",
     description:
@@ -536,7 +576,8 @@ const attractions: Record<string, Attraction> = {
     image: AmericanMuseumOfNaturalHistory,
     categories: ["1", "10", "14"],
   },
-  30: {
+  "30": {
+    id: "30",
     cityId: 3,
     name: "Fifth Avenue",
     description:
@@ -549,7 +590,8 @@ const attractions: Record<string, Attraction> = {
   },
 
   // San Francisco Attractions
-  31: {
+  "31": {
+    id: "31",
     cityId: 4,
     name: "Golden Gate Bridge",
     description:
@@ -560,7 +602,8 @@ const attractions: Record<string, Attraction> = {
     image: GoldenGateBridge,
     categories: ["3", "12", "13"],
   },
-  32: {
+  "32": {
+    id: "32",
     cityId: 4,
     name: "Alcatraz Island",
     description:
@@ -571,7 +614,8 @@ const attractions: Record<string, Attraction> = {
     image: AlcatrazIsland,
     categories: ["3", "4", "10"],
   },
-  33: {
+  "33": {
+    id: "33",
     cityId: 4,
     name: "Fisherman's Wharf",
     description:
@@ -582,7 +626,8 @@ const attractions: Record<string, Attraction> = {
     image: FishermansWharf,
     categories: ["3", "6", "11"],
   },
-  34: {
+  "34": {
+    id: "34",
     cityId: 4,
     name: "Chinatown",
     description:
@@ -593,7 +638,8 @@ const attractions: Record<string, Attraction> = {
     image: Chinatown,
     categories: ["6", "11", "14"],
   },
-  35: {
+  "35": {
+    id: "35",
     cityId: 4,
     name: "Lombard Street",
     description:
@@ -604,7 +650,8 @@ const attractions: Record<string, Attraction> = {
     image: LombardStreet,
     categories: ["3", "10", "12"],
   },
-  36: {
+  "36": {
+    id: "36",
     cityId: 4,
     name: "Golden Gate Park",
     description:
@@ -615,7 +662,8 @@ const attractions: Record<string, Attraction> = {
     image: GoldenGatePark,
     categories: ["2", "5", "10"],
   },
-  37: {
+  "37": {
+    id: "37",
     cityId: 4,
     name: "Palace of Fine Arts",
     description:
@@ -626,7 +674,8 @@ const attractions: Record<string, Attraction> = {
     image: PalaceOfFineArts,
     categories: ["3", "4", "12"],
   },
-  38: {
+  "38": {
+    id: "38",
     cityId: 4,
     name: "Twin Peaks",
     description:
@@ -637,7 +686,8 @@ const attractions: Record<string, Attraction> = {
     image: TwinPeaks,
     categories: ["5", "10", "13"],
   },
-  39: {
+  "39": {
+    id: "39",
     cityId: 4,
     name: "PIER 39",
     description:
@@ -648,7 +698,8 @@ const attractions: Record<string, Attraction> = {
     image: Pier39,
     categories: ["3", "7", "10"],
   },
-  40: {
+  "40": {
+    id: "40",
     cityId: 4,
     name: "Painted Ladies",
     description:
@@ -659,7 +710,8 @@ const attractions: Record<string, Attraction> = {
     image: PaintedLadies,
     categories: ["3", "4", "12"],
   },
-  41: {
+  "41": {
+    id: "41",
     cityId: 4,
     name: "Vercel Headquarters",
     description:
@@ -671,7 +723,8 @@ const attractions: Record<string, Attraction> = {
     categories: ["1", "12", "14"],
   },
   // Seattle Attractions
-  42: {
+  "42": {
+    id: "42",
     cityId: 5,
     name: "Space Needle",
     description:
@@ -682,7 +735,8 @@ const attractions: Record<string, Attraction> = {
     image: SpaceNeedle,
     categories: ["3", "7", "13"],
   },
-  43: {
+  "43": {
+    id: "43",
     cityId: 5,
     name: "Pike Place Market",
     description:
@@ -693,7 +747,8 @@ const attractions: Record<string, Attraction> = {
     image: PikePlaceMarket,
     categories: ["6", "11", "10"],
   },
-  44: {
+  "44": {
+    id: "44",
     cityId: 5,
     name: "Chihuly Garden and Glass",
     description:
@@ -704,7 +759,8 @@ const attractions: Record<string, Attraction> = {
     image: ChihulyGarden,
     categories: ["1", "12", "14"],
   },
-  45: {
+  "45": {
+    id: "45",
     cityId: 5,
     name: "Museum of Pop Culture (MoPOP)",
     description:
@@ -715,7 +771,8 @@ const attractions: Record<string, Attraction> = {
     image: MoPOP,
     categories: ["1", "7", "14"],
   },
-  46: {
+  "46": {
+    id: "46",
     cityId: 5,
     name: "Olympic Sculpture Park",
     description:
@@ -726,7 +783,8 @@ const attractions: Record<string, Attraction> = {
     image: OlympicSculpturePark,
     categories: ["2", "12", "10"],
   },
-  47: {
+  "47": {
+    id: "47",
     cityId: 5,
     name: "Seattle Aquarium",
     description:
@@ -737,7 +795,8 @@ const attractions: Record<string, Attraction> = {
     image: SeattleAquarium,
     categories: ["7", "10", "5"],
   },
-  48: {
+  "48": {
+    id: "48",
     cityId: 5,
     name: "Kerry Park",
     description:
@@ -749,6 +808,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["2", "10", "13"],
   },
   49: {
+    id: "49",
     cityId: 5,
     name: "Woodland Park Zoo",
     description:
@@ -760,6 +820,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["5", "7", "10"],
   },
   50: {
+    id: "50",
     cityId: 5,
     name: "Museum of Flight",
     description:
@@ -771,6 +832,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["1", "4", "10"],
   },
   51: {
+    id: "51",
     cityId: 5,
     name: "Gas Works Park",
     description:
@@ -784,6 +846,7 @@ const attractions: Record<string, Attraction> = {
 
   // Los Angeles Attractions
   52: {
+    id: "52",
     cityId: 6,
     name: "Universal Studios Hollywood",
     description:
@@ -795,6 +858,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["7", "3"],
   },
   53: {
+    id: "53",
     cityId: 6,
     name: "Hollywood Walk of Fame",
     description:
@@ -806,6 +870,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["3", "7", "10"],
   },
   54: {
+    id: "54",
     cityId: 6,
     name: "Griffith Observatory",
     description:
@@ -817,6 +882,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["1", "10", "13"],
   },
   55: {
+    id: "55",
     cityId: 6,
     name: "Santa Monica Pier",
     description:
@@ -828,6 +894,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["3", "7", "9"],
   },
   56: {
+    id: "56",
     cityId: 6,
     name: "The Getty Center",
     description:
@@ -839,6 +906,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["1", "12", "10"],
   },
   57: {
+    id: "57",
     cityId: 6,
     name: "Venice Beach Boardwalk",
     description:
@@ -850,6 +918,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["9", "7", "6"],
   },
   58: {
+    id: "58",
     cityId: 6,
     name: "The Hollywood Sign",
     description:
@@ -861,6 +930,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["3", "10", "13"],
   },
   59: {
+    id: "59",
     cityId: 6,
     name: "Los Angeles County Museum of Art (LACMA)",
     description:
@@ -872,6 +942,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["1", "12", "14"],
   },
   60: {
+    id: "60",
     cityId: 6,
     name: "The Grove",
     description:
@@ -883,6 +954,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["6", "7", "11"],
   },
   61: {
+    id: "61",
     cityId: 6,
     name: "Runyon Canyon Park",
     description:
@@ -896,6 +968,7 @@ const attractions: Record<string, Attraction> = {
 
   // Tokyo Attractions
   62: {
+    id: "62",
     cityId: 7,
     name: "Tokyo Skytree",
     description:
@@ -907,6 +980,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["3", "7", "13"],
   },
   63: {
+    id: "63",
     cityId: 7,
     name: "Meiji Shrine",
     description:
@@ -918,6 +992,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["4", "8", "10"],
   },
   64: {
+    id: "64",
     cityId: 7,
     name: "Senso-ji Temple",
     description:
@@ -929,6 +1004,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["4", "8", "14"],
   },
   65: {
+    id: "65",
     cityId: 7,
     name: "Shibuya Crossing",
     description:
@@ -941,6 +1017,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["3", "10", "7"],
   },
   66: {
+    id: "66",
     cityId: 7,
     name: "Tokyo Disneyland",
     description:
@@ -952,6 +1029,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["7", "10"],
   },
   67: {
+    id: "67",
     cityId: 7,
     name: "Shinjuku Gyoen National Garden",
     description:
@@ -963,6 +1041,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["2", "5", "10"],
   },
   68: {
+    id: "68",
     cityId: 7,
     name: "Tokyo Imperial Palace",
     description:
@@ -974,6 +1053,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["3", "4", "10"],
   },
   69: {
+    id: "69",
     cityId: 7,
     name: "Ueno Park",
     description:
@@ -985,6 +1065,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["2", "5", "10"],
   },
   70: {
+    id: "70",
     cityId: 7,
     name: "Akihabara Electric Town",
     description:
@@ -996,6 +1077,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["6", "7", "14"],
   },
   71: {
+    id: "71",
     cityId: 7,
     name: "Harajuku (Takeshita Street)",
     description:
@@ -1009,6 +1091,7 @@ const attractions: Record<string, Attraction> = {
 
   // Seoul Attractions
   72: {
+    id: "72",
     cityId: 8,
     name: "Gyeongbokgung Palace",
     description:
@@ -1020,6 +1103,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["3", "4", "12"],
   },
   73: {
+    id: "73",
     cityId: 8,
     name: "Namsan Tower (N Seoul Tower)",
     description:
@@ -1031,6 +1115,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["3", "13", "7"],
   },
   74: {
+    id: "74",
     cityId: 8,
     name: "Bukchon Hanok Village",
     description:
@@ -1042,6 +1127,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["4", "12", "14"],
   },
   75: {
+    id: "75",
     cityId: 8,
     name: "Myeongdong",
     description:
@@ -1053,6 +1139,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["6", "11", "10"],
   },
   76: {
+    id: "76",
     cityId: 8,
     name: "Lotte World",
     description:
@@ -1064,6 +1151,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["7", "6"],
   },
   77: {
+    id: "77",
     cityId: 8,
     name: "Changdeokgung Palace",
     description:
@@ -1075,6 +1163,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["3", "4", "12"],
   },
   78: {
+    id: "78",
     cityId: 8,
     name: "Dongdaemun Design Plaza (DDP)",
     description:
@@ -1086,6 +1175,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["12", "6", "7"],
   },
   79: {
+    id: "79",
     cityId: 8,
     name: "Insadong",
     description:
@@ -1097,6 +1187,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["6", "11", "14"],
   },
   80: {
+    id: "80",
     cityId: 8,
     name: "Yeouido Hangang Park",
     description:
@@ -1108,6 +1199,7 @@ const attractions: Record<string, Attraction> = {
     categories: ["2", "5", "10"],
   },
   81: {
+    id: "81",
     cityId: 8,
     name: "Starfield Library",
     description:

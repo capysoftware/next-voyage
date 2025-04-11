@@ -37,10 +37,9 @@ export default function Home() {
         </div>
       </div>
       <div className="mx-auto grid grid-cols-1 gap-14 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {Object.keys(cities).map((cityId) => {
-          const city = { ...cities[cityId], id: cityId };
-          return <CityCard key={cityId} city={city} />;
-        })}
+        {Object.keys(cities).map((cityId) => (
+          <CityCard key={cityId} city={cities[cityId]} />
+        ))}
       </div>
     </>
   );

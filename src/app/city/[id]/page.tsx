@@ -16,10 +16,7 @@ export default async function CityDetailsPage({
 
   const city = cities[id];
 
-  const cityAttractions = city.attractions.map((id) => ({
-    ...attractions[id],
-    id,
-  }));
+  const cityAttractions = city.attractions.map((id) => attractions[id]);
 
   if (!city) {
     return (

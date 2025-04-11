@@ -10,12 +10,12 @@ import { X } from "lucide-react";
 export default function CityAttractions({
   cityAttractions,
 }: {
-  cityAttractions: (Attraction & { id: string })[];
+  cityAttractions: Attraction[];
 }) {
   const [isSelecting, setIsSelecting] = useState(false);
-  const [selectedAttractions, setSelectedAttractions] = useState<
-    (Attraction & { id: string })[]
-  >([]);
+  const [selectedAttractions, setSelectedAttractions] = useState<Attraction[]>(
+    [],
+  );
 
   return (
     <>
