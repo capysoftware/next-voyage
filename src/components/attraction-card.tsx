@@ -26,7 +26,7 @@ const AttractionCard: React.FC<AttractionCardProps> = ({
   return (
     <div
       className={cn(
-        "relative mx-auto flex max-w-md flex-col border-2 border-transparent bg-white p-3 shadow-md transition duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-105 hover:cursor-pointer",
+        "relative mx-auto flex max-w-md flex-col border bg-white p-3 shadow-md transition duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-105 hover:cursor-pointer",
         { "border-blue-400": isSelected },
       )}
       onClick={() => {

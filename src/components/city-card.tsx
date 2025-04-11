@@ -12,7 +12,7 @@ interface CityCardProps {
 
 const CityCard: React.FC<CityCardProps> = ({ city }) => {
   return (
-    <div className="relative mx-auto w-full max-w-md cursor-pointer bg-white p-2 shadow-md">
+    <div className="relative mx-auto w-full max-w-md cursor-pointer border bg-white p-2 shadow-md">
       <Link href={`/city/${city.id}`}>
         <div className="relative overflow-hidden">
           <Image

@@ -55,7 +55,7 @@ import PalaceOfFineArts from "@/images/attractions/san-francisco/palace-of-fine-
 import TwinPeaks from "@/images/attractions/san-francisco/twin-peaks.jpeg";
 import Pier39 from "@/images/attractions/san-francisco/pier-39.jpg";
 import PaintedLadies from "@/images/attractions/san-francisco/painted-ladies.jpg";
-
+import VercelHeadquarters from "@/images/attractions/san-francisco/vercel-hq.jpeg";
 // Seattle attractions
 import SpaceNeedle from "@/images/attractions/seattle/space-needle.jpeg";
 import PikePlaceMarket from "@/images/attractions/seattle/pike-place-market.jpeg";
@@ -702,10 +702,21 @@ const attractions: Attraction[] = [
     image: PaintedLadies,
     categories: [3, 4, 12],
   },
-
-  // Seattle Attractions
   {
     id: 41,
+    cityId: 4,
+    name: "Vercel Headquarters",
+    description:
+      "Vercel specializes in cloud platform services that enhance the web development and deployment process.",
+    address: "650 California St, SF, CA 94108",
+    googleMapUrl: "https://maps.app.goo.gl/jP9Mu2Xo5QrWRfff9",
+    rating: 4.4,
+    image: VercelHeadquarters,
+    categories: [1, 12, 14],
+  },
+  // Seattle Attractions
+  {
+    id: 42,
     cityId: 5,
     name: "Space Needle",
     description:
@@ -717,7 +728,7 @@ const attractions: Attraction[] = [
     categories: [3, 7, 13],
   },
   {
-    id: 42,
+    id: 43,
     cityId: 5,
     name: "Pike Place Market",
     description:
@@ -729,7 +740,7 @@ const attractions: Attraction[] = [
     categories: [6, 11, 10],
   },
   {
-    id: 43,
+    id: 44,
     cityId: 5,
     name: "Chihuly Garden and Glass",
     description:
@@ -741,7 +752,7 @@ const attractions: Attraction[] = [
     categories: [1, 12, 14],
   },
   {
-    id: 44,
+    id: 45,
     cityId: 5,
     name: "Museum of Pop Culture (MoPOP)",
     description:
@@ -753,7 +764,7 @@ const attractions: Attraction[] = [
     categories: [1, 7, 14],
   },
   {
-    id: 45,
+    id: 46,
     cityId: 5,
     name: "Olympic Sculpture Park",
     description:
@@ -765,7 +776,7 @@ const attractions: Attraction[] = [
     categories: [2, 12, 10],
   },
   {
-    id: 46,
+    id: 47,
     cityId: 5,
     name: "Seattle Aquarium",
     description:
@@ -777,7 +788,7 @@ const attractions: Attraction[] = [
     categories: [7, 10, 5],
   },
   {
-    id: 47,
+    id: 48,
     cityId: 5,
     name: "Kerry Park",
     description:
@@ -789,7 +800,7 @@ const attractions: Attraction[] = [
     categories: [2, 10, 13],
   },
   {
-    id: 48,
+    id: 49,
     cityId: 5,
     name: "Woodland Park Zoo",
     description:
@@ -801,7 +812,7 @@ const attractions: Attraction[] = [
     categories: [5, 7, 10],
   },
   {
-    id: 49,
+    id: 50,
     cityId: 5,
     name: "Museum of Flight",
     description:
@@ -813,7 +824,7 @@ const attractions: Attraction[] = [
     categories: [1, 4, 10],
   },
   {
-    id: 50,
+    id: 51,
     cityId: 5,
     name: "Gas Works Park",
     description:
@@ -827,7 +838,7 @@ const attractions: Attraction[] = [
 
   // Los Angeles Attractions
   {
-    id: 51,
+    id: 52,
     cityId: 6,
     name: "Universal Studios Hollywood",
     description:
@@ -839,7 +850,7 @@ const attractions: Attraction[] = [
     categories: [7, 3],
   },
   {
-    id: 52,
+    id: 53,
     cityId: 6,
     name: "Hollywood Walk of Fame",
     description:
@@ -851,7 +862,7 @@ const attractions: Attraction[] = [
     categories: [3, 7, 10],
   },
   {
-    id: 53,
+    id: 54,
     cityId: 6,
     name: "Griffith Observatory",
     description:
@@ -863,7 +874,7 @@ const attractions: Attraction[] = [
     categories: [1, 10, 13],
   },
   {
-    id: 54,
+    id: 55,
     cityId: 6,
     name: "Santa Monica Pier",
     description:
@@ -875,7 +886,7 @@ const attractions: Attraction[] = [
     categories: [3, 7, 9],
   },
   {
-    id: 55,
+    id: 56,
     cityId: 6,
     name: "The Getty Center",
     description:
@@ -887,7 +898,7 @@ const attractions: Attraction[] = [
     categories: [1, 12, 10],
   },
   {
-    id: 56,
+    id: 57,
     cityId: 6,
     name: "Venice Beach Boardwalk",
     description:
@@ -899,7 +910,7 @@ const attractions: Attraction[] = [
     categories: [9, 7, 6],
   },
   {
-    id: 57,
+    id: 58,
     cityId: 6,
     name: "The Hollywood Sign",
     description:
@@ -911,7 +922,7 @@ const attractions: Attraction[] = [
     categories: [3, 10, 13],
   },
   {
-    id: 58,
+    id: 59,
     cityId: 6,
     name: "Los Angeles County Museum of Art (LACMA)",
     description:
@@ -923,7 +934,7 @@ const attractions: Attraction[] = [
     categories: [1, 12, 14],
   },
   {
-    id: 59,
+    id: 60,
     cityId: 6,
     name: "The Grove",
     description:
@@ -935,7 +946,7 @@ const attractions: Attraction[] = [
     categories: [6, 7, 11],
   },
   {
-    id: 60,
+    id: 61,
     cityId: 6,
     name: "Runyon Canyon Park",
     description:
@@ -949,7 +960,7 @@ const attractions: Attraction[] = [
 
   // Tokyo Attractions
   {
-    id: 61,
+    id: 62,
     cityId: 7,
     name: "Tokyo Skytree",
     description:
@@ -961,7 +972,7 @@ const attractions: Attraction[] = [
     categories: [3, 7, 13],
   },
   {
-    id: 62,
+    id: 63,
     cityId: 7,
     name: "Meiji Shrine",
     description:
@@ -973,7 +984,7 @@ const attractions: Attraction[] = [
     categories: [4, 8, 10],
   },
   {
-    id: 63,
+    id: 64,
     cityId: 7,
     name: "Senso-ji Temple",
     description:
@@ -985,7 +996,7 @@ const attractions: Attraction[] = [
     categories: [4, 8, 14],
   },
   {
-    id: 64,
+    id: 65,
     cityId: 7,
     name: "Shibuya Crossing",
     description:
@@ -998,7 +1009,7 @@ const attractions: Attraction[] = [
     categories: [3, 10, 7],
   },
   {
-    id: 65,
+    id: 66,
     cityId: 7,
     name: "Tokyo Disneyland",
     description:
@@ -1010,7 +1021,7 @@ const attractions: Attraction[] = [
     categories: [7, 10],
   },
   {
-    id: 66,
+    id: 67,
     cityId: 7,
     name: "Shinjuku Gyoen National Garden",
     description:
@@ -1022,7 +1033,7 @@ const attractions: Attraction[] = [
     categories: [2, 5, 10],
   },
   {
-    id: 67,
+    id: 68,
     cityId: 7,
     name: "Tokyo Imperial Palace",
     description:
@@ -1034,7 +1045,7 @@ const attractions: Attraction[] = [
     categories: [3, 4, 10],
   },
   {
-    id: 68,
+    id: 69,
     cityId: 7,
     name: "Ueno Park",
     description:
@@ -1046,7 +1057,7 @@ const attractions: Attraction[] = [
     categories: [2, 5, 10],
   },
   {
-    id: 69,
+    id: 70,
     cityId: 7,
     name: "Akihabara Electric Town",
     description:
@@ -1058,7 +1069,7 @@ const attractions: Attraction[] = [
     categories: [6, 7, 14],
   },
   {
-    id: 70,
+    id: 71,
     cityId: 7,
     name: "Harajuku (Takeshita Street)",
     description:
@@ -1072,7 +1083,7 @@ const attractions: Attraction[] = [
 
   // Seoul Attractions
   {
-    id: 71,
+    id: 72,
     cityId: 8,
     name: "Gyeongbokgung Palace",
     description:
@@ -1084,7 +1095,7 @@ const attractions: Attraction[] = [
     categories: [3, 4, 12],
   },
   {
-    id: 72,
+    id: 73,
     cityId: 8,
     name: "Namsan Tower (N Seoul Tower)",
     description:
@@ -1096,7 +1107,7 @@ const attractions: Attraction[] = [
     categories: [3, 13, 7],
   },
   {
-    id: 73,
+    id: 74,
     cityId: 8,
     name: "Bukchon Hanok Village",
     description:
@@ -1108,7 +1119,7 @@ const attractions: Attraction[] = [
     categories: [4, 12, 14],
   },
   {
-    id: 74,
+    id: 75,
     cityId: 8,
     name: "Myeongdong",
     description:
@@ -1120,7 +1131,7 @@ const attractions: Attraction[] = [
     categories: [6, 11, 10],
   },
   {
-    id: 75,
+    id: 76,
     cityId: 8,
     name: "Lotte World",
     description:
@@ -1132,7 +1143,7 @@ const attractions: Attraction[] = [
     categories: [7, 6],
   },
   {
-    id: 76,
+    id: 77,
     cityId: 8,
     name: "Changdeokgung Palace",
     description:
@@ -1144,7 +1155,7 @@ const attractions: Attraction[] = [
     categories: [3, 4, 12],
   },
   {
-    id: 77,
+    id: 78,
     cityId: 8,
     name: "Dongdaemun Design Plaza (DDP)",
     description:
@@ -1156,7 +1167,7 @@ const attractions: Attraction[] = [
     categories: [12, 6, 7],
   },
   {
-    id: 78,
+    id: 79,
     cityId: 8,
     name: "Insadong",
     description:
@@ -1168,7 +1179,7 @@ const attractions: Attraction[] = [
     categories: [6, 11, 14],
   },
   {
-    id: 79,
+    id: 80,
     cityId: 8,
     name: "Yeouido Hangang Park",
     description:
@@ -1180,7 +1191,7 @@ const attractions: Attraction[] = [
     categories: [2, 5, 10],
   },
   {
-    id: 80,
+    id: 81,
     cityId: 8,
     name: "Starfield Library",
     description:

@@ -41,7 +41,7 @@ export default async function CityDetailsPage({
         Back to all cities
       </Link>
 
-      <div className="relative mx-auto mb-12 max-w-4xl bg-white p-8 shadow-sm">
+      <div className="bubble-pattern relative mx-auto mb-12 max-w-4xl bg-white p-8 shadow-sm">
         <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
         <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
         <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
@@ -49,7 +49,7 @@ export default async function CityDetailsPage({
 
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="relative md:w-1/2">
-            <div className="transform bg-white p-3 shadow-md transition-transform duration-200 hover:-rotate-1">
+            <div className="transform border bg-white p-3 shadow-md transition-transform duration-200 hover:-rotate-1">
               <Image
                 src={city.image}
                 alt={city.name}
@@ -75,7 +75,7 @@ export default async function CityDetailsPage({
               <span className="font-handwritten pt-1">{city.country}</span>
             </div>
 
-            <div className="border-l-4 border-amber-200 bg-yellow-50 p-4 shadow-sm">
+            <div className="isolate border-l-4 border-amber-200 bg-yellow-50 p-4 shadow-sm">
               <p className="font-handwritten text-scrapbook-text leading-relaxed">
                 {city.description}
               </p>
