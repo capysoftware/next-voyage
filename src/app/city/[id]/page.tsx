@@ -1,6 +1,6 @@
 import { Tape } from "@/components/tape";
 import { attractions, cities } from "@/data";
-import { ArrowLeft, MapPin } from "lucide-react";
+import { ArrowLeft, MapPin, Heart } from "lucide-react";
 import Link from "next/link";
 import CityAttractions from "./components/city-attractions";
 import Image from "next/image";
@@ -48,14 +48,19 @@ export default async function CityDetailsPage({
         <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
 
         <div className="flex flex-col gap-6 md:flex-row">
-          <div className="md:w-1/2">
-            <Image
-              src={city.image}
-              alt={city.name}
-              placeholder="blur"
-              className="h-64 w-full rounded-md object-cover shadow-md"
-              loading="lazy"
-            />
+          <div className="relative md:w-1/2">
+            <div className="transform bg-white p-3 shadow-md transition-transform duration-200 hover:-rotate-1">
+              <Image
+                src={city.image}
+                alt={city.name}
+                placeholder="blur"
+                className="h-64 w-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute right-2 bottom-4 -rotate-6">
+                <Heart className="size-8 fill-red-400 text-red-500 drop-shadow-sm" />
+              </div>
+            </div>
           </div>
 
           <div className="md:w-1/2">
@@ -70,9 +75,11 @@ export default async function CityDetailsPage({
               <span className="font-handwritten pt-1">{city.country}</span>
             </div>
 
-            <p className="font-handwritten text-scrapbook-text">
-              {city.description}
-            </p>
+            <div className="border-l-4 border-amber-200 bg-yellow-50 p-4 shadow-sm">
+              <p className="font-handwritten text-scrapbook-text leading-relaxed">
+                {city.description}
+              </p>
+            </div>
           </div>
         </div>
       </div>
