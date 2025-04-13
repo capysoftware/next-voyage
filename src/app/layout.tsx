@@ -39,7 +39,7 @@ export default function RootLayout({
           <div className="absolute inset-0 bg-[radial-gradient(#e7a221_1px,transparent_1px)] [background-size:20px_20px]"></div>
         </div>
         <Header />
-        <main className="container mx-auto p-8 pb-20">{children}</main>
+        <main className="mx-auto max-w-7xl p-8 pb-20">{children}</main>
       </body>
     </html>
   );

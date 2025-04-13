@@ -44,41 +44,43 @@ const AttractionCard: React.FC<AttractionCardProps> = ({
         }
       }}
     >
-      <div className="relative">
-        <Image
-          src={attraction.image}
-          alt={attraction.name}
-          placeholder="blur"
-          className="mb-3 h-80 w-full object-cover"
-          loading="lazy"
-        />
-      </div>
-      <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
-      <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
-      <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
-      <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
-      <div className="grid flex-1 p-2">
-        <h3 className="font-handwritten text-lg font-bold">
-          {attraction.name}
-        </h3>
-
-        <div className="mb-3 flex flex-wrap gap-2">
-          {attractionCategories.map((category) => (
-            <Badge
-              key={category.id}
-              className="text-foreground"
-              style={{
-                backgroundColor: category.color,
-              }}
-            >
-              {category.name}
-            </Badge>
-          ))}
+      <div className="flex flex-col gap-2">
+        <div className="relative">
+          <Image
+            src={attraction.image}
+            alt={attraction.name}
+            placeholder="blur"
+            className="h-80 w-full object-cover"
+            loading="lazy"
+          />
         </div>
+        <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
+        <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
+        <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
+        <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
+        <div className="grid flex-1 p-2">
+          <h3 className="font-handwritten text-lg font-bold">
+            {attraction.name}
+          </h3>
 
-        <p className="font-handwritten line-clamp-3 text-sm">
-          {attraction.description}
-        </p>
+          <div className="mb-3 flex flex-wrap gap-2">
+            {attractionCategories.map((category) => (
+              <Badge
+                key={category.id}
+                className="text-foreground"
+                style={{
+                  backgroundColor: category.color,
+                }}
+              >
+                {category.name}
+              </Badge>
+            ))}
+          </div>
+
+          <p className="font-handwritten line-clamp-3 text-sm">
+            {attraction.description}
+          </p>
+        </div>
       </div>
     </div>
   );
