@@ -148,7 +148,19 @@ const cities: Record<string, City> = {
     description:
       "San Francisco, a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay, is known for its iconic Golden Gate Bridge, cable cars, and colorful Victorian houses.",
     image: SanFrancisco,
-    attractions: ["31", "32", "33", "34", "35", "36", "37", "38", "39", "40"],
+    attractions: [
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+    ],
   },
   "5": {
     id: "5",
@@ -157,7 +169,7 @@ const cities: Record<string, City> = {
     description:
       "Seattle, a city on Puget Sound in the Pacific Northwest, is surrounded by water, mountains and evergreen forests, and home to thousands of acres of parkland.",
     image: Seattle,
-    attractions: ["41", "42", "43", "44", "45", "46", "47", "48", "49", "50"],
+    attractions: ["42", "43", "44", "45", "46", "47", "48", "49", "50", "51"],
   },
   "6": {
     id: "6",
@@ -166,7 +178,7 @@ const cities: Record<string, City> = {
     description:
       "Los Angeles is a sprawling Southern California city and the center of the nation's film and television industry, with studios such as Paramount Pictures, Universal and Warner Brothers.",
     image: LosAngeles,
-    attractions: ["51", "52", "53", "54", "55", "56", "57", "58", "59", "60"],
+    attractions: ["52", "53", "54", "55", "56", "57", "58", "59", "60", "61"],
   },
   "7": {
     id: "7",
@@ -175,7 +187,7 @@ const cities: Record<string, City> = {
     description:
       "Tokyo, Japan's busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples.",
     image: Tokyo,
-    attractions: ["61", "62", "63", "64", "65", "66", "67", "68", "69", "70"],
+    attractions: ["62", "63", "64", "65", "66", "67", "68", "69", "70", "71"],
   },
   "8": {
     id: "8",
@@ -184,7 +196,7 @@ const cities: Record<string, City> = {
     description:
       "Seoul, the capital of South Korea, is a huge metropolis where modern skyscrapers, high-tech subways and pop culture meet Buddhist temples, palaces and street markets.",
     image: Seoul,
-    attractions: ["71", "72", "73", "74", "75", "76", "77", "78", "79", "80"],
+    attractions: ["72", "73", "74", "75", "76", "77", "78", "79", "80"],
   },
 };
 
