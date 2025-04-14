@@ -35,7 +35,7 @@ const itinerary: Schedule[] = [
 
 export default function Page() {
   return (
-    <div>
+    <div className="grid gap-4">
       {itinerary.map((schedule) => (
         <DaySchedule key={schedule.day} schedule={schedule} />
       ))}

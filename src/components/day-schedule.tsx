@@ -20,7 +20,7 @@ interface DayScheduleProps {
 
 export default function DaySchedule({ schedule }: DayScheduleProps) {
   return (
-    <div className="bubble-pattern relative mb-8 inline-block bg-white p-4 px-8 pt-8 shadow-md">
+    <div className="bubble-pattern relative mb-8 inline-block bg-white p-8 pt-8 shadow-md">
       <h2 className="font-handwritten relative mb-4 text-4xl font-bold">
         Day {schedule.day}
       </h2>
@@ -28,29 +28,29 @@ export default function DaySchedule({ schedule }: DayScheduleProps) {
       <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
       <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
       <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
-      <div className="grid gap-2">
+      <div className="grid gap-6">
         {schedule.attractions
           .map((a) => ({
             ...schedule.attractions,
             ...attractions[a.id],
           }))
           .map((attraction) => (
-            <div key={attraction.id} className="">
+            <div key={attraction.id} className="flex flex-col gap-2">
               <div className="flex items-center gap-2">
                 <Clock className="size-4" />
                 <span className="font-handwritten pt-1">9:00 am - 5:00pm</span>
               </div>
-              <div className="relative mx-auto flex flex-col gap-2 bg-white p-3 shadow-md md:flex-row">
+              <div className="relative grid gap-4 md:grid-cols-3">
                 <div className="relative flex">
                   <Image
                     src={attraction.image}
                     alt={attraction.name}
                     placeholder="blur"
-                    className="h-80 w-full object-cover md:h-64"
+                    className="h-80 w-full object-cover md:h-60"
                     loading="lazy"
                   />
                 </div>
-                <div className="flex flex-1 flex-col gap-4 p-2">
+                <div className="col-span-1 flex flex-1 flex-col gap-4 md:col-span-2">
                   <h3 className="font-handwritten text-lg font-bold">
                     {attraction.name}
                   </h3>
