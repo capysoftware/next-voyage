@@ -1,8 +1,7 @@
-import { attractions, categories } from "@/data";
+import { attractions } from "@/data";
 import { Clock, MapPin, ExternalLink } from "lucide-react";
 import { Tape } from "./tape";
 import { Button } from "./ui/button";
-import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 
 export interface Schedule {
@@ -40,13 +39,13 @@ export default function DaySchedule({ schedule }: DayScheduleProps) {
           .map((attraction) => (
             <div
               key={attraction.id}
-              className="relative mx-auto mb-6 ml-16 max-w-4xl bg-white p-8 shadow-sm"
+              className="relative mx-auto mb-6 ml-16 max-w-2xl bg-white p-8 shadow-sm"
             >
               <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
               <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
               <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
               <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
-              <div className="grid grid-cols-3">
+              <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-2 flex flex-1 flex-col gap-4 p-2">
                   <div className="flex items-center gap-2">
                     <Clock className="size-4" />
@@ -57,24 +56,6 @@ export default function DaySchedule({ schedule }: DayScheduleProps) {
                   <h3 className="font-handwritten text-lg font-bold">
                     {attraction.name}
                   </h3>
-
-                  <div className="flex flex-wrap items-center gap-2">
-                    {attraction.categories.map((id) => (
-                      <Badge
-                        key={categories[id].id}
-                        className="text-foreground"
-                        style={{
-                          backgroundColor: categories[id].color,
-                        }}
-                      >
-                        {categories[id].name}
-                      </Badge>
-                    ))}
-                  </div>
-
-                  <p className="font-handwritten line-clamp-3 text-sm">
-                    {attraction.description}
-                  </p>
                   <div className="font-handwritten mb-2 flex items-start gap-1 text-xs text-gray-600">
                     <div className="flex h-[1lh] items-center">
                       <MapPin className="size-3" />
@@ -84,7 +65,7 @@ export default function DaySchedule({ schedule }: DayScheduleProps) {
                   <Button
                     size="lg"
                     asChild
-                    className="text-md mt-auto flex items-center"
+                    className="text-md mt-auto flex w-fit items-center"
                   >
                     <a
                       href={attraction.googleMapUrl}
