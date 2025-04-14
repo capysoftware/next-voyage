@@ -20,55 +20,56 @@ interface DayScheduleProps {
 
 export default function DaySchedule({ schedule }: DayScheduleProps) {
   return (
-    <div className="bubble-pattern relative mb-8 inline-block bg-white p-8 pt-8 shadow-md">
-      <h2 className="font-handwritten relative mb-4 text-4xl font-bold">
-        Day {schedule.day}
-      </h2>
-      <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
-      <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
-      <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
-      <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
-      <div className="grid gap-6">
+    <div className="mb-10">
+      <div className="relative mb-4 flex items-center">
+        <div className="z-10 flex h-8 w-8 items-center justify-center rounded-full bg-red-300">
+          <div className="h-2 w-2 rounded-full bg-red-600" />
+        </div>
+        <div className="ml-4">
+          <span className="font-handwritten">Day {schedule.day}</span>
+        </div>
+      </div>
+      <div className="flex flex-col gap-4">
         {schedule.attractions
-          .map((a) => ({
-            ...schedule.attractions,
-            ...attractions[a.id],
-          }))
+          .map((a) => {
+            return {
+              ...a,
+              ...attractions[a.id],
+            };
+          })
           .map((attraction) => (
-            <div key={attraction.id} className="flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <Clock className="size-4" />
-                <span className="font-handwritten pt-1">9:00 am - 5:00pm</span>
-              </div>
-              <div className="relative grid gap-4 md:grid-cols-3">
-                <div className="relative flex">
-                  <Image
-                    src={attraction.image}
-                    alt={attraction.name}
-                    placeholder="blur"
-                    className="h-80 w-full object-cover md:h-60"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="col-span-1 flex flex-1 flex-col gap-4 md:col-span-2">
+            <div
+              key={attraction.id}
+              className="relative mx-auto mb-6 ml-16 max-w-4xl bg-white p-8 shadow-sm"
+            >
+              <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
+              <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
+              <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
+              <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
+              <div className="grid grid-cols-3">
+                <div className="col-span-2 flex flex-1 flex-col gap-4 p-2">
+                  <div className="flex items-center gap-2">
+                    <Clock className="size-4" />
+                    <span className="font-handwritten pt-1">
+                      {attraction.startTime} - {attraction.endTime}
+                    </span>
+                  </div>
                   <h3 className="font-handwritten text-lg font-bold">
                     {attraction.name}
                   </h3>
 
                   <div className="flex flex-wrap items-center gap-2">
-                    {attraction.categories
-                      .map((cId) => categories[cId])
-                      .map((category) => (
-                        <Badge
-                          key={category.id}
-                          className="text-foreground"
-                          style={{
-                            backgroundColor: category.color,
-                          }}
-                        >
-                          {category.name}
-                        </Badge>
-                      ))}
+                    {attraction.categories.map((id) => (
+                      <Badge
+                        key={categories[id].id}
+                        className="text-foreground"
+                        style={{
+                          backgroundColor: categories[id].color,
+                        }}
+                      >
+                        {categories[id].name}
+                      </Badge>
+                    ))}
                   </div>
 
                   <p className="font-handwritten line-clamp-3 text-sm">
@@ -95,6 +96,15 @@ export default function DaySchedule({ schedule }: DayScheduleProps) {
                       <ExternalLink />
                     </a>
                   </Button>
+                </div>
+                <div className="relative">
+                  <Image
+                    src={attraction.image}
+                    alt={attraction.name}
+                    placeholder="blur"
+                    className="h-46 w-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>

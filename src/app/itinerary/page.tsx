@@ -35,7 +35,10 @@ const itinerary: Schedule[] = [
 
 export default function Page() {
   return (
-    <div className="grid gap-4">
+    <div className="relative">
+      {/* Timeline line */}
+      <div className="absolute top-6 bottom-0 left-4 border-l-2 border-dashed border-zinc-700" />
+
       {itinerary.map((schedule) => (
         <DaySchedule key={schedule.day} schedule={schedule} />
       ))}
