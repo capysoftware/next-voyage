@@ -1,5 +1,4 @@
 import DaySchedule, { type Schedule } from "@/components/day-schedule";
-import { getItinerary } from "./actions";
 
 const itinerary: Schedule[] = [
   {
@@ -35,17 +34,6 @@ const itinerary: Schedule[] = [
 ];
 
 export default async function Page() {
-  const { itineraryData } = await getItinerary(`
-    Generate an itinerary for Vancouver that includes visits to the following attractions:
-    - Stanley Park (ID: 1)
-    - Capilano Suspension Bridge (ID: 2)
-    - Vancouver Aquarium (ID: 4)
-    - Granville Island (ID: 3)
-
-    Determine how many days would be appropriate to visit all these attractions without rushing. Schedule the attractions across the days with suitable start and end times for each visit. Consider travel time between attractions and provide a balanced schedule. Make sure to include the correct ID number for each attraction as specified above.
-  `);
-  console.dir(itineraryData, { depth: null });
-
   return (
     <div className="relative">
       {/* Timeline line */}
