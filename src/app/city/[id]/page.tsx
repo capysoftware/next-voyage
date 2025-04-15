@@ -88,7 +88,7 @@ export default async function CityDetailsPage({
         Top Attractions in {city.name}
       </h2>
 
-      <CityAttractions cityAttractions={cityAttractions} />
+      <CityAttractions cityName={city.name} cityAttractions={cityAttractions} />
     </>
   );
 }

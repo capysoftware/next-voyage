@@ -9,8 +9,10 @@ import { X } from "lucide-react";
 import { generateItinerary } from "@/app/itinerary/actions";
 
 export default function CityAttractions({
+  cityName,
   cityAttractions,
 }: {
+  cityName: string;
   cityAttractions: Attraction[];
 }) {
   const [isSelecting, setIsSelecting] = useState(false);
@@ -55,12 +57,11 @@ export default function CityAttractions({
                   onClick={async () => {
                     setItinerary(
                       await generateItinerary(
-                        `Generate an itinerary for Vancouver that includes visits to the following attractions:
-                      - Stanley Park (ID: 1)
-                      - Capilano Suspension Bridge (ID: 2)
-                      - Vancouver Aquarium (ID: 4)
-                      - Granville Island (ID: 3)
-                    
+                        `Generate an itinerary for ${cityName} that includes visits to the following attractions:
+                      ${selectedAttractions
+                        .map((a) => `- ${a.name} (ID: ${a.id})`)
+                        .join("\n")}
+              
                       Determine how many days would be appropriate to visit all these attractions without rushing. Schedule the attractions across the days with suitable start and end times for each visit. Consider travel time between attractions and provide a balanced schedule. Make sure to include the correct ID number for each attraction as specified above.
                     `,
                       ),
