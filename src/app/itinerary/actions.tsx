@@ -33,12 +33,12 @@ export async function generateItinerary(userPrompt?: string) {
     model: openai("gpt-3.5-turbo"),
     prompt:
       userPrompt ||
-      "Generate an itinerary for Vancouver that includes visits to the following attractions: Stanley Park (ID: 1), Capilano Suspension Bridge (ID: 2), Vancouver Aquarium (ID: 4), and Granville Island (ID: 3). Determine how many days would be appropriate to visit all these attractions without rushing.",
+      "Generate an itinerary for Vancouver that includes visits to the following attractions: Stanley Park (ID: 1), Capilano Suspension Bridge (ID: 2), Vancouver Aquarium (ID: 4), and Granville Island (ID: 3). Determine how many days would be appropriate to visit all these attractions without rushing. Make sure all start and end times are formatted as '9:00 AM' (with AM/PM indicator).",
     text: ({ content }) => <div className="rounded border p-4">{content}</div>,
     tools: {
       createItinerary: {
         description:
-          "Create a multi-day itinerary with attractions, start times, and end times",
+          'Create a multi-day itinerary with attractions, start times, and end times. Times should be in format "9:00 AM".',
         parameters: z.object({
           itinerary: z.array(
             z.object({
@@ -46,8 +46,16 @@ export async function generateItinerary(userPrompt?: string) {
               attractions: z.array(
                 z.object({
                   id: z.string(),
-                  startTime: z.string(),
-                  endTime: z.string(),
+                  startTime: z
+                    .string()
+                    .describe(
+                      'Start time in format "9:00 AM" with AM/PM indicator',
+                    ),
+                  endTime: z
+                    .string()
+                    .describe(
+                      'End time in format "9:00 AM" with AM/PM indicator',
+                    ),
                 }),
               ),
             }),
