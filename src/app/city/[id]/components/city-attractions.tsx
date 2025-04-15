@@ -6,8 +6,7 @@ import AttractionCard from "@/components/attraction-card";
 import { Button } from "@/components/ui/button";
 import type { Attraction } from "@/data";
 import { X } from "lucide-react";
-import { getItinerary } from "@/app/itinerary/actions";
-import DaySchedule, { Schedule } from "@/components/day-schedule";
+import { generateItinerary } from "@/app/itinerary/actions";
 
 export default function CityAttractions({
   cityAttractions,
@@ -18,7 +17,7 @@ export default function CityAttractions({
   const [selectedAttractions, setSelectedAttractions] = useState<Attraction[]>(
     [],
   );
-  const [itinerary, setItinerary] = useState<Schedule[]>([]);
+  const [itinerary, setItinerary] = useState<React.ReactNode>();
 
   return (
     <>
@@ -33,14 +32,7 @@ export default function CityAttractions({
           />
         ))}
       </div>
-      <div className="relative mt-20">
-        {/* Timeline line */}
-        <div className="absolute top-6 bottom-0 left-4 border-l-2 border-dashed border-zinc-700" />
-
-        {itinerary.map((schedule) => (
-          <DaySchedule key={schedule.day} schedule={schedule} />
-        ))}
-      </div>
+      <div className="mt-20">{itinerary}</div>
       <div className="flex justify-center">
         <div className="fixed bottom-5 flex items-center gap-2">
           {isSelecting ? (
@@ -58,19 +50,21 @@ export default function CityAttractions({
               <div className="relative">
                 <Button
                   size="lg"
+                  className="hover:cursor-pointer"
                   disabled={!selectedAttractions.length}
                   onClick={async () => {
-                    const { itineraryData } = await getItinerary(`
-                    Generate an itinerary for Vancouver that includes visits to the following attractions:
-                    - Stanley Park (ID: 1)
-                    - Capilano Suspension Bridge (ID: 2)
-                    - Vancouver Aquarium (ID: 4)
-                    - Granville Island (ID: 3)
-                
-                    Determine how many days would be appropriate to visit all these attractions without rushing. Schedule the attractions across the days with suitable start and end times for each visit. Consider travel time between attractions and provide a balanced schedule. Make sure to include the correct ID number for each attraction as specified above.
-                  `);
-                    console.dir(itineraryData, { depth: null });
-                    setItinerary(itineraryData.itinerary);
+                    setItinerary(
+                      await generateItinerary(
+                        `Generate an itinerary for Vancouver that includes visits to the following attractions:
+                      - Stanley Park (ID: 1)
+                      - Capilano Suspension Bridge (ID: 2)
+                      - Vancouver Aquarium (ID: 4)
+                      - Granville Island (ID: 3)
+                    
+                      Determine how many days would be appropriate to visit all these attractions without rushing. Schedule the attractions across the days with suitable start and end times for each visit. Consider travel time between attractions and provide a balanced schedule. Make sure to include the correct ID number for each attraction as specified above.
+                    `,
+                      ),
+                    );
                     setSelectedAttractions([]);
                     setIsSelecting(false);
                   }}
@@ -83,7 +77,11 @@ export default function CityAttractions({
               </div>
             </>
           ) : (
-            <Button size="lg" onClick={() => setIsSelecting(true)}>
+            <Button
+              size="lg"
+              className="hover:cursor-pointer"
+              onClick={() => setIsSelecting(true)}
+            >
               Create Itinerary
             </Button>
           )}
