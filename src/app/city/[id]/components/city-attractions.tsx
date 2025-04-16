@@ -93,7 +93,7 @@ export default function CityAttractions({
                   </span>
                 </div>
                 <Button
-                  className="rounded-full duration-300 hover:rotate-90 hover:bg-red-500"
+                  className="rounded-full hover:rotate-90 hover:cursor-pointer hover:bg-red-500"
                   size="icon"
                   onClick={() => {
                     setSelectedAttractions([]);
