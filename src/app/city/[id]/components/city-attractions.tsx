@@ -78,7 +78,7 @@ export default function CityAttractions({
       )}
 
       {/* Dynamic Island Component */}
-      {itinerary ? (
+      {!itinerary ? (
         <LiveIsland
           ref={islandRef}
           className="font-handwritten flex items-center justify-center"
