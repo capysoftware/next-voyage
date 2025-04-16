@@ -78,7 +78,7 @@ export const days = pgTable("days", {
 
 export const attractions = pgTable("attractions", {
   id: serial("id").primaryKey(),
-  dayId: text("day_id")
+  dayId: integer("day_id")
     .notNull()
     .references(() => days.id),
   attractionId: text("attraction_id").notNull(),
