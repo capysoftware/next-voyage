@@ -11,6 +11,7 @@ import { DayScheduleSkeleton } from "@/components/day-schedule-skeleton";
 import { Skeleton } from "@/components/ui/skeleton";
 
 async function getItinerary(id: string, userId: string) {
+  "use cache";
   const data = await db.query.itineraries.findFirst({
     with: {
       days: {

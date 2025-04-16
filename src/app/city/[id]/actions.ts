@@ -11,6 +11,7 @@ import { db } from "@/db";
 import { attractions, days, itineraries } from "@/db/schema";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
+import { revalidatePath } from "next/cache";
 
 // Function to generate itinerary using streamUI
 export async function generateItinerary(userPrompt: string) {
@@ -90,6 +91,8 @@ export async function createItinerary({
   if (attractionsToInsert.length > 0) {
     await db.insert(attractions).values(attractionsToInsert);
   }
+
+  revalidatePath("/itineraries");
 
   return { success: true, itineraryId: itinerary.id };
 }

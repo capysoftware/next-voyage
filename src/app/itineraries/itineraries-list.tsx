@@ -9,6 +9,7 @@ import { headers } from "next/headers";
 import Link from "next/link";
 
 async function getItineraries() {
+  "use cache";
   const data = await db.query.itineraries.findMany();
   return data.map((itinerary) => ({
     ...itinerary,
