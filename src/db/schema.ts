@@ -5,7 +5,9 @@ import {
   boolean,
   serial,
   integer,
+  uuid,
 } from "drizzle-orm/pg-core";
+import { relations } from "drizzle-orm/relations";
 
 export const user = pgTable("user", {
   id: text("id").primaryKey(),
@@ -57,40 +59,46 @@ export const verification = pgTable("verification", {
   updatedAt: timestamp("updated_at"),
 });
 
-export const cities = pgTable("cities", {
-  id: serial("id").primaryKey(),
+export const itineraries = pgTable("itineraries", {
+  id: uuid("id").primaryKey().defaultRandom(),
   name: text("name").notNull(),
-  country: text("country"),
-  description: text("description"),
-  image: text("image"),
+  userId: text("user_id")
+    .notNull()
+    .references(() => user.id, { onDelete: "cascade" }),
+  cityId: text("city_id").notNull(),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
+export const days = pgTable("days", {
+  id: serial("id").primaryKey(),
+  itineraryId: text("itinerary_id").notNull(),
+  value: integer("value").notNull(),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
 export const attractions = pgTable("attractions", {
   id: serial("id").primaryKey(),
-  cityId: integer("city_id")
+  dayId: integer("day_id")
     .notNull()
-    .references(() => cities.id, { onDelete: "cascade" }),
-  name: text("name").notNull(),
-  description: text("description"),
-  address: text("address"),
-  googleMapUrl: text("google_map_url"),
-  rating: integer("rating"),
-  image: text("image"),
+    .references(() => days.id),
+  attractionId: text("attraction_id").notNull(),
+  startTime: text("start_time").notNull(),
+  endTime: text("end_time").notNull(),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
-export const categories = pgTable("categories", {
-  id: serial("id").primaryKey(),
-  name: text("name").notNull(),
-  color: text("color").notNull(),
-});
+export const itinerariesRelations = relations(itineraries, ({ many, one }) => ({
+  days: many(days),
+  user: one(user, {
+    fields: [itineraries.userId],
+    references: [user.id],
+  }),
+}));
 
-export const attractionCategories = pgTable("attraction_categories", {
-  id: serial("id").primaryKey(),
-  attractionId: integer("attraction_id")
-    .notNull()
-    .references(() => attractions.id, { onDelete: "cascade" }),
+export const daysRelations = relations(days, ({ many }) => ({
+  attractions: many(attractions),
+}));
 
-  categoryId: integer("category_id")
-    .notNull()
-    .references(() => categories.id, { onDelete: "cascade" }),
-});
+export const attractionsRelations = relations(attractions, ({ one }) => ({
+  day: one(days, { fields: [attractions.dayId], references: [days.id] }),
+}));

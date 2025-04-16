@@ -2,7 +2,7 @@ import { Loader2 } from "lucide-react";
 import { Tape } from "@/components/tape";
 import { Skeleton } from "@/components/ui/skeleton";
 
-export function ItinerarySkeleton() {
+export function DayScheduleSkeleton() {
   return (
     <div className="mb-10">
       <div className="relative mb-4 flex items-center">
