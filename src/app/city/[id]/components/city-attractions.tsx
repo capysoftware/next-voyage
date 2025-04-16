@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import AttractionCard from "@/components/attraction-card";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,7 @@ import { generateItinerary } from "@/app/itinerary/actions";
 import type { ItineraryAIResult } from "@/app/itinerary/schema";
 import { readStreamableValue } from "ai/rsc";
 import { StreamDaySchedule } from "@/components/day-schedule";
+import LiveIsland, { LiveIslandHandle } from "@/components/live-island";
 
 export default function CityAttractions({
   cityName,
@@ -23,6 +24,12 @@ export default function CityAttractions({
     [],
   );
   const [itinerary, setItinerary] = useState<ItineraryAIResult | null>(null);
+  const islandRef = useRef<LiveIslandHandle>(null);
+
+  const handleCloseIsland = () => {
+    islandRef.current?.close();
+  };
+
   return (
     <>
       {itinerary ? (
@@ -58,15 +65,35 @@ export default function CityAttractions({
           </div>
         </>
       )}
-      <div className="flex justify-center">
-        {!itinerary && (
-          <div className="font-handwritten fixed right-5 bottom-5 flex items-center gap-2">
-            {isSelecting ? (
-              <>
+
+      {/* Dynamic Island Component */}
+      {!itinerary && (
+        <LiveIsland
+          ref={islandRef}
+          className="font-handwritten flex items-center justify-center"
+          top={20}
+          smallWidth={150}
+          smallHeight={40}
+          largeWidth={240}
+          largeHeight={60}
+          triggerType="click"
+          initialAnimation={false}
+          closeOnScroll={false}
+          closeOnOutsideClick={false}
+        >
+          {(isSmall) =>
+            isSmall ? (
+              // Small island content
+              <div onClick={() => setIsSelecting(true)}>
+                <p>Create Itinerary</p>
+              </div>
+            ) : (
+              // Expanded island content
+              <div className="flex items-center justify-center gap-3">
                 <div className="relative">
                   <Button
-                    size="lg"
-                    className="hover:cursor-pointer disabled:text-gray-400 disabled:opacity-100"
+                    variant="ghost"
+                    className="hover:text-secondary rounded-full bg-gray-800 text-base hover:cursor-pointer hover:bg-gray-700 disabled:text-gray-400 disabled:opacity-100"
                     disabled={selectedAttractions.length === 0}
                     onClick={async () => {
                       const result = await generateItinerary(
@@ -93,28 +120,21 @@ export default function CityAttractions({
                   </span>
                 </div>
                 <Button
-                  className="rounded-full hover:rotate-90 hover:cursor-pointer hover:bg-red-500"
+                  className="rounded-full bg-red-500 hover:rotate-90 hover:cursor-pointer hover:bg-red-400"
                   size="icon"
                   onClick={() => {
+                    handleCloseIsland();
                     setSelectedAttractions([]);
                     setIsSelecting(false);
                   }}
                 >
                   <X className="size-4" />
                 </Button>
-              </>
-            ) : (
-              <Button
-                size="lg"
-                className="hover:cursor-pointer disabled:text-gray-500 disabled:opacity-100"
-                onClick={() => setIsSelecting(true)}
-              >
-                Create Itinerary
-              </Button>
-            )}
-          </div>
-        )}
-      </div>
+              </div>
+            )
+          }
+        </LiveIsland>
+      )}
     </>
   );
 }
