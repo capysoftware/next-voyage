@@ -60,23 +60,13 @@ export default function CityAttractions({
       )}
       <div className="flex justify-center">
         {!itinerary && (
-          <div className="fixed bottom-5 flex items-center gap-2">
+          <div className="font-handwritten fixed right-5 bottom-5 flex items-center gap-2">
             {isSelecting ? (
               <>
-                <Button
-                  className="rounded-full"
-                  size="icon"
-                  onClick={() => {
-                    setSelectedAttractions([]);
-                    setIsSelecting(false);
-                  }}
-                >
-                  <X className="size-4" />
-                </Button>
                 <div className="relative">
                   <Button
                     size="lg"
-                    className="hover:cursor-pointer"
+                    className="hover:cursor-pointer disabled:text-gray-500 disabled:opacity-100"
                     disabled={selectedAttractions.length === 0}
                     onClick={async () => {
                       const result = await generateItinerary(
@@ -102,11 +92,21 @@ export default function CityAttractions({
                     {selectedAttractions.length}
                   </span>
                 </div>
+                <Button
+                  className="rounded-full"
+                  size="icon"
+                  onClick={() => {
+                    setSelectedAttractions([]);
+                    setIsSelecting(false);
+                  }}
+                >
+                  <X className="size-4" />
+                </Button>
               </>
             ) : (
               <Button
                 size="lg"
-                className="hover:cursor-pointer"
+                className="hover:cursor-pointer disabled:text-gray-500 disabled:opacity-100"
                 onClick={() => setIsSelecting(true)}
               >
                 Create Itinerary
