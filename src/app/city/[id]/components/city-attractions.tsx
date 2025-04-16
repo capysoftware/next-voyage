@@ -2,6 +2,17 @@
 
 import { useRef, useState } from "react";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import AttractionCard from "@/components/attraction-card";
 import { Button } from "@/components/ui/button";
 import type { Attraction } from "@/data";
@@ -67,7 +78,7 @@ export default function CityAttractions({
       )}
 
       {/* Dynamic Island Component */}
-      {!itinerary && (
+      {itinerary ? (
         <LiveIsland
           ref={islandRef}
           className="font-handwritten flex items-center justify-center"
@@ -134,7 +145,41 @@ export default function CityAttractions({
             )
           }
         </LiveIsland>
+      ) : (
+        <SaveItinerary />
       )}
     </>
+  );
+}
+
+function SaveItinerary() {
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button className="font-handwritten fixed top-0 left-1/2 mt-5 h-[40px] w-[150px] -translate-x-1/2 rounded-full text-base hover:cursor-pointer">
+          Save Itinerary
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle>Save Itinerary</DialogTitle>
+          <DialogDescription>
+            Give your itinerary a name below and click save to store it for
+            later.
+          </DialogDescription>
+        </DialogHeader>
+        <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="name" className="text-right">
+              Name
+            </Label>
+            <Input id="name" className="col-span-3" />
+          </div>
+        </div>
+        <DialogFooter>
+          <Button type="submit">Save</Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
 }
