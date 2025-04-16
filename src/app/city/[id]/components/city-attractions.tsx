@@ -6,7 +6,7 @@ import AttractionCard from "@/components/attraction-card";
 import { Button } from "@/components/ui/button";
 import type { Attraction } from "@/data";
 import { X } from "lucide-react";
-import { generateItinerary } from "@/app/itinerary/actions";
+import { generateItinerary } from "@/app/city/[id]/actions";
 import type { ItineraryAIResult } from "@/app/itinerary/schema";
 import { readStreamableValue } from "ai/rsc";
 import { StreamDaySchedule } from "@/components/day-schedule";
