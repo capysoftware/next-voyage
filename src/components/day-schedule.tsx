@@ -52,7 +52,7 @@ export function DaySchedule({ schedule }: DayScheduleProps) {
           .map((attraction) => (
             <div
               key={attraction.id}
-              className="relative mx-auto mb-6 ml-16 max-w-2xl bg-white p-8 shadow-sm"
+              className="relative mx-auto mb-6 ml-16 w-full max-w-2xl bg-white p-8 shadow-sm"
             >
               <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
               <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
@@ -127,9 +127,6 @@ export function StreamDaySchedule({ schedule }: StreamDayScheduleProps) {
               if (!a.id) {
                 return null;
               }
-              if (!a.startTime || !a.endTime) {
-                return null;
-              }
               return {
                 ...a,
                 ...attractions[a.id],
@@ -140,7 +137,7 @@ export function StreamDaySchedule({ schedule }: StreamDayScheduleProps) {
                 attraction && (
                   <div
                     key={attraction.id}
-                    className="relative mx-auto mb-6 ml-16 max-w-2xl bg-white p-8 shadow-sm"
+                    className="relative mx-auto mb-6 ml-16 w-full max-w-2xl bg-white p-8 shadow-sm"
                   >
                     <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
                     <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />

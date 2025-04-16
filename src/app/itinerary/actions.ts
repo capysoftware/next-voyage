@@ -21,9 +21,7 @@ export async function generateItinerary(userPrompt: string) {
       stream.update(partialObject);
     }
 
-    stream.done(() => {
-      console.log("stream done");
-    });
+    stream.done();
   })();
 
   return stream.value;

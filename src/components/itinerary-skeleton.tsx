@@ -11,7 +11,7 @@ export function ItinerarySkeleton() {
         </div>
         <div className="font-handwritten ml-4 flex items-center gap-2">
           <Loader2 className="size-4 animate-spin" />
-          <span className="pt-1">Generating Itinerary...</span>
+          <span className="pt-1">Loading Itinerary...</span>
         </div>
       </div>
       <div className="flex flex-col gap-4">

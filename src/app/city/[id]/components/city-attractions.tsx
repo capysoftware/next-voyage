@@ -8,7 +8,6 @@ import type { Attraction } from "@/data";
 import { X } from "lucide-react";
 import { generateItinerary } from "@/app/itinerary/actions";
 import type { ItineraryAIResult } from "@/app/itinerary/schema";
-import { ItinerarySkeleton } from "@/components/itinerary-skeleton";
 import { readStreamableValue } from "ai/rsc";
 import { StreamDaySchedule } from "@/components/day-schedule";
 
@@ -30,15 +29,14 @@ export default function CityAttractions({
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute top-6 bottom-0 left-4 border-l-2 border-dashed border-zinc-700" />
-          {itinerary.itinerary?.length > 0
-            ? itinerary.itinerary.map(
-                (schedule) =>
-                  schedule &&
-                  schedule.day && (
-                    <StreamDaySchedule key={schedule.day} schedule={schedule} />
-                  ),
-              )
-            : [1, 2, 3].map((num) => <ItinerarySkeleton key={num} />)}
+          {itinerary.itinerary?.length > 0 &&
+            itinerary.itinerary.map(
+              (schedule) =>
+                schedule &&
+                schedule.day && (
+                  <StreamDaySchedule key={schedule.day} schedule={schedule} />
+                ),
+            )}
         </div>
       ) : (
         <>
