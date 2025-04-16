@@ -16,7 +16,7 @@ export default async function Header() {
         className="font-handwritten flex items-center gap-2 text-2xl font-bold tracking-tighter"
       >
         <Compass className="size-6" />
-        <span className="pt-1">Next Trip</span>
+        <span className="pt-1">Next Voyage</span>
       </Link>
       <nav className="font-handwritten flex items-center gap-4">
         <Link href="/">Home</Link>

@@ -24,6 +24,8 @@ import { StreamDaySchedule } from "@/components/day-schedule";
 import LiveIsland, { LiveIslandHandle } from "@/components/live-island";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
+import { useSession } from "@/lib/auth-client";
+import { Login } from "@/components/auth/login";
 
 export default function CityAttractions({
   cityName,
@@ -166,6 +168,7 @@ function SaveItinerary({
   const [name, setName] = useState("");
   const [isSaving, setIsSaving] = useState(false);
   const router = useRouter();
+  const { data: session } = useSession();
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -174,57 +177,73 @@ function SaveItinerary({
         </Button>
       </DialogTrigger>
       <DialogContent className="font-handwritten bg-white sm:max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle>Save Itinerary</DialogTitle>
-          <DialogDescription>
-            Give your itinerary a name below and click save to store it for
-            later.
-          </DialogDescription>
-        </DialogHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid items-center gap-4">
-            <Label htmlFor="name" className="sr-only text-right">
-              Name
-            </Label>
-            <Input
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="col-span-3"
-              placeholder="My Itinerary"
-            />
-          </div>
-        </div>
-        <DialogFooter>
-          <Button
-            type="submit"
-            disabled={isSaving}
-            onClick={async () => {
-              if (name.trim().length <= 3) {
-                toast.error("Name must be at least 3 characters long");
-                return;
-              }
+        {session?.user.id ? (
+          <>
+            <DialogHeader>
+              <DialogTitle>Save Itinerary</DialogTitle>
+              <DialogDescription>
+                Give your itinerary a name below and click save to store it for
+                later.
+              </DialogDescription>
+            </DialogHeader>
+            <div className="grid gap-4 py-4">
+              <div className="grid items-center gap-4">
+                <Label htmlFor="name" className="sr-only text-right">
+                  Name
+                </Label>
+                <Input
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="col-span-3"
+                  placeholder="My Itinerary"
+                />
+              </div>
+            </div>
+            <DialogFooter>
+              <Button
+                type="submit"
+                disabled={isSaving}
+                onClick={async () => {
+                  if (name.trim().length <= 3) {
+                    toast.error("Name must be at least 3 characters long");
+                    return;
+                  }
 
-              setIsSaving(true);
+                  setIsSaving(true);
 
-              const { error, itineraryId } = await createItinerary({
-                cityId,
-                name,
-                schedule,
-              });
+                  const { error, itineraryId } = await createItinerary({
+                    cityId,
+                    name,
+                    schedule,
+                  });
 
-              if (error) {
-                toast.error("Failed to save itinerary");
-              } else {
-                toast.success("Itinerary saved successfully");
-                router.push(`/itinerary/${itineraryId}`);
-              }
-              await setIsSaving(false);
-            }}
-          >
-            {isSaving ? "Saving..." : "Save"}
-          </Button>
-        </DialogFooter>
+                  if (error) {
+                    toast.error("Failed to save itinerary");
+                  } else {
+                    toast.success("Itinerary saved successfully");
+                    router.push(`/itinerary/${itineraryId}`);
+                  }
+                  await setIsSaving(false);
+                }}
+              >
+                {isSaving ? "Saving..." : "Save"}
+              </Button>
+            </DialogFooter>
+          </>
+        ) : (
+          <>
+            <DialogHeader>
+              <DialogTitle>Save Itinerary</DialogTitle>
+              <DialogDescription>
+                Please login to save your itinerary.
+              </DialogDescription>
+            </DialogHeader>
+            <DialogFooter>
+              <Login />
+            </DialogFooter>
+          </>
+        )}
       </DialogContent>
     </Dialog>
   );
