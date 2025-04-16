@@ -8,11 +8,11 @@ const envSchema = z.object({
   BETTER_AUTH_SECRET: z.string({
     message: "BETTER_AUTH_SECRET is required",
   }),
-  DISCORD_CLIENT_ID: z.string({
-    message: "DISCORD_CLIENT_ID is required",
+  GITHUB_CLIENT_ID: z.string({
+    message: "GITHUB_CLIENT_ID is required",
   }),
-  DISCORD_CLIENT_SECRET: z.string({
-    message: "DISCORD_CLIENT_SECRET is required",
+  GITHUB_CLIENT_SECRET: z.string({
+    message: "GITHUB_CLIENT_SECRET is required",
   }),
 });
 

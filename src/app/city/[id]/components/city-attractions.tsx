@@ -42,6 +42,7 @@ export default function CityAttractions({
   );
   const [itinerary, setItinerary] = useState<ItineraryAIResult | null>(null);
   const islandRef = useRef<LiveIslandHandle>(null);
+  const { data: session } = useSession();
 
   const handleCloseIsland = () => {
     islandRef.current?.close();
@@ -101,9 +102,30 @@ export default function CityAttractions({
           {(isSmall) =>
             isSmall ? (
               // Small island content
-              <div onClick={() => setIsSelecting(true)}>
-                <p>Create Itinerary</p>
-              </div>
+              session?.user ? (
+                <div onClick={() => setIsSelecting(true)}>
+                  <p>Create Itinerary</p>
+                </div>
+              ) : (
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <div onClick={() => setIsSelecting(true)}>
+                      <p>Create Itinerary</p>
+                    </div>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>Login</DialogTitle>
+                      <DialogDescription>
+                        Please login to create an itinerary.
+                      </DialogDescription>
+                    </DialogHeader>
+                    <DialogFooter>
+                      <Login />
+                    </DialogFooter>
+                  </DialogContent>
+                </Dialog>
+              )
             ) : (
               // Expanded island content
               <div className="flex items-center justify-center gap-3">
@@ -168,7 +190,6 @@ function SaveItinerary({
   const [name, setName] = useState("");
   const [isSaving, setIsSaving] = useState(false);
   const router = useRouter();
-  const { data: session } = useSession();
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -177,73 +198,57 @@ function SaveItinerary({
         </Button>
       </DialogTrigger>
       <DialogContent className="font-handwritten bg-white sm:max-w-[425px]">
-        {session?.user.id ? (
-          <>
-            <DialogHeader>
-              <DialogTitle>Save Itinerary</DialogTitle>
-              <DialogDescription>
-                Give your itinerary a name below and click save to store it for
-                later.
-              </DialogDescription>
-            </DialogHeader>
-            <div className="grid gap-4 py-4">
-              <div className="grid items-center gap-4">
-                <Label htmlFor="name" className="sr-only text-right">
-                  Name
-                </Label>
-                <Input
-                  id="name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="col-span-3"
-                  placeholder="My Itinerary"
-                />
-              </div>
-            </div>
-            <DialogFooter>
-              <Button
-                type="submit"
-                disabled={isSaving}
-                onClick={async () => {
-                  if (name.trim().length <= 3) {
-                    toast.error("Name must be at least 3 characters long");
-                    return;
-                  }
+        <DialogHeader>
+          <DialogTitle>Save Itinerary</DialogTitle>
+          <DialogDescription>
+            Give your itinerary a name below and click save to store it for
+            later.
+          </DialogDescription>
+        </DialogHeader>
+        <div className="grid gap-4 py-4">
+          <div className="grid items-center gap-4">
+            <Label htmlFor="name" className="sr-only text-right">
+              Name
+            </Label>
+            <Input
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="col-span-3"
+              placeholder="My Itinerary"
+            />
+          </div>
+        </div>
+        <DialogFooter>
+          <Button
+            type="submit"
+            disabled={isSaving}
+            onClick={async () => {
+              if (name.trim().length <= 3) {
+                toast.error("Name must be at least 3 characters long");
+                return;
+              }
 
-                  setIsSaving(true);
+              setIsSaving(true);
 
-                  const { error, itineraryId } = await createItinerary({
-                    cityId,
-                    name,
-                    schedule,
-                  });
+              const { error, itineraryId } = await createItinerary({
+                cityId,
+                name,
+                schedule,
+              });
 
-                  if (error) {
-                    toast.error("Failed to save itinerary");
-                  } else {
-                    toast.success("Itinerary saved successfully");
-                    router.push(`/itinerary/${itineraryId}`);
-                  }
-                  await setIsSaving(false);
-                }}
-              >
-                {isSaving ? "Saving..." : "Save"}
-              </Button>
-            </DialogFooter>
-          </>
-        ) : (
-          <>
-            <DialogHeader>
-              <DialogTitle>Save Itinerary</DialogTitle>
-              <DialogDescription>
-                Please login to save your itinerary.
-              </DialogDescription>
-            </DialogHeader>
-            <DialogFooter>
-              <Login />
-            </DialogFooter>
-          </>
-        )}
+              if (error) {
+                toast.error("Failed to save itinerary");
+              } else {
+                toast.success("Itinerary saved successfully");
+                router.push(`/itinerary/${itineraryId}`);
+              }
+              await setIsSaving(false);
+            }}
+          >
+            {isSaving ? "Saving..." : "Save"}
+          </Button>
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   );

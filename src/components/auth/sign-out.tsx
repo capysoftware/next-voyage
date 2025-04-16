@@ -7,8 +7,13 @@ import { DropdownMenuItem } from "../ui/dropdown-menu";
 export default function SignOut() {
   const router = useRouter();
   const handleSignOut = async () => {
-    await signOut();
-    router.refresh();
+    await signOut({
+      fetchOptions: {
+        onSuccess: () => {
+          router.push("/");
+        },
+      },
+    });
   };
   return (
     <DropdownMenuItem
