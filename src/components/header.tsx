@@ -13,12 +13,22 @@ export default async function Header() {
     <header className="container mx-auto flex justify-between p-4">
       <Link
         href="/"
-        className="flex items-center gap-2 text-2xl font-bold tracking-tighter"
+        className="font-handwritten flex items-center gap-2 text-2xl font-bold tracking-tighter"
       >
         <Compass className="size-6" />
-        Next Voyage
+        <span className="pt-1">Next Trip</span>
       </Link>
-      {session?.user ? <UserProfile user={session.user} /> : <Login />}
+      <nav className="font-handwritten flex items-center gap-4">
+        <Link href="/">Home</Link>
+        {session?.user ? (
+          <>
+            <Link href="/itineraries">My Itineraries</Link>
+            <UserProfile user={session.user} />
+          </>
+        ) : (
+          <Login />
+        )}
+      </nav>
     </header>
   );
 }
