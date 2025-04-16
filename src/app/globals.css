@@ -134,3 +134,47 @@
     isolation: isolate;
   }
 }
+
+/* Custom animations for Dynamic Island */
+@keyframes turn-to-large {
+  50% {
+    height: calc(var(--large-height) * 1.02);
+    width: calc(var(--large-width) * 1.02);
+    border-radius: var(--large-radius);
+    box-shadow:
+      inset 0 0 0 1.5px rgba(255, 255, 255, 0.1),
+      0 16px 40px rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    height: var(--large-height);
+    width: var(--large-width);
+    border-radius: var(--large-radius);
+    box-shadow:
+      inset 0 0 0 1.5px rgba(255, 255, 255, 0.1),
+      0 16px 40px rgba(0, 0, 0, 0.7);
+  }
+}
+
+@keyframes turn-to-small {
+  0% {
+    height: var(--large-height);
+    width: var(--large-width);
+    border-radius: var(--large-radius);
+    box-shadow:
+      inset 0 0 0 1.5px rgba(255, 255, 255, 0.1),
+      0 16px 40px rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    height: calc(var(--small-height) * 0.94);
+    width: calc(var(--small-width) * 0.94);
+  }
+}
+
+/* Custom animation classes */
+.animate-turn-to-large {
+  animation: turn-to-large 0.4s ease-out forwards;
+}
+
+.animate-turn-to-small {
+  animation: turn-to-small 0.4s ease-out forwards;
+}
