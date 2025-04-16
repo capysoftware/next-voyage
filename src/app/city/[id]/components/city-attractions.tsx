@@ -7,6 +7,10 @@ import { Button } from "@/components/ui/button";
 import type { Attraction } from "@/data";
 import { X } from "lucide-react";
 import { generateItinerary } from "@/app/itinerary/actions";
+import type { ItineraryAIResult } from "@/app/itinerary/schema";
+import { ItinerarySkeleton } from "@/components/itinerary-skeleton";
+import { readStreamableValue } from "ai/rsc";
+import { StreamDaySchedule } from "@/components/day-schedule";
 
 export default function CityAttractions({
   cityName,
@@ -19,74 +23,99 @@ export default function CityAttractions({
   const [selectedAttractions, setSelectedAttractions] = useState<Attraction[]>(
     [],
   );
-  const [itinerary, setItinerary] = useState<React.ReactNode>();
-
+  const [itinerary, setItinerary] = useState<ItineraryAIResult | null>(null);
   return (
     <>
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {cityAttractions.map((attraction) => (
-          <AttractionCard
-            key={attraction.id}
-            attraction={attraction}
-            isSelecting={isSelecting}
-            isSelected={selectedAttractions.some((a) => a.id === attraction.id)}
-            setSelectedAttractions={setSelectedAttractions}
-          />
-        ))}
-      </div>
-      <div className="mt-20">{itinerary}</div>
+      {itinerary ? (
+        <div className="relative">
+          {/* Timeline line */}
+          <div className="absolute top-6 bottom-0 left-4 border-l-2 border-dashed border-zinc-700" />
+          {itinerary.itinerary?.length > 0
+            ? itinerary.itinerary.map(
+                (schedule) =>
+                  schedule &&
+                  schedule.day && (
+                    <StreamDaySchedule key={schedule.day} schedule={schedule} />
+                  ),
+              )
+            : [1, 2, 3].map((num) => <ItinerarySkeleton key={num} />)}
+        </div>
+      ) : (
+        <>
+          <h2 className="font-handwritten text-scrapbook-text mb-8 text-center text-2xl font-bold">
+            Top Attractions in {cityName}
+          </h2>
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+            {cityAttractions.map((attraction) => (
+              <AttractionCard
+                key={attraction.id}
+                attraction={attraction}
+                isSelecting={isSelecting}
+                isSelected={selectedAttractions.some(
+                  (a) => a.id === attraction.id,
+                )}
+                setSelectedAttractions={setSelectedAttractions}
+              />
+            ))}
+          </div>
+        </>
+      )}
       <div className="flex justify-center">
-        <div className="fixed bottom-5 flex items-center gap-2">
-          {isSelecting ? (
-            <>
-              <Button
-                className="rounded-full"
-                size="icon"
-                onClick={() => {
-                  setSelectedAttractions([]);
-                  setIsSelecting(false);
-                }}
-              >
-                <X className="size-4" />
-              </Button>
-              <div className="relative">
+        {!itinerary && (
+          <div className="fixed bottom-5 flex items-center gap-2">
+            {isSelecting ? (
+              <>
                 <Button
-                  size="lg"
-                  className="hover:cursor-pointer"
-                  disabled={!selectedAttractions.length}
-                  onClick={async () => {
-                    setItinerary(
-                      await generateItinerary(
-                        `Generate an itinerary for ${cityName} that includes visits to the following attractions:
-                      ${selectedAttractions
-                        .map((a) => `- ${a.name} (ID: ${a.id})`)
-                        .join("\n")}
-              
-                      Determine how many days would be appropriate to visit all these attractions without rushing. Schedule the attractions across the days with suitable start and end times for each visit. Consider travel time between attractions and provide a balanced schedule. Make sure to include the correct ID number for each attraction as specified above.
-                    `,
-                      ),
-                    );
+                  className="rounded-full"
+                  size="icon"
+                  onClick={() => {
                     setSelectedAttractions([]);
                     setIsSelecting(false);
                   }}
                 >
-                  Generate Itinerary
+                  <X className="size-4" />
                 </Button>
-                <span className="text-primary-foreground absolute -top-1 -right-1 inline-flex size-5 items-center justify-center rounded-full bg-red-500 text-center text-xs font-medium">
-                  {selectedAttractions.length}
-                </span>
-              </div>
-            </>
-          ) : (
-            <Button
-              size="lg"
-              className="hover:cursor-pointer"
-              onClick={() => setIsSelecting(true)}
-            >
-              Create Itinerary
-            </Button>
-          )}
-        </div>
+                <div className="relative">
+                  <Button
+                    size="lg"
+                    className="hover:cursor-pointer"
+                    disabled={selectedAttractions.length === 0}
+                    onClick={async () => {
+                      const result = await generateItinerary(
+                        `Generate an itinerary for ${cityName} that includes visits to the following attractions:
+                      ${selectedAttractions
+                        .map((a) => `- ${a.name} (ID: ${a.id})`)
+                        .join("\n")}
+                      Determine how many days would be appropriate to visit all these attractions without rushing. Schedule the attractions across the days with suitable start and end times for each visit. Consider travel time between attractions and provide a balanced schedule. Make sure to include the correct ID number for each attraction as specified above.
+                    `,
+                      );
+                      for await (const partialObject of readStreamableValue(
+                        result,
+                      )) {
+                        setItinerary(partialObject);
+                      }
+                      setSelectedAttractions([]);
+                      setIsSelecting(false);
+                    }}
+                  >
+                    Generate Itinerary
+                  </Button>
+                  <span className="text-primary-foreground absolute -top-1 -right-1 inline-flex size-5 items-center justify-center rounded-full bg-red-500 text-center text-xs font-medium">
+                    {selectedAttractions.length}
+                  </span>
+                </div>
+              </>
+            ) : (
+              <Button
+                size="lg"
+                className="hover:cursor-pointer"
+                onClick={() => setIsSelecting(true)}
+              >
+                Create Itinerary
+              </Button>
+            )}
+          </div>
+        )}
       </div>
     </>
   );

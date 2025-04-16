@@ -1,4 +1,5 @@
-import DaySchedule, { type Schedule } from "@/components/day-schedule";
+import { DaySchedule, type Schedule } from "@/components/day-schedule";
+import { ItinerarySkeleton } from "@/components/itinerary-skeleton";
 
 const itinerary: Schedule[] = [
   {
@@ -35,13 +36,15 @@ const itinerary: Schedule[] = [
 
 export default async function Page() {
   return (
-    <div className="relative">
-      {/* Timeline line */}
-      <div className="absolute top-6 bottom-0 left-4 border-l-2 border-dashed border-zinc-700" />
-
-      {itinerary.map((schedule) => (
-        <DaySchedule key={schedule.day} schedule={schedule} />
-      ))}
-    </div>
+    <>
+      <ItinerarySkeleton />
+      <div className="relative">
+        {/* Timeline line */}
+        <div className="absolute top-6 bottom-0 left-4 border-l-2 border-dashed border-zinc-700" />
+        {itinerary.map((schedule) => (
+          <DaySchedule key={schedule.day} schedule={schedule} />
+        ))}
+      </div>
+    </>
   );
 }

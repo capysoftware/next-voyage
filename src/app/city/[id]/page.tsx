@@ -5,6 +5,8 @@ import Link from "next/link";
 import CityAttractions from "./components/city-attractions";
 import Image from "next/image";
 
+export const dynamic = "force-dynamic";
+
 interface CityDetailsPageProps {
   params: Promise<{ id: number }>;
 }
@@ -83,11 +85,6 @@ export default async function CityDetailsPage({
           </div>
         </div>
       </div>
-
-      <h2 className="font-handwritten text-scrapbook-text mb-8 text-center text-2xl font-bold">
-        Top Attractions in {city.name}
-      </h2>
-
       <CityAttractions cityName={city.name} cityAttractions={cityAttractions} />
     </>
   );
