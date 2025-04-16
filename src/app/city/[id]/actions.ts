@@ -39,7 +39,7 @@ export async function createItinerary({
   name,
   schedule,
 }: {
-  cityId: string;
+  cityId: number;
   name: string;
   schedule: ItineraryAIResult["itinerary"];
 }) {
@@ -55,7 +55,7 @@ export async function createItinerary({
     .insert(itineraries)
     .values({
       userId: session.user.id,
-      cityId,
+      cityId: cityId.toString(),
       name,
     })
     .returning()

@@ -85,7 +85,11 @@ export default async function CityDetailsPage({
           </div>
         </div>
       </div>
-      <CityAttractions cityName={city.name} cityAttractions={cityAttractions} />
+      <CityAttractions
+        cityName={city.name}
+        cityAttractions={cityAttractions}
+        cityId={id}
+      />
     </>
   );
 }

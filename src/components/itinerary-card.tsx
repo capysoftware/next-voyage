@@ -31,7 +31,9 @@ export default function ItineraryCard({ itinerary }: IntineraryCardProps) {
           </h3>
           <p className="text-foreground flex items-center justify-center gap-1 text-sm">
             <MapPin className="size-3.5" />
-            <span>{itinerary.city.country}</span>
+            <span>
+              {itinerary.city.name}, {itinerary.city.country}
+            </span>
           </p>
         </div>
       </Link>

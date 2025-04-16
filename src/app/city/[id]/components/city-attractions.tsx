@@ -17,18 +17,22 @@ import AttractionCard from "@/components/attraction-card";
 import { Button } from "@/components/ui/button";
 import type { Attraction } from "@/data";
 import { X } from "lucide-react";
-import { generateItinerary } from "@/app/city/[id]/actions";
+import { createItinerary, generateItinerary } from "@/app/city/[id]/actions";
 import type { ItineraryAIResult } from "@/app/itinerary/schema";
 import { readStreamableValue } from "ai/rsc";
 import { StreamDaySchedule } from "@/components/day-schedule";
 import LiveIsland, { LiveIslandHandle } from "@/components/live-island";
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
 export default function CityAttractions({
   cityName,
   cityAttractions,
+  cityId,
 }: {
   cityName: string;
   cityAttractions: Attraction[];
+  cityId: number;
 }) {
   const [isSelecting, setIsSelecting] = useState(false);
   const [selectedAttractions, setSelectedAttractions] = useState<Attraction[]>(
@@ -125,10 +129,10 @@ export default function CityAttractions({
                     }}
                   >
                     Generate Itinerary
+                    <span className="text-primary-foreground absolute -top-1 -left-1 inline-flex size-5 items-center justify-center rounded-full bg-blue-500 text-center text-xs font-medium">
+                      {selectedAttractions.length}
+                    </span>
                   </Button>
-                  <span className="text-primary-foreground absolute -top-1 -right-1 inline-flex size-5 items-center justify-center rounded-full bg-red-500 text-center text-xs font-medium">
-                    {selectedAttractions.length}
-                  </span>
                 </div>
                 <Button
                   className="rounded-full bg-red-500 hover:rotate-90 hover:cursor-pointer hover:bg-red-400"
@@ -146,13 +150,22 @@ export default function CityAttractions({
           }
         </LiveIsland>
       ) : (
-        <SaveItinerary />
+        <SaveItinerary cityId={cityId} schedule={itinerary.itinerary} />
       )}
     </>
   );
 }
 
-function SaveItinerary() {
+function SaveItinerary({
+  cityId,
+  schedule,
+}: {
+  cityId: number;
+  schedule: ItineraryAIResult["itinerary"];
+}) {
+  const [name, setName] = useState("");
+  const [isSaving, setIsSaving] = useState(false);
+  const router = useRouter();
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -160,7 +173,7 @@ function SaveItinerary() {
           Save Itinerary
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="font-handwritten bg-white sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Save Itinerary</DialogTitle>
           <DialogDescription>
@@ -169,15 +182,48 @@ function SaveItinerary() {
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
+          <div className="grid items-center gap-4">
+            <Label htmlFor="name" className="sr-only text-right">
               Name
             </Label>
-            <Input id="name" className="col-span-3" />
+            <Input
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="col-span-3"
+              placeholder="My Itinerary"
+            />
           </div>
         </div>
         <DialogFooter>
-          <Button type="submit">Save</Button>
+          <Button
+            type="submit"
+            disabled={isSaving}
+            onClick={async () => {
+              if (name.trim().length <= 3) {
+                toast.error("Name must be at least 3 characters long");
+                return;
+              }
+
+              setIsSaving(true);
+
+              const { error, itineraryId } = await createItinerary({
+                cityId,
+                name,
+                schedule,
+              });
+
+              if (error) {
+                toast.error("Failed to save itinerary");
+              } else {
+                toast.success("Itinerary saved successfully");
+                router.push(`/itinerary/${itineraryId}`);
+              }
+              await setIsSaving(false);
+            }}
+          >
+            {isSaving ? "Saving..." : "Save"}
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

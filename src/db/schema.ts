@@ -71,7 +71,7 @@ export const itineraries = pgTable("itineraries", {
 
 export const days = pgTable("days", {
   id: serial("id").primaryKey(),
-  itineraryId: text("itinerary_id").notNull(),
+  itineraryId: uuid("itinerary_id").notNull(),
   value: integer("value").notNull(),
   createdAt: timestamp("created_at").notNull().defaultNow(),
 });
@@ -95,7 +95,11 @@ export const itinerariesRelations = relations(itineraries, ({ many, one }) => ({
   }),
 }));
 
-export const daysRelations = relations(days, ({ many }) => ({
+export const daysRelations = relations(days, ({ many, one }) => ({
+  itinerary: one(itineraries, {
+    fields: [days.itineraryId],
+    references: [itineraries.id],
+  }),
   attractions: many(attractions),
 }));
 
