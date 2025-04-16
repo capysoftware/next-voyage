@@ -66,7 +66,7 @@ export default function CityAttractions({
                 <div className="relative">
                   <Button
                     size="lg"
-                    className="hover:cursor-pointer disabled:text-gray-500 disabled:opacity-100"
+                    className="hover:cursor-pointer disabled:text-gray-400 disabled:opacity-100"
                     disabled={selectedAttractions.length === 0}
                     onClick={async () => {
                       const result = await generateItinerary(
@@ -93,7 +93,7 @@ export default function CityAttractions({
                   </span>
                 </div>
                 <Button
-                  className="rounded-full"
+                  className="rounded-full duration-300 hover:rotate-90 hover:bg-red-500"
                   size="icon"
                   onClick={() => {
                     setSelectedAttractions([]);
