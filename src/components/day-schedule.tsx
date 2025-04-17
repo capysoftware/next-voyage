@@ -58,7 +58,7 @@ export function DaySchedule({ schedule }: DayScheduleProps) {
               <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
               <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
               <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <div className="col-span-2 flex flex-1 flex-col gap-4 p-2">
                   <div className="flex items-center gap-2">
                     <Clock className="size-4" />
@@ -96,7 +96,7 @@ export function DaySchedule({ schedule }: DayScheduleProps) {
                     src={attraction.image}
                     alt={attraction.name}
                     placeholder="blur"
-                    className="h-46 w-full object-cover"
+                    className="hidden h-46 w-full object-cover md:block"
                     loading="lazy"
                   />
                 </div>
@@ -143,7 +143,7 @@ export function StreamDaySchedule({ schedule }: StreamDayScheduleProps) {
                     <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
                     <Tape className="absolute -bottom-4 -left-4 -translate-y-1/2 rotate-12" />
                     <Tape className="absolute -right-4 -bottom-4 -translate-y-1/2 -rotate-12" />
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                       <div className="col-span-2 flex flex-1 flex-col gap-4 p-2">
                         <div className="flex items-center gap-2">
                           <Clock className="size-4" />
