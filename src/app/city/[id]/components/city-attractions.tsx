@@ -108,7 +108,7 @@ export default function CityAttractions({
         <LiveIsland
           ref={islandRef}
           className="font-handwritten flex items-center justify-center"
-          bottom={10}
+          bottom={20}
           smallWidth={150}
           smallHeight={40}
           largeWidth={240}
