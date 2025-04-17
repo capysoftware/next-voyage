@@ -12,6 +12,7 @@ async function getItineraries(userId: string) {
   "use cache";
   const data = await db.query.itineraries.findMany({
     where: (itineraries, { eq }) => eq(itineraries.userId, userId),
+    orderBy: (itineraries, { desc }) => [desc(itineraries.createdAt)],
   });
   return data.map((itinerary) => ({
     ...itinerary,
