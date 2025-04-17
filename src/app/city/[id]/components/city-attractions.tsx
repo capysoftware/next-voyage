@@ -221,6 +221,7 @@ function SaveItinerary({
           <Button
             type="submit"
             disabled={isSaving}
+            className="hover:cursor-pointer"
             onClick={async () => {
               if (name.trim().length <= 3) {
                 toast.error("Name must be at least 3 characters long");
@@ -241,7 +242,7 @@ function SaveItinerary({
                 toast.success("Itinerary saved successfully");
                 router.push(`/itinerary/${itineraryId}`);
               }
-              await setIsSaving(false);
+              setIsSaving(false);
             }}
           >
             {isSaving ? "Saving..." : "Save"}

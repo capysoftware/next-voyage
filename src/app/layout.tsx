@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import type { Metadata } from "next";
 import { Kalam, Inter } from "next/font/google";
 import "./globals.css";
@@ -40,6 +41,7 @@ export default function RootLayout({
         </div>
         <Header />
         <main className="mx-auto max-w-7xl p-8 pb-20">{children}</main>
+        <Toaster richColors />
       </body>
     </html>
   );
