@@ -8,9 +8,11 @@ import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import Link from "next/link";
 
-async function getItineraries() {
+async function getItineraries(userId: string) {
   "use cache";
-  const data = await db.query.itineraries.findMany();
+  const data = await db.query.itineraries.findMany({
+    where: (itineraries, { eq }) => eq(itineraries.userId, userId),
+  });
   return data.map((itinerary) => ({
     ...itinerary,
     city: cities[itinerary.cityId],
@@ -28,7 +30,7 @@ export default async function ItinerariesList() {
     return <div>You must be logged in to view your itineraries</div>;
   }
 
-  const itineraries = await getItineraries();
+  const itineraries = await getItineraries(session.user.id);
 
   return itineraries.length > 0 ? (
     <div className="mx-auto grid grid-cols-1 gap-14 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
