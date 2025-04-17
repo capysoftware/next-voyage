@@ -41,7 +41,7 @@ export function DaySchedule({ schedule }: DayScheduleProps) {
           <span className="font-handwritten">Day {schedule.day}</span>
         </div>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 pl-16">
         {schedule.attractions
           .map((a) => {
             return {
@@ -52,7 +52,7 @@ export function DaySchedule({ schedule }: DayScheduleProps) {
           .map((attraction) => (
             <div
               key={attraction.id}
-              className="relative mx-auto mb-6 ml-16 w-full max-w-2xl bg-white p-8 shadow-sm"
+              className="relative mb-6 w-full max-w-2xl bg-white p-8 shadow-sm"
             >
               <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
               <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
@@ -96,7 +96,7 @@ export function DaySchedule({ schedule }: DayScheduleProps) {
                     src={attraction.image}
                     alt={attraction.name}
                     placeholder="blur"
-                    className="hidden h-46 w-full object-cover md:block"
+                    className="h-46 w-full object-cover"
                     loading="lazy"
                   />
                 </div>
@@ -119,7 +119,7 @@ export function StreamDaySchedule({ schedule }: StreamDayScheduleProps) {
           <span className="font-handwritten">Day {schedule?.day}</span>
         </div>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 pl-16">
         {schedule.attractions &&
           schedule.attractions.length > 0 &&
           schedule.attractions
@@ -137,7 +137,7 @@ export function StreamDaySchedule({ schedule }: StreamDayScheduleProps) {
                 attraction && (
                   <div
                     key={attraction.id}
-                    className="relative mx-auto mb-6 ml-16 w-full max-w-2xl bg-white p-8 shadow-sm"
+                    className="relative mb-6 w-full max-w-2xl bg-white p-8 shadow-sm"
                   >
                     <Tape className="absolute top-1 -left-4 -translate-y-1/2 -rotate-12" />
                     <Tape className="absolute top-1 -right-4 -translate-y-1/2 rotate-12" />
