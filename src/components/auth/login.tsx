@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 export function Login() {
   const handleSignIn = async () => {
     const { error } = await signIn.social({
-      provider: "discord",
+      provider: "github",
     });
 
     if (error) {

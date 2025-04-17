@@ -85,7 +85,26 @@ export default function CityAttractions({
       )}
 
       {/* Dynamic Island Component */}
-      {!itinerary ? (
+      {!session ? (
+        <Dialog>
+          <DialogTrigger className="absolute bg-black text-white" asChild>
+            <Button className="font-handwritten fixed top-5 left-1/2 -translate-x-1/2 rounded-full text-base hover:cursor-pointer">
+              Create Itinerary
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="font-handwritten bg-white sm:max-w-[425px]">
+            <DialogHeader>
+              <DialogTitle>Login</DialogTitle>
+              <DialogDescription>
+                Please login to create an itinerary.
+              </DialogDescription>
+            </DialogHeader>
+            <DialogFooter>
+              <Login />
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
+      ) : !itinerary ? (
         <LiveIsland
           ref={islandRef}
           className="font-handwritten flex items-center justify-center"
@@ -102,30 +121,9 @@ export default function CityAttractions({
           {(isSmall) =>
             isSmall ? (
               // Small island content
-              session?.user ? (
-                <div onClick={() => setIsSelecting(true)}>
-                  <p>Create Itinerary</p>
-                </div>
-              ) : (
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <div onClick={() => setIsSelecting(true)}>
-                      <p>Create Itinerary</p>
-                    </div>
-                  </DialogTrigger>
-                  <DialogContent>
-                    <DialogHeader>
-                      <DialogTitle>Login</DialogTitle>
-                      <DialogDescription>
-                        Please login to create an itinerary.
-                      </DialogDescription>
-                    </DialogHeader>
-                    <DialogFooter>
-                      <Login />
-                    </DialogFooter>
-                  </DialogContent>
-                </Dialog>
-              )
+              <div onClick={() => setIsSelecting(true)}>
+                <p>Create Itinerary</p>
+              </div>
             ) : (
               // Expanded island content
               <div className="flex items-center justify-center gap-3">
