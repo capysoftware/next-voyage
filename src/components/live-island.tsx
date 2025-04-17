@@ -21,7 +21,7 @@ export type LiveIslandHandle = {
 
 export type LiveIslandProps = {
   className?: string;
-  top?: number | string;
+  bottom?: number | string;
   smallClassName?: string;
   smallWidth?: number | string;
   smallHeight?: number | string;
@@ -42,7 +42,7 @@ const LiveIsland = forwardRef<LiveIslandHandle, LiveIslandProps>(
   (props, ref) => {
     const {
       className = "",
-      top = 10,
+      bottom = 10,
       smallClassName = "",
       smallWidth = 96,
       smallHeight = 30,
@@ -116,7 +116,7 @@ const LiveIsland = forwardRef<LiveIslandHandle, LiveIslandProps>(
         className={`fixed inset-x-0 z-[9999] ${wrapperClassName}`}
         style={
           {
-            top: getVal(top),
+            bottom: getVal(bottom),
             "--small-width": getVal(smallWidth),
             "--small-height": getVal(smallHeight),
             "--large-width": getVal(largeWidth),
@@ -133,7 +133,7 @@ const LiveIsland = forwardRef<LiveIslandHandle, LiveIslandProps>(
           />
         )}
         <div
-          className={`absolute top-0 left-1/2 -translate-x-1/2 overflow-hidden bg-black text-white ${className} ${
+          className={`absolute bottom-0 left-1/2 -translate-x-1/2 overflow-hidden bg-black text-white ${className} ${
             isSmall
               ? `cursor-pointer duration-300 select-none hover:scale-105 ${smallClassName} ${
                   initialAnimation || hasMount.current

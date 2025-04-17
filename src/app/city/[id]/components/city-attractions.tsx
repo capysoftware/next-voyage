@@ -88,7 +88,7 @@ export default function CityAttractions({
       {!session ? (
         <Dialog>
           <DialogTrigger className="absolute bg-black text-white" asChild>
-            <Button className="font-handwritten fixed top-5 left-1/2 -translate-x-1/2 rounded-full text-base hover:cursor-pointer">
+            <Button className="font-handwritten fixed bottom-4 left-1/2 -translate-x-1/2 rounded-full text-sm hover:cursor-pointer hover:bg-gray-800">
               Create Itinerary
             </Button>
           </DialogTrigger>
@@ -108,7 +108,7 @@ export default function CityAttractions({
         <LiveIsland
           ref={islandRef}
           className="font-handwritten flex items-center justify-center"
-          top={20}
+          bottom={10}
           smallWidth={150}
           smallHeight={40}
           largeWidth={240}
@@ -191,7 +191,7 @@ function SaveItinerary({
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="font-handwritten fixed top-0 left-1/2 mt-5 h-[40px] w-[150px] -translate-x-1/2 rounded-full text-base hover:cursor-pointer">
+        <Button className="font-handwritten fixed bottom-4 left-1/2 mt-5 h-[40px] w-[150px] -translate-x-1/2 rounded-full text-base hover:cursor-pointer">
           Save Itinerary
         </Button>
       </DialogTrigger>
